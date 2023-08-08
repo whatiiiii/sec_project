@@ -9,10 +9,6 @@
         </style>
         <body style="text-align:center">
             <h3>index.jsp</h3>
-
-           	<a href="hello.html">종일이 컴으로 작업함(static)</a>
-
-
-
+           	<a href="hello.html">제목입니다!!!!!</a>
     </body>
 </html>
