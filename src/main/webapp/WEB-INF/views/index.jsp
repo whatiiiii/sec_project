@@ -9,6 +9,6 @@
         </style>
         <body style="text-align:center">
             <h3>index.jsp</h3>
-           	<a href="hello.html">스테이틱(static)</a>
+           	<a href="hello.html">스테이틱!!!!!(static)</a>
     </body>
 </html>
