@@ -9,6 +9,6 @@
         </style>
         <body style="text-align:center">
             <h3>index.jsp</h3>
-           	<a href="hello.html">제목입니다!!!!!</a>
+           	<a href="hello.html">제목테스트!</a>
     </body>
 </html>
