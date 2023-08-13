@@ -95,14 +95,8 @@ $(document).ready(function() {
     $("#category #group_shoes").mouseenter(function() {
         $("div#image-list-shoes").attr("class", "image-list-hover");
     });
-    $("#category #group_home").mouseenter(function() {
-        $("div#image-list-home").attr("class", "image-list-hover");
-    });
-    $("#category #group_stuff").mouseenter(function() {
-        $("div#image-list-stuff").attr("class", "image-list-hover");
-    });
-    $("#category #group_sale").mouseenter(function() {
-        $("div#image-list-sale").attr("class", "image-list-hover");
+    $("#category #group_accessory").mouseenter(function() {
+        $("div#image-list-accessory").attr("class", "image-list-hover");
     });
 
     $("#category #group_outer").mouseout(function() {
@@ -130,16 +124,9 @@ $(document).ready(function() {
     $("#category #group_shoes").mouseout(function() {
         $("div#image-list-shoes").attr("class", "image-list");
     });
-    $("#category #group_home").mouseout(function() {
-        $("div#image-list-home").attr("class", "image-list");
+    $("#category #group_accessory").mouseout(function() {
+        $("div#image-list-accessory").attr("class", "image-list");
     });
-    $("#category #group_stuff").mouseout(function() {
-        $("div#image-list-stuff").attr("class", "image-list");
-    });
-    $("#category #group_sale").mouseout(function() {
-        $("div#image-list-sale").attr("class", "image-list");
-    });
-
 });
 
 
