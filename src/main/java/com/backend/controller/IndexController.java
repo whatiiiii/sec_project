@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("order")
 @Controller
 public class IndexController {
-
     @GetMapping("login.do")
     public String login(){
         return "order/login";
