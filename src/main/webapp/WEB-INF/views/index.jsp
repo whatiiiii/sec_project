@@ -304,7 +304,7 @@
             <a href="/product/list.html?cate_no=230">카테고리</a>
             <div class="middle-category">
 
-                <ul><li class="group"><a href="content.html" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" title="겉옷" button_text="바로 가기" button_link="/product/list.html?cate_no=88" >겉옷</a></li>
+                <ul><li class="group"><a href="/product/content.do" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" title="겉옷" button_text="바로 가기" button_link="/product/list.html?cate_no=88" >겉옷</a></li>
                     <li class="group">
                         <a href="/product/list.html?cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/list.html?cate_no=89">상의</a>
                         <div class="sub-category">
@@ -362,7 +362,7 @@
         <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
     <div class="image-list" id="image-list-outer" data_check="겉옷/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg">
-        <a href="content.html"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" alt="">
+        <a href="/product/content.do"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" alt="">
             <span class="title">겉옷</span><span>바로 가기</span></a></div>
             <div class="image-list" id="image-list-top" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg">
                 <a href="/product/list.html?cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt="">
@@ -431,7 +431,7 @@
             <a href="/product/list.html?cate_no=230">카테고리</a>
             <div class="middle-category">
                 <!-- 진짜 메뉴 -->
-                <ul><li class="group" id="group_outer"><a href="content.html" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" title="겉옷" button_text="바로 가기" button_link="/product/list.html?cate_no=88">겉옷</a></li>
+                <ul><li class="group" id="group_outer"><a href="/product/content.do" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" title="겉옷" button_text="바로 가기" button_link="/product/list.html?cate_no=88">겉옷</a></li>
                     <li class="group" id="group_top">
                         <a href="/product/list.html?cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/list.html?cate_no=89">상의</a>
                         <div class="sub-category">
