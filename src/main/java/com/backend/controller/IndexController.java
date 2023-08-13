@@ -10,6 +10,7 @@ public class IndexController {
 
     @GetMapping("login.do")
     public String login(){
+
         return "order/login";
     }
 }
