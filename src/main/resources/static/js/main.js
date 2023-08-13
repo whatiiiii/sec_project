@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+
 function replaceClass1(id, newClass){
     var elem = document.getElementById(id);
     elem.classList.add(newClass);
