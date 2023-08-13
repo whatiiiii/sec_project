@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="content.css" rel ="stylesheet"/>
+    <link href="../css/content.css" rel ="stylesheet"/>
 
 </head>
 
@@ -721,7 +721,7 @@ EC$('[async_section=before]').addClass('displaynone');
 }
 
 </script>
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 <iframe src="/exec/front/eclog/main/?cate_no=88&amp;rloc=https%3A//aviemuah.com/product/list.html%3Fcate_no%3D88&amp;rref=https%3A//aviemuah.com/product/list.html%3Fcate_no%3D91&amp;udim=1920*1080&amp;rserv=elg-db-svcm-293.cafe24.com&amp;cid=CID477a550e07e84f9361a4b859c9d1c9c6&amp;role_path=PRODUCT_LIST&amp;stype=e&amp;shop_no=1&amp;lang=ko_KR&amp;ver=2" id="log_realtime" style="display: none;"></iframe><div id="modalBackpanel"></div><div id="modalContainer">
 <iframe id="modalContent" scroll="0" scrolling="no" frameborder="0"></iframe>
 </div>
