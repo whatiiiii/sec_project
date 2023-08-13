@@ -243,10 +243,6 @@
                                 </ul>
 </div>
 </div>
-
-
-
-
     <div id="M_modal" class="header_notice_margin" style="margin-top: 0px;"></div>
 </div>
 </div>
@@ -303,10 +299,9 @@
         <li class="group image">
             <a href="/product/list.html?cate_no=230">카테고리</a>
             <div class="middle-category">
-
-                <ul><li class="group"><a href="/product/content.do" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" title="겉옷" button_text="바로 가기" button_link="/product/list.html?cate_no=88" >겉옷</a></li>
+                <ul>
                     <li class="group">
-                        <a href="/product/list.html?cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/list.html?cate_no=89">상의</a>
+                        <a href="/product/content.do" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/list.html?cate_no=89">상의</a>
                         <div class="sub-category">
                             <ul><li><a href="/product/list.html?cate_no=90">니트</a></li>
                                 <li><a href="/product/list.html?cate_no=117">셔츠</a></li>
@@ -331,39 +326,15 @@
                     <li class="group"><a href="/product/list.html?cate_no=94" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" title="드레스" button_text="바로가기" button_link="/product/list.html?cate_no=94">드레스</a></li>
                     <li class="group"><a href="/product/list.html?cate_no=95" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" title="가방" button_text="바로 가기" button_link="/product/list.html?cate_no=95">가방</a></li>
                     <li class="group"><a href="/product/list.html?cate_no=161" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" title="신발" button_text="바로 가기" button_link="/product/list.html?cate_no=161">신발</a></li>
-                    <li class="group"><a href="/product/list.html?cate_no=160" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="홈" button_text="바로 가기" button_link="/product/list.html?cate_no=160">홈</a>
-                        <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=240">홈</a></li>
-                                <li><a href="/product/list.html?cate_no=241">키친</a></li>
-                                <li><a href="/product/list.html?cate_no=96">오브제</a></li>
-                            </ul></div>
-                    </li>
-                    <li class="group">
-                        <a href="/product/list.html?cate_no=97" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg" title="잡화" button_text="바로 가기" button_link="/product/list.html?cate_no=97">잡화</a>
-                        <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=174">폰 놉</a></li>
-                                <li><a href="/product/list.html?cate_no=259">지갑</a></li>
-                                <li><a href="/product/list.html?cate_no=260">벨트</a></li>
-                                <li><a href="/product/list.html?cate_no=98">작은 가죽 제품</a></li>
-                                <li><a href="/product/list.html?cate_no=203">모자</a></li>
-                                <li><a href="/product/list.html?cate_no=207">헤어</a></li>
-                                <li><a href="/product/list.html?cate_no=204">양말</a></li>
-                                <li><a href="/product/list.html?cate_no=205">스카프</a></li>
-                                <li><a href="/product/list.html?cate_no=99">선물 포장</a></li>
-                            </ul></div>
-                    </li>
-                    <li class="group"><a href="/product/list.html?cate_no=253" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" title="할인" button_text="바로 가기" button_link="/product/list.html?cate_no=253">할인</a></li>
+                    <li class="group"><a href="/product/list.html?cate_no=160" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="악세서리" button_text="바로 가기" button_link="/product/list.html?cate_no=160">악세서리</a>
                 </ul></div>
         </li>
-    </ul><ul> <li class="group"><a href="/mundane/html/product/collection.html?cate_no=166">컬렉션</a></li>
+    </ul><ul>
         <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
         <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
         <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
         <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
-    <div class="image-list" id="image-list-outer" data_check="겉옷/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg">
-        <a href="/product/content.do"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" alt="">
-            <span class="title">겉옷</span><span>바로 가기</span></a></div>
             <div class="image-list" id="image-list-top" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg">
                 <a href="/product/list.html?cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt="">
                     <span class="title">상의</span><span>바로 가기</span></a></div>
@@ -379,13 +350,8 @@
                                             <a href="/product/list.html?cate_no=161"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" alt="">
                                                 <span class="title">신발</span><span>바로 가기</span></a></div>
                                                 <div class="image-list" data_check="홈/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg"><a href="/product/list.html?cate_no=160">
-                                                    <img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" alt=""><span class="title">홈</span>
-                                                    <span>바로 가기</span></a></div><div class="image-list" data_check="잡화/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg">
-                                                        <a href="/product/list.html?cate_no=97"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg" alt="">
-                                                            <span class="title">잡화</span><span>바로 가기</span></a></div>
-                                                            <div class="image-list" data_check="할인/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg">
-                                                                <a href="/product/list.html?cate_no=253"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" alt="">
-                                                                    <span class="title">할인</span><span>바로 가기</span></a></div></li></ul></div>
+                                                    <img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" alt=""><span class="title">악세서리</span>
+                                                    <span>바로 가기</span></a></div>
 </div>
 <!-- 사용자 카테고리 --><li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
 &nbsp;/&nbsp;
@@ -431,7 +397,7 @@
             <a href="/product/list.html?cate_no=230">카테고리</a>
             <div class="middle-category">
                 <!-- 진짜 메뉴 -->
-                <ul><li class="group" id="group_outer"><a href="/product/content.do" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" title="겉옷" button_text="바로 가기" button_link="/product/list.html?cate_no=88">겉옷</a></li>
+                <ul>
                     <li class="group" id="group_top">
                         <a href="/product/list.html?cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/list.html?cate_no=89">상의</a>
                         <div class="sub-category">
@@ -458,57 +424,24 @@
                     <li class="group" id="group_dress"><a href="/product/list.html?cate_no=94" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" title="드레스" button_text="바로가기" button_link="/product/list.html?cate_no=94">드레스</a></li>
                     <li class="group" id="group_bag"><a href="/product/list.html?cate_no=95" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" title="가방" button_text="바로 가기" button_link="/product/list.html?cate_no=95">가방</a></li>
                     <li class="group" id="group_shoes"><a href="/product/list.html?cate_no=161" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" title="신발" button_text="바로 가기" button_link="/product/list.html?cate_no=161">신발</a></li>
-                    <li class="group" id="group_home"><a href="/product/list.html?cate_no=160" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="홈" button_text="바로 가기" button_link="/product/list.html?cate_no=160">홈</a>
-                        <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=240">홈</a></li>
-                                <li><a href="/product/list.html?cate_no=241">키친</a></li>
-                                <li><a href="/product/list.html?cate_no=96">오브제</a></li>
-                            </ul></div>
-                    </li>
-                    <li class="group" id="group_stuff">
-                        <a href="/product/list.html?cate_no=97" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg" title="잡화" button_text="바로 가기" button_link="/product/list.html?cate_no=97">잡화</a>
-                        <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=174">폰 놉</a></li>
-                                <li><a href="/product/list.html?cate_no=259">지갑</a></li>
-                                <li><a href="/product/list.html?cate_no=260">벨트</a></li>
-                                <li><a href="/product/list.html?cate_no=98">작은 가죽 제품</a></li>
-                                <li><a href="/product/list.html?cate_no=203">모자</a></li>
-                                <li><a href="/product/list.html?cate_no=207">헤어</a></li>
-                                <li><a href="/product/list.html?cate_no=204">양말</a></li>
-                                <li><a href="/product/list.html?cate_no=205">스카프</a></li>
-                                <li><a href="/product/list.html?cate_no=99">선물 포장</a></li>
-                            </ul></div>
-                    </li>
-                    <li class="group" id="group_sale"><a href="/product/list.html?cate_no=253" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" title="할인" button_text="바로 가기" button_link="/product/list.html?cate_no=253">할인</a></li>
+                    <li class="group" id="group_accessory"><a href="/product/list.html?cate_no=160" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="악세서리" button_text="바로 가기" button_link="/product/list.html?cate_no=160">악세서리</a>
                 </ul></div>
         </li>
     </ul><ul>
       <!-- 여기가 진짜 메뉴 -->
-        <li class="group"><a href="/mundane/html/product/collection.html?cate_no=166">컬렉션</a></li>
         <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
         <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
         <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
         <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
         <!-- 진짜메뉴 이미지 호버 -->
-    <div class="image-list hover" id="image-list-outer" data_check="겉옷/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg"><a href="/product/list.html?cate_no=88"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" alt=""><span class="title">겉옷</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-top" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg"><a href="/product/list.html?cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt=""><span class="title">상의</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-pants" data_check="바지/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg"><a href="/product/list.html?cate_no=91"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" alt=""><span class="title">바지</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-dress" data_check="드레스/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg"><a href="/product/list.html?cate_no=94"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" alt=""><span class="title">드레스</span><span>바로가기</span></a></div>
     <div class="image-list" id="image-list-bag" data_check="가방/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg"><a href="/product/list.html?cate_no=95"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" alt=""><span class="title">가방</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-shoes" data_check="신발/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg"><a href="/product/list.html?cate_no=161"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" alt=""><span class="title">신발</span><span>바로 가기</span></a></div>
-    <div class="image-list" id="image-list-home" data_check="홈/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg"><a href="/product/list.html?cate_no=160"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" alt=""><span class="title">홈</span><span>바로 가기</span></a></div>
-    <div class="image-list" id="image-list-stuff" data_check="잡화/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg"><a href="/product/list.html?cate_no=97"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg" alt=""><span class="title">잡화</span><span>바로 가기</span></a></div>
-    <div class="image-list" id="image-list-sale" data_check="할인/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg"><a href="/product/list.html?cate_no=253"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" alt=""><span class="title">할인</span><span>바로 가기</span></a></div></li></ul></div>
+    <div class="image-list" id="image-list-accessory" data_check="악세서리/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg"><a href="/product/list.html?cate_no=253"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" alt=""><span class="title">악세서리</span><span>바로 가기</span></a></div></li></ul></div>
 </div>
-        <div class="sns-Area M_mobile">
-            <a href="http://instagram.com/aviemuah" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
-<a href="http://facebook.com/" target="_blank" class="M_facebookLink off">facebook</a>
-<a href="http://twitter.com/" target="_blank" class="M_twitterLink off">twitter</a>
-<a href="http://blog.naver.com/" target="_blank" class="M_blogLink off">blog</a>
-<a href="http://pinterest.com/" target="_blank" class="M_pinterestLink off">pinterest</a>
-<a href="http://kakao.com/" target="_blank" class="M_kakaoLink off">kakao</a>
-        </div>
         <div class="multi-Area M_mobile">
             <li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
 &nbsp;/&nbsp;
