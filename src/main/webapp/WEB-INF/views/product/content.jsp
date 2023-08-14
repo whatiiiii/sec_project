@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="../css/content.css" rel ="stylesheet"/>
+    <link href="../../css/content.css" rel ="stylesheet"/>
 
 </head>
 
@@ -42,10 +42,6 @@
     </div>
 </div>
 </div>
-
-
-
-
     <div id="contents" class="header_notice_margin" style="margin-top: 0px;">
 
 
@@ -57,10 +53,8 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
 
 <div id="e_WF_5_1" class="header_layout_padding" style="padding-top: 110px;">
 <div class="e_WF_5_1">
-
     <div id="product_category">
         <div class="cover">
-            <div class="category-title">겉옷</div>
             <div class="category-sub">
                 <div id="category">
 <div class="category-cover mun_select">
@@ -68,64 +62,46 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
         <li class="group image mun-select">
             <a href="/product/list.html?cate_no=230">카테고리</a>
             <div class="middle-category">
-                <ul><li class="group mun-select"><a href="/product/list.html?cate_no=88" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" title="겉옷" button_text="바로 가기" button_link="/product/list.html?cate_no=88" class="mun-select">겉옷</a></li>
+                <ul>
                     <li class="group">
                         <a href="/product/list.html?cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/list.html?cate_no=89">상의</a>
                         <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=90">니트</a></li>
-                                <li><a href="/product/list.html?cate_no=117">셔츠</a></li>
-                                <li><a href="/product/list.html?cate_no=118">블라우스</a></li>
-                                <li><a href="/product/list.html?cate_no=206">베스트</a></li>
-                                <li><a href="/product/list.html?cate_no=120">스웻셔츠</a></li>
-                                <li><a href="/product/list.html?cate_no=116">티셔츠</a></li>
-                                <li><a href="/product/list.html?cate_no=158">탱크 탑</a></li>
+                            <ul><li><a href="/product/list.html?cate_no=90">티셔츠</a></li>
+                                <li><a href="/product/list.html?cate_no=117">탑/바디슈트</a></li>
+                                <li><a href="/product/list.html?cate_no=118">셔츠/블라우스</a></li>
                             </ul></div>
                     </li>
                     <li class="group">
                         <a href="/product/list.html?cate_no=91" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" title="바지" button_text="바로 가기" button_link="/product/list.html?cate_no=91">바지</a>
                         <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=92">청바지</a></li>
-                                <li><a href="/product/list.html?cate_no=149">와이드 레그</a></li>
-                                <li><a href="/product/list.html?cate_no=150">스트레이트 레그</a></li>
-                                <li><a href="/product/list.html?cate_no=220">테이퍼드 레그</a></li>
-                                <li><a href="/product/list.html?cate_no=147">쇼츠</a></li>
-                                <li><a href="/product/list.html?cate_no=148">스웻팬츠</a></li>
+                            <ul><li><a href="/product/list.html?cate_no=92">긴바지</a></li>
+                                <li><a href="/product/list.html?cate_no=149">반바지</a></li>
+                                <li><a href="/product/list.html?cate_no=150">스커트</a></li>
                             </ul></div>
                     </li>
                     <li class="group"><a href="/product/list.html?cate_no=94" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" title="드레스" button_text="바로가기" button_link="/product/list.html?cate_no=94">드레스</a></li>
                     <li class="group"><a href="/product/list.html?cate_no=95" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" title="가방" button_text="바로 가기" button_link="/product/list.html?cate_no=95">가방</a></li>
                     <li class="group"><a href="/product/list.html?cate_no=161" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" title="신발" button_text="바로 가기" button_link="/product/list.html?cate_no=161">신발</a></li>
-                    <li class="group"><a href="/product/list.html?cate_no=160" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="홈" button_text="바로 가기" button_link="/product/list.html?cate_no=160">홈</a>
+                    <li class="group"><a href="/product/list.html?cate_no=160" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="악세서리" button_text="바로 가기" button_link="/product/list.html?cate_no=160">악세서리</a>
                         <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=240">홈</a></li>
-                                <li><a href="/product/list.html?cate_no=241">키친</a></li>
-                                <li><a href="/product/list.html?cate_no=96">오브제</a></li>
+                            <ul><li><a href="/product/list.html?cate_no=240">벨트</a></li>
+                                <li><a href="/product/list.html?cate_no=241">브레이슬릿/네클리스</a></li>
+                                <li><a href="/product/list.html?cate_no=96">etc..</a></li>
                             </ul></div>
                     </li>
-                    <li class="group">
-                        <a href="/product/list.html?cate_no=97" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg" title="잡화" button_text="바로 가기" button_link="/product/list.html?cate_no=97">잡화</a>
-                        <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=174">폰 놉</a></li>
-                                <li><a href="/product/list.html?cate_no=259">지갑</a></li>
-                                <li><a href="/product/list.html?cate_no=260">벨트</a></li>
-                                <li><a href="/product/list.html?cate_no=98">작은 가죽 제품</a></li>
-                                <li><a href="/product/list.html?cate_no=203">모자</a></li>
-                                <li><a href="/product/list.html?cate_no=207">헤어</a></li>
-                                <li><a href="/product/list.html?cate_no=204">양말</a></li>
-                                <li><a href="/product/list.html?cate_no=205">스카프</a></li>
-                                <li><a href="/product/list.html?cate_no=99">선물 포장</a></li>
-                            </ul></div>
-                    </li>
-                    <li class="group"><a href="/product/list.html?cate_no=253" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" title="할인" button_text="바로 가기" button_link="/product/list.html?cate_no=253">할인</a></li>
-                </ul></div>
         </li>
-    </ul><ul><li class="group"><a href="/mundane/html/product/collection.html?cate_no=166">컬렉션</a></li>
+    </ul><ul>
         <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
         <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
         <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
         <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
-    <div class="image-list hover" data_check="겉옷/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg"><a href="/product/list.html?cate_no=88"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" alt=""><span class="title">겉옷</span><span>바로 가기</span></a></div><div class="image-list" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg"><a href="/product/list.html?cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt=""><span class="title">상의</span><span>바로 가기</span></a></div><div class="image-list" data_check="바지/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg"><a href="/product/list.html?cate_no=91"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" alt=""><span class="title">바지</span><span>바로 가기</span></a></div><div class="image-list" data_check="드레스/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg"><a href="/product/list.html?cate_no=94"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" alt=""><span class="title">드레스</span><span>바로가기</span></a></div><div class="image-list" data_check="가방/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg"><a href="/product/list.html?cate_no=95"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" alt=""><span class="title">가방</span><span>바로 가기</span></a></div><div class="image-list" data_check="신발/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg"><a href="/product/list.html?cate_no=161"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" alt=""><span class="title">신발</span><span>바로 가기</span></a></div><div class="image-list" data_check="홈/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg"><a href="/product/list.html?cate_no=160"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" alt=""><span class="title">홈</span><span>바로 가기</span></a></div><div class="image-list" data_check="잡화/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg"><a href="/product/list.html?cate_no=97"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg" alt=""><span class="title">잡화</span><span>바로 가기</span></a></div><div class="image-list" data_check="할인/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg"><a href="/product/list.html?cate_no=253"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" alt=""><span class="title">할인</span><span>바로 가기</span></a></div></li></ul></div>
+    <div class="image-list" id="image-list-top" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg"><a href="/product/list.html?cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt=""><span class="title">상의</span><span>바로 가기</span></a></div>
+    <div class="image-list" id="image-list-pants" data_check="바지/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg"><a href="/product/list.html?cate_no=91"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" alt=""><span class="title">바지</span><span>바로 가기</span></a></div>
+    <div class="image-list" id="image-list-dress" data_check="드레스/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg"><a href="/product/list.html?cate_no=94"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" alt=""><span class="title">드레스</span><span>바로가기</span></a></div>
+    <div class="image-list" id="image-list-bag" data_check="가방/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg"><a href="/product/list.html?cate_no=95"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" alt=""><span class="title">가방</span><span>바로 가기</span></a></div>
+    <div class="image-list" id="image-list-shoes" data_check="신발/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg"><a href="/product/list.html?cate_no=161"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" alt=""><span class="title">신발</span><span>바로 가기</span></a></div>
+    <div class="image-list" id="image-list-accessory" data_check="악세서리/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg"><a href="/product/list.html?cate_no=253"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" alt=""><span class="title">악세서리</span><span>바로 가기</span></a></div></li></ul></div>
 </div>
             </div>
         </div>
@@ -142,15 +118,16 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
         -->
 <div id="grid" class="grid1-2-3">
             <ul>
+            <c:forEach items = "${goods}" var ="goods">
 <li class="mun-prd-list xans-record- fade-in">
                     <div class="mun-prd-list-cover">
                         <div class="mun-prd-thumb">
 <img src="//aviemuah.com/web/product/medium/202305/4565d23dac2fcf888a878421df6358a1.jpg" id="eListPrdImage1191_1" alt="실크 블랜드 하이넥 재킷 (2컬러)"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=1191&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202305/d9eb93d18109df597833dcbd797f44fd.jpg"></a></div>
 </div>
                         <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=1191&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">실크 블랜드 하이넥 재킷 (2컬러)</span></a></div>
+                            <div class="name"><a href="/product/detail.html?product_no=1191&amp;cate_no=88" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">${goods.gname}</span></a></div>
                             <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 168,000</span><span id="span_product_tax_type_text" style=""> </span></li>
+<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW ${goods.gprice}</span><span id="span_product_tax_type_text" style=""> </span></li>
 </ul>
 <div class="icon">
                                                                   </div>
@@ -159,200 +136,12 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
                         </div>
                     </div>
                 </li>
-                <li class="mun-prd-list xans-record- fade-in">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202305/681639ccd9daad738206a8c26ee17807.jpg" id="eListPrdImage1189_1" alt="텐셀 코듀로이 숏 슬리브 재킷 (화이트)"><div class="mun-prd-thumb-hover"><a href="product.html"><img src="//aviemuah.com/web/product/small/202305/cd81ca836e42b4f9a5359968208af7e9.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="product.html" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 138,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list xans-record- fade-in">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202305/05e99159a90c78c54acde03ebf1dc3a4.jpg" id="eListPrdImage1190_1" alt="텐셀 코듀로이 숏 슬리브 재킷 (피콕 그린)"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=1190&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202305/a6a5c423250a0371e17378450b1c0818.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=1190&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">텐셀 코듀로이 숏 슬리브 재킷 (피콕 그린)</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 138,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list xans-record- fade-in">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202305/6f30cc11332837660135b5d1e80f1a8a.jpg" id="eListPrdImage1219_1" alt="하트 크로셰 니트 재킷 (아이보리)"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=1219&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202305/d7929fb0e2707f40d8c4628d20311207.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=1219&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">하트 크로셰 니트 재킷 (아이보리)</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 164,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list xans-record- fade-in">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202305/278f6f7717bea02c2608be8444480547.jpg" id="eListPrdImage1218_1" alt="하트 크로셰 니트 재킷 (블랙)"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=1218&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202305/c4ce01cfd7dcb037ff990e4b36ad0fcb.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=1218&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">하트 크로셰 니트 재킷 (블랙)</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 164,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list xans-record- fade-in">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202305/43c21f477951ffc6c81a542d7e4c4547.jpg" id="eListPrdImage1220_1" alt="라인 볼레로 가디건 슬리브리스 세트 (아이보리)"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=1220&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202305/e676d3bb3754d729d66212c258154fae.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=1220&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">라인 볼레로 가디건 슬리브리스 세트 (아이보리)</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 172,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list xans-record-">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202305/7b0c7b7af2f3e1591600ef3a6bbf4359.jpg" id="eListPrdImage1245_1" alt="라인 볼레로 가디건 슬리브리스 세트 (민트)"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=1245&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202305/d9b13887a9a73aca4f5318a0ba90f731.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=1245&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">라인 볼레로 가디건 슬리브리스 세트 (민트)</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 172,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list xans-record-">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202303/2aa2e94985ee98040a35d3ada9731035.jpg" id="eListPrdImage1132_1" alt="아워글래스 울 트윌 블레이저"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=1132&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202303/beb539ffa6ad89590b8fc5123d609f71.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=1132&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">아워글래스 울 트윌 블레이저</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 248,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list xans-record-">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202302/31ca5ba2de24617872b45158088dec3f.jpg" id="eListPrdImage1092_1" alt="페이크 레더 레이서 재킷"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=1092&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202302/e6ce3ab6ed4ff8554c4528ffe3fee1d8.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=1092&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">페이크 레더 레이서 재킷</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 267,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list xans-record-">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202211/5d2b1270933e55e46e07481d764e4195.jpg" id="eListPrdImage982_1" alt="울 캐시미어 테일러드 코트 (멜란지 그레이)"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=982&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202211/eb0a326f17eef55f263f8c93e993b543.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=982&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">울 캐시미어 테일러드 코트 (멜란지 그레이)</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 398,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list xans-record-">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202211/c2ad97b78146c1f44076f12de4a4cab3.jpg" id="eListPrdImage984_1" alt="알파카 블렌드 발마칸 코트 (카멜)"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=984&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202211/063ac99f01bd432a97e9d37a33696abe.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=984&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">알파카 블렌드 발마칸 코트 (카멜)</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 432,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list xans-record-">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202211/cf5590e78185a0b62722db12b0cc0160.jpg" id="eListPrdImage989_1" alt="알파카 블렌드 울 피코트"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=989&amp;cate_no=88&amp;display_group=1"><img src="//aviemuah.com/web/product/small/202211/37328d454dc7ae671d82f4602f8de50b.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=989&amp;cate_no=88&amp;display_group=1" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">알파카 블렌드 울 피코트</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2e2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2e2e;">KRW 347,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-</div>
-</div>
 
-    <div class="xans-element- xans-product xans-product-listmore ec-base-paginate typeMoreview "><a href="#none" onclick="try { $M.displayMore(0, 0, 88, 12, 0, true, 'S0000000', false, ''); } catch(e) { return false; }" class="btnMore">
-            <div class="arrow-type1">더보기</div>
-        </a>
+                 </c:forEach>
+
+
+
+
 </div>
 </div>
 </div>
@@ -363,69 +152,53 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
 <div class="cover header_notice_margin" style="margin-top: 0px;">
     <div class="section1">
         <div id="category">
-<div class="category-cover mun_select">
+<div style="padding-top:20px;" class="category-cover mun_select">
     <ul><li class="group"><a href="/product/list.html?cate_no=230">모두 보기</a></li>
         <li class="group image mun-select">
             <a href="/product/list.html?cate_no=230">카테고리</a>
             <div class="middle-category">
-                <ul><li class="group mun-select"><a href="/product/list.html?cate_no=88" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" title="겉옷" button_text="바로 가기" button_link="/product/list.html?cate_no=88" class="mun-select">겉옷</a></li>
-                    <li class="group">
+                <ul>
+                    <li class="group" id="group_top">
                         <a href="/product/list.html?cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/list.html?cate_no=89">상의</a>
                         <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=90">니트</a></li>
-                                <li><a href="/product/list.html?cate_no=117">셔츠</a></li>
-                                <li><a href="/product/list.html?cate_no=118">블라우스</a></li>
-                                <li><a href="/product/list.html?cate_no=206">베스트</a></li>
-                                <li><a href="/product/list.html?cate_no=120">스웻셔츠</a></li>
-                                <li><a href="/product/list.html?cate_no=116">티셔츠</a></li>
-                                <li><a href="/product/list.html?cate_no=158">탱크 탑</a></li>
+                            <ul><li><a href="/product/list.html?cate_no=90">티셔츠</a></li>
+                                <li><a href="/product/list.html?cate_no=117">탑/바디슈트</a></li>
+                                <li><a href="/product/list.html?cate_no=118">셔츠/블라우스</a></li>
                             </ul></div>
                     </li>
-                    <li class="group">
+                    <li class="group" id="group_pants">
                         <a href="/product/list.html?cate_no=91" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" title="바지" button_text="바로 가기" button_link="/product/list.html?cate_no=91">바지</a>
                         <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=92">청바지</a></li>
-                                <li><a href="/product/list.html?cate_no=149">와이드 레그</a></li>
-                                <li><a href="/product/list.html?cate_no=150">스트레이트 레그</a></li>
-                                <li><a href="/product/list.html?cate_no=220">테이퍼드 레그</a></li>
-                                <li><a href="/product/list.html?cate_no=147">쇼츠</a></li>
-                                <li><a href="/product/list.html?cate_no=148">스웻팬츠</a></li>
+                            <ul><li><a href="/product/list.html?cate_no=92">긴바지</a></li>
+                                <li><a href="/product/list.html?cate_no=149">반바지</a></li>
+                                <li><a href="/product/list.html?cate_no=150">스커트</a></li>
                             </ul></div>
                     </li>
-                    <li class="group"><a href="/product/list.html?cate_no=94" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" title="드레스" button_text="바로가기" button_link="/product/list.html?cate_no=94">드레스</a></li>
-                    <li class="group"><a href="/product/list.html?cate_no=95" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" title="가방" button_text="바로 가기" button_link="/product/list.html?cate_no=95">가방</a></li>
-                    <li class="group"><a href="/product/list.html?cate_no=161" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" title="신발" button_text="바로 가기" button_link="/product/list.html?cate_no=161">신발</a></li>
-                    <li class="group"><a href="/product/list.html?cate_no=160" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="홈" button_text="바로 가기" button_link="/product/list.html?cate_no=160">홈</a>
+                    <li class="group" id="group_dress"><a href="/product/list.html?cate_no=94" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" title="드레스" button_text="바로가기" button_link="/product/list.html?cate_no=94">드레스</a></li>
+                    <li class="group" id="group_bag"><a href="/product/list.html?cate_no=95" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" title="가방" button_text="바로 가기" button_link="/product/list.html?cate_no=95">가방</a></li>
+                    <li class="group" id="group_shoes"><a href="/product/list.html?cate_no=161" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" title="신발" button_text="바로 가기" button_link="/product/list.html?cate_no=161">신발</a></li>
+                    <li class="group" id="group_accessory"><a href="/product/list.html?cate_no=160" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="악세서리" button_text="바로 가기" button_link="/product/list.html?cate_no=160">악세서리</a>
                         <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=240">홈</a></li>
-                                <li><a href="/product/list.html?cate_no=241">키친</a></li>
-                                <li><a href="/product/list.html?cate_no=96">오브제</a></li>
+                            <ul><li><a href="/product/list.html?cate_no=240">벨트</a></li>
+                                <li><a href="/product/list.html?cate_no=241">브레이슬릿/네클리스</a></li>
+                                <li><a href="/product/list.html?cate_no=96">etc..</a></li>
                             </ul></div>
                     </li>
-                    <li class="group">
-                        <a href="/product/list.html?cate_no=97" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg" title="잡화" button_text="바로 가기" button_link="/product/list.html?cate_no=97">잡화</a>
-                        <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=174">폰 놉</a></li>
-                                <li><a href="/product/list.html?cate_no=259">지갑</a></li>
-                                <li><a href="/product/list.html?cate_no=260">벨트</a></li>
-                                <li><a href="/product/list.html?cate_no=98">작은 가죽 제품</a></li>
-                                <li><a href="/product/list.html?cate_no=203">모자</a></li>
-                                <li><a href="/product/list.html?cate_no=207">헤어</a></li>
-                                <li><a href="/product/list.html?cate_no=204">양말</a></li>
-                                <li><a href="/product/list.html?cate_no=205">스카프</a></li>
-                                <li><a href="/product/list.html?cate_no=99">선물 포장</a></li>
-                            </ul></div>
-                    </li>
-                    <li class="group"><a href="/product/list.html?cate_no=253" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" title="할인" button_text="바로 가기" button_link="/product/list.html?cate_no=253">할인</a></li>
+
                 </ul></div>
         </li>
-    </ul><ul><li class="group"><a href="/mundane/html/product/collection.html?cate_no=166">컬렉션</a></li>
+    </ul><ul>
         <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
         <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
         <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
         <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
-    <div class="image-list hover" data_check="겉옷/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg"><a href="/product/list.html?cate_no=88"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/outer.jpg" alt=""><span class="title">겉옷</span><span>바로 가기</span></a></div><div class="image-list" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg"><a href="/product/list.html?cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt=""><span class="title">상의</span><span>바로 가기</span></a></div><div class="image-list" data_check="바지/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg"><a href="/product/list.html?cate_no=91"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" alt=""><span class="title">바지</span><span>바로 가기</span></a></div><div class="image-list" data_check="드레스/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg"><a href="/product/list.html?cate_no=94"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" alt=""><span class="title">드레스</span><span>바로가기</span></a></div><div class="image-list" data_check="가방/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg"><a href="/product/list.html?cate_no=95"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" alt=""><span class="title">가방</span><span>바로 가기</span></a></div><div class="image-list" data_check="신발/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg"><a href="/product/list.html?cate_no=161"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" alt=""><span class="title">신발</span><span>바로 가기</span></a></div><div class="image-list" data_check="홈/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg"><a href="/product/list.html?cate_no=160"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" alt=""><span class="title">홈</span><span>바로 가기</span></a></div><div class="image-list" data_check="잡화/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg"><a href="/product/list.html?cate_no=97"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20fall/acc.jpg" alt=""><span class="title">잡화</span><span>바로 가기</span></a></div><div class="image-list" data_check="할인/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg"><a href="/product/list.html?cate_no=253"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" alt=""><span class="title">할인</span><span>바로 가기</span></a></div></li></ul></div>
+    <div class="image-list" id="image-list-top" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg"><a href="/product/list.html?cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt=""><span class="title">상의</span><span>바로 가기</span></a></div>
+    <div class="image-list" id="image-list-pants" data_check="바지/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg"><a href="/product/list.html?cate_no=91"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" alt=""><span class="title">바지</span><span>바로 가기</span></a></div>
+    <div class="image-list" id="image-list-dress" data_check="드레스/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg"><a href="/product/list.html?cate_no=94"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" alt=""><span class="title">드레스</span><span>바로가기</span></a></div>
+    <div class="image-list" id="image-list-bag" data_check="가방/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg"><a href="/product/list.html?cate_no=95"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" alt=""><span class="title">가방</span><span>바로 가기</span></a></div>
+    <div class="image-list" id="image-list-shoes" data_check="신발/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg"><a href="/product/list.html?cate_no=161"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" alt=""><span class="title">신발</span><span>바로 가기</span></a></div>
+    <div class="image-list" id="image-list-accessory" data_check="악세서리/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg"><a href="/product/list.html?cate_no=253"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" alt=""><span class="title">악세서리</span><span>바로 가기</span></a></div></li></ul></div>
 </div>
         <div class="sns-Area M_mobile">
             <a href="http://instagram.com/aviemuah" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
@@ -513,7 +286,7 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
 <option value="166">컬렉션</option>
 <option value="238" selected="selected">검색</option>
 </select></span>
-        <input id="keyword" name="keyword" fw-filter="" fw-label="상품명/제조사" fw-msg="" class="inputTypeText" placeholder="" size="15" value="" type="text"> <input type="image" src="	https://aviemuah.com/web/upload/mundane/search_.png" alt="검색" onclick="">
+        <input id="keyword" name="keyword" fw-filter="" fw-label="상품명/제조사" fw-msg="" class="inputTypeText" placeholder="" size="15" value="" type="text"> <input type="image" src="   https://aviemuah.com/web/upload/mundane/search_.png" alt="검색" onclick="">
 </fieldset>
 </div>
 </form></div>
