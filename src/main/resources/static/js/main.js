@@ -1,3 +1,4 @@
+
 function replaceClass1(id, newClass){
     var elem = document.getElementById(id);
     elem.classList.add(newClass);
