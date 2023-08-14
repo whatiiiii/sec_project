@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+
 <!DOCTYPE html>
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" id="main-id">
 <head>
@@ -140,8 +141,9 @@
                       <label for="sex">성별</label>
                       <select class="custom-select d-block w-100" id="sex">
                         <option value=""></option>
-                        <option>여자</option>
-                        <option>남자</option>
+                        <option>여성</option>
+                        <option>남성
+                        </option>
                       </select>
                       <div class="invalid-feedback">
                         성별을 선택해주세요
