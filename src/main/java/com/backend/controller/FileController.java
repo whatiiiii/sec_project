@@ -31,14 +31,15 @@ public class FileController {
     }
 
     @PostMapping("upload.do")
-    public String uploadFile(@RequestParam("file") MultipartFile file,@RequestParam("files") List<MultipartFile> files)
+    @ResponseBody
+    public long uploadFile(@RequestParam("file") MultipartFile file)
             throws IOException {
         //long fileSize = file.getSize();
-        fileService.saveFile(file); //단일파일
-        for(MultipartFile mfile:files){
-            fileService.saveFile(mfile);
-        }
-        return "redirect:list.do";
+        long fileName = fileService.saveFile(file); //단일파일
+      //  for(MultipartFile mfile:files){
+      //      fileService.saveFile(mfile);
+      //  }
+        return fileName;
     }
 
     //(2) 파일 다운로드

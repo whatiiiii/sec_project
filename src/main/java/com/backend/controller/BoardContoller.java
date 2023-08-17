@@ -2,6 +2,7 @@ package com.backend.controller;
 
 import com.backend.domain.Goods;
 import com.backend.service.PageBoardService;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -19,6 +20,23 @@ public class BoardContoller {
 
     @GetMapping("content.do")
     public String content(){
+
+        return "board/board";
+    }
+
+    @PostMapping("content.do")
+    public String content2(HttpServletRequest request){
+
+        String test3 = request.getParameter("productDetail");
+        String test4 = request.getParameter("subject");
+        String test5 = request.getParameter("content");
+        String test6 = request.getParameter("fileName");
+
+        System.err.println(test3);
+        System.err.println(test4);
+        System.err.println(test5);
+        System.err.println(test6);
+
         return "board/board";
     }
     @GetMapping("write.do")
