@@ -4,6 +4,8 @@ import com.backend.domain.FileUp;
 import com.backend.domain.Goods;
 import com.backend.repository.GoodsRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,10 +33,17 @@ public class GoodsServiceImpl implements GoodsService {
         return goods;
     }
 
+
     //(2) 파일 다운로드
-    @Override
+ /*  @Override
     public List<Goods> getFileUp(int cgcode, String sname) {
         List<Goods> goods = repository.findDistinctByCgcodeAndSname(cgcode, sname);
         return goods;
+    }*/
+
+    @Override
+    public List<Goods> getFileUpAll(){
+        List<Goods> fileUps = repository.findAll();
+        return fileUps;
     }
 }
