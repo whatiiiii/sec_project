@@ -11,14 +11,21 @@ import java.util.List;
 public interface GoodsRepository extends JpaRepository<Goods, Integer> {
 
     List<Goods> findDistinctByCgcodeAndSname(int cgcode, String sname);
+    Goods findByGcodeAndCgcode(int gcode, int cgcode);
 
     List<Goods> findGoodsDistinctBy();
+
+    List<Goods> findDistinctByGcodeAndSname(int gcode, String sname);
+    List<Goods> findDistinctByGcodeBetweenAndSname(int startGcode, int endGcode, String sname);
+    List<Goods> findDistinctByGcodeLikeAndSname(int gcode, String sname);
+
 
 
     List<Goods> findByGnameContaining(String gname);
 
     Goods getByGcode(int gcode);
   //  Page<Goods> findByOrderbySeqDesc(Pageable pageable);
+
 
 
 

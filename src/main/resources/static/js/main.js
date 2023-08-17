@@ -131,6 +131,17 @@ $(document).ready(function() {
 });
 
 
+function showOptionChangeLayer(element) {
+    var layerId = 'ec-basketOptionModifyLayer';
+    var layer = document.getElementById(layerId);
+
+
+    if (layer.style.display === 'block') {
+        layer.style.display = 'none';
+    } else {
+        layer.style.display = 'block';
+    }
+}
 
 // $(document).ready(function() {
 //     $('.M_pc .group').hover(function() {
@@ -155,6 +166,7 @@ $(document).ready(function() {
 //         replaceClass3("main-id", "mobile-slide");
 //     }
 // });
+
 
 var productItems = document.querySelectorAll('.mun-prd-list');
 

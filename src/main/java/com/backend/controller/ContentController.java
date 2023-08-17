@@ -86,13 +86,37 @@ public class ContentController {
         return list;
     }
 
+//    @GetMapping("content.do/cate_no={cgcode}")
+//   //@Query("select distinct s.goods from goods s")
+//    public String select(@PathVariable int cgcode, Model model){
+//        //  System.out.println(code);
+//        //Category category = categoryService.getByCodeS(code);
+//        //model.addAttribute("category", category);
+//        List<Goods> goods = goodsService.findDistinctByCgcodeAndSname(cgcode, "S");
+//        model.addAttribute("goods", goods);
+//
+//      //  List<FileUp> fileUps = fileService.getFileUpAll();
+//      //  model1.addAttribute("fileUps", fileUps);
+//      //    System.out.println(fileUps);
+//       // List<Goods> fileUps = goodsService.getFileUpAll();
+//      //  model1.addAttribute("fileUps", fileUps);
+//        System.out.println(goods);
+//     //   System.out.println(goods);
+//        return "/product/content";
+//    }
+////
+
     @GetMapping("content.do/cate_no={cgcode}")
-   //@Query("select distinct s.goods from goods s")
-    public String select(@PathVariable int cgcode, Model model){
-        //  System.out.println(code);
-        //Category category = categoryService.getByCodeS(code);
-        //model.addAttribute("category", category);
-        List<Goods> goods = goodsService.findDistinctByCgcodeAndSname(cgcode, "S");
+    public String select(@PathVariable int cgcode, @RequestParam(required = false) String shoe, @RequestParam(required = false) String free, Model model){
+        List<Goods> goods;
+
+        if (shoe != null) {
+            goods = goodsService.findDistinctByCgcodeAndSname(cgcode, "38");
+        } else if (free != null) {
+            goods = goodsService.findDistinctByCgcodeAndSname(cgcode, "FREE");
+        } else {
+            goods = goodsService.findDistinctByCgcodeAndSname(cgcode, "S");
+        }
         model.addAttribute("goods", goods);
 
       //  List<FileUp> fileUps = fileService.getFileUpAll();
@@ -102,6 +126,16 @@ public class ContentController {
       //  model1.addAttribute("fileUps", fileUps);
         System.out.println(goods);
      //   System.out.println(goods);
+        return "/product/content";
+    }
+
+
+
+    @GetMapping("content.do/goods_no={startGcode}&{endGcode}")
+    public String goods(@PathVariable int startGcode, @PathVariable int endGcode, Model model) {
+        List<Goods> goods = goodsService.findDistinctByGcodeBetweenAndSname(startGcode, endGcode, "S");
+        model.addAttribute("goods", goods);
+        System.out.println(goods);
         return "/product/content";
     }
 
