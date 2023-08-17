@@ -36,48 +36,6 @@ public class ContentController {
         return "product/content";
     }
 
- //   @GetMapping("content.do/cate_no={cgcode}")
-  //  public Category read(@PathVariable int gcode){
-   //     Category category = categoryService.getByGcode(gcode);
-   //     return category;
-   // }
-
-/*
-    @GetMapping("#;")
-    @ResponseBody
-    public List<Category> read(){
-        List<Category> list = categoryService.listS();
-        return list;
-    }
-
-   @GetMapping("content.do/cate_no={code}")
-    @ResponseBody
-    public Category selectMenu(@PathVariable int code){
-       System.out.println(code);
-        Category category = categoryService.getByCodeS(code);
-        System.out.println(category);
-        return category;
-    }*/
-
-//    @GetMapping("content.do")
-//    public String findByCgcode(int cgcode, Model model){
-     //   List<Goods> goods = goodsService.findByCgcode(cgcode);
-//        model.addAttribute("category", category);
- //       return  "/product/content";
- //   }
-/*
-    @GetMapping("content.do/cate_no={code}")
-    public String select(@PathVariable int cgcode, Model model){
-        //  System.out.println(code);
-        //Category category = categoryService.getByCodeS(code);
-        //model.addAttribute("category", category);
-        Goods goods = goodsService.getByCgcode(cgcode);
-        model.addAttribute("goods", goods);
-        System.out.println(goods);
-        return "/product/content";
-    }
- */
-
     @GetMapping("#;")
     @ResponseBody
     public List<Goods> read(){
@@ -85,26 +43,6 @@ public class ContentController {
         System.out.println(list);
         return list;
     }
-
-//    @GetMapping("content.do/cate_no={cgcode}")
-//   //@Query("select distinct s.goods from goods s")
-//    public String select(@PathVariable int cgcode, Model model){
-//        //  System.out.println(code);
-//        //Category category = categoryService.getByCodeS(code);
-//        //model.addAttribute("category", category);
-//        List<Goods> goods = goodsService.findDistinctByCgcodeAndSname(cgcode, "S");
-//        model.addAttribute("goods", goods);
-//
-//      //  List<FileUp> fileUps = fileService.getFileUpAll();
-//      //  model1.addAttribute("fileUps", fileUps);
-//      //    System.out.println(fileUps);
-//       // List<Goods> fileUps = goodsService.getFileUpAll();
-//      //  model1.addAttribute("fileUps", fileUps);
-//        System.out.println(goods);
-//     //   System.out.println(goods);
-//        return "/product/content";
-//    }
-////
 
     @GetMapping("content.do/cate_no={cgcode}")
     public String select(@PathVariable int cgcode, @RequestParam(required = false) String shoe, @RequestParam(required = false) String free, Model model){
@@ -118,18 +56,9 @@ public class ContentController {
             goods = goodsService.findDistinctByCgcodeAndSname(cgcode, "S");
         }
         model.addAttribute("goods", goods);
-
-      //  List<FileUp> fileUps = fileService.getFileUpAll();
-      //  model1.addAttribute("fileUps", fileUps);
-      //    System.out.println(fileUps);
-       // List<Goods> fileUps = goodsService.getFileUpAll();
-      //  model1.addAttribute("fileUps", fileUps);
         System.out.println(goods);
-     //   System.out.println(goods);
         return "/product/content";
     }
-
-
 
     @GetMapping("content.do/goods_no={startGcode}&{endGcode}")
     public String goods(@PathVariable int startGcode, @PathVariable int endGcode, Model model) {
@@ -147,22 +76,5 @@ public class ContentController {
         FileUp fileup = fileService.getFileUp(file_id);
         return new UrlResource("file:" + fileup.getSavedpath());
     }
-
-
-   /* @GetMapping("content.do/cate_no={cgcode}")
-    @ResponseBody
-    public org.springframework.core.io.Resource downloadImage(@PathVariable int cgcode, Model model)
-            throws IOException {
-         List<Goods> goods = goodsService.findDistinctByCgcodeAndSname(cgcode, "S");
-        return new UrlResource("file:" + goods.getSavedpath());
-        //  return new UrlResource("file:" + goods.getSavedpath());
-    }*/
-
-  //  @GetMapping("list.do")
-  //  public String list(Model model){
-
-  //     return "/product/content";
-  //  }
-
 
 }
