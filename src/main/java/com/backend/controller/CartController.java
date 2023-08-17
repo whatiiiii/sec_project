@@ -13,6 +13,7 @@ public class CartController {
     private final GoodsService goodsService;
     @GetMapping("cart.do")
     public String cart(){
+        System.out.println("dd");
         return "cart/cart";
     }
 }
