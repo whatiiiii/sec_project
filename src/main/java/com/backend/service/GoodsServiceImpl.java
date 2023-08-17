@@ -31,10 +31,40 @@ public class GoodsServiceImpl implements GoodsService {
         return goods;
     }
 
-    //(2) 파일 다운로드
     @Override
+    public Goods findByGcodeAndCgcode(int gcode, int cgcode) {
+        Goods goods = repository.findByGcodeAndCgcode(gcode, cgcode);
+        return goods;
+    }
+
+    @Override
+    public List<Goods> findDistinctByGcodeAndSname(int gcode, String sname) {
+        List<Goods> goods = repository.findDistinctByGcodeAndSname(gcode, sname);
+        return goods;
+    }
+
+    @Override
+    public List<Goods> findDistinctByGcodeBetweenAndSname(int startGcode, int endGcode, String sname) {
+        List<Goods> goods = repository.findDistinctByGcodeBetweenAndSname(startGcode, endGcode, sname);
+        return goods;
+    }
+
+    @Override
+    public List<Goods> findDistinctByGcodeLikeAndSname(int gcode, String sname) {
+        List<Goods> goods = repository.findDistinctByGcodeLikeAndSname(gcode, sname);
+        return goods;
+    }
+
+    //(2) 파일 다운로드
+ /*  @Override
     public List<Goods> getFileUp(int cgcode, String sname) {
         List<Goods> goods = repository.findDistinctByCgcodeAndSname(cgcode, sname);
         return goods;
+    }*/
+
+    @Override
+    public List<Goods> getFileUpAll(){
+        List<Goods> fileUps = repository.findAll();
+        return fileUps;
     }
 }
