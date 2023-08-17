@@ -16,6 +16,16 @@ public interface GoodsService {
     List<Goods> findDistinctByGcodeBetweenAndSname(int startGcode, int endGcode, String sname);
     List<Goods> findDistinctByGcodeLikeAndSname(int gcode, String sname);
 
+
     List<Goods> getFileUpAll();
+
+
+   // List<Goods> getFileUpAll();
+
+   // List<Goods> getFileUp(int cgcode, String sname);
+
+    //List<Goods> findDistinctGoods();
+    List<Goods> getFileUpAll();
+
 
 }

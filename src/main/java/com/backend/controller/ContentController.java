@@ -118,9 +118,17 @@ public class ContentController {
             goods = goodsService.findDistinctByCgcodeAndSname(cgcode, "S");
         }
         model.addAttribute("goods", goods);
+
+      //  List<FileUp> fileUps = fileService.getFileUpAll();
+      //  model1.addAttribute("fileUps", fileUps);
+      //    System.out.println(fileUps);
+       // List<Goods> fileUps = goodsService.getFileUpAll();
+      //  model1.addAttribute("fileUps", fileUps);
         System.out.println(goods);
+     //   System.out.println(goods);
         return "/product/content";
     }
+
 
 
     @GetMapping("content.do/goods_no={startGcode}&{endGcode}")
@@ -130,6 +138,7 @@ public class ContentController {
         System.out.println(goods);
         return "/product/content";
     }
+
 
     @GetMapping("/images/{file_id}")
     @ResponseBody

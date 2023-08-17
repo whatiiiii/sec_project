@@ -135,12 +135,38 @@ function showOptionChangeLayer(element) {
     var layerId = 'ec-basketOptionModifyLayer';
     var layer = document.getElementById(layerId);
 
+
     if (layer.style.display === 'block') {
         layer.style.display = 'none';
     } else {
         layer.style.display = 'block';
     }
 }
+
+// $(document).ready(function() {
+//     $('.M_pc .group').hover(function() {
+//       $(this).find('.image-list').addClass('hover');
+//     }, function() {
+//       $(this).find('.image-list').removeClass('hover');
+//     });
+//   });
+
+
+// document.addEventListener("click", function(event) {
+//     var mainElem = document.getElementById("main-id");
+//     var menuBtn = document.getElementById("menu-btn");
+
+//     // 메뉴 버튼을 클릭한 경우는 아무 동작도 하지 않음
+//     if (event.target == menuBtn) {
+//         return;
+//     }
+
+//     // 메뉴 이외의 영역을 클릭한 경우에만 클래스 제거
+//     if (mainElem.classList.contains("mobile-slide")) {
+//         replaceClass3("main-id", "mobile-slide");
+//     }
+// });
+
 
 var productItems = document.querySelectorAll('.mun-prd-list');
 
