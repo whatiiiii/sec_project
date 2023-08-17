@@ -95,6 +95,7 @@
             <li class="text-en"><a href="join.html" data-bs-toggle="modal" data-bs-target="#exampleModal">create account</a></li>
         </ul> <!-- a href="/member/join.html" 경로로 바꿔줘야함-->
 
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

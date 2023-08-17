@@ -1,5 +1,7 @@
 <%@ page contentType="text/html;charset=utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ include file="../login/login_check_modul.jsp"%>
+<% session.setAttribute("forward_url", "board/write.do");%>
 
 <!DOCTYPE html>
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" id="main-id" >
@@ -12,11 +14,37 @@
       function showPopup() {
            openWin = window.open("selectProduct.do", "a", "width=600, height=400");
        }
-
-  </script>
-
-
+    </script>
     <link href="../../css/main.css" rel ="stylesheet"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><script>
+    function passFrom()
+    {
+        let productDetail = document.getElementById("pInput").value;
+        let subject = document.getElementById("subject").value;
+        let content = document.getElementById("content").value;
+         var f = document.getElementById("uploadInput").files[0];
+         var fileName = f.name;
+        console.log(productDetail);
+        console.log(subject);
+        console.log(content);
+        console.log(fileName);
+
+        $.ajax({
+            url: "../../board/content.do?productDetail="+productDetail+"&subject="+subject+"&content="+content+"&fileName="+fileName,
+            type: "POST",
+            contentType: "application/json",
+            error: function (err) {
+            }
+        })
+    }
+</script>
+
+
+
+
 </head>
 
 <body class="Mtype_layout">        <div id="loading" style="display: none;"></div>
@@ -79,7 +107,8 @@
             <div class="form-typeList">
                 <ul>
 <li class="mun-list clear-fix">
-                       전달할 값 : <input type="text" id="pInput">
+               <!--     <button onclick='passFrom()'>test</button> -->
+                       전달할 값 : <input type="text" id="pInput" >
                                            <div class="thumb">
                         <a href=""><img id="dd" src="" onerror="this.src='//img.echosting.cafe24.com/thumb/75x75.gif'" alt=""></a>
                         </div>
@@ -127,7 +156,7 @@
 
             <!-- HTML -->
           <span class="fr-counter" style="bottom: 1px; margin-right: 2px;">문자 : 0</span></div></div><textarea style="width: 100%; display: none;" name="content" id="content" class="ec-fr-never-be-duplicated"></textarea>
-                <input type="hidden" id="content_hidden" fw-filter="isSimplexEditorFill" fw-label="내용" value="EC_FROALA_INSTANCE">
+              <!--  <input type="hidden" id="content_hidden" fw-filter="isSimplexEditorFill" fw-label="내용" value="EC_FROALA_INSTANCE"> -->
 
             <!-- JavaScript -->
             <script type="text/javascript" src="//img.echosting.cafe24.com/editors/froala/js/polyfill.min.js?vs=2308111229"></script>
@@ -560,7 +589,7 @@
 <li class="mun-list clear-fix">
     <form action="upload.do" method="post" enctype="multipart/form-data">
                         <div class="mun-title">첨부파일1</div>
-                        <div class="mun-desc"><input name="file" type="file" accept=".gif, .jpg, .png"></div>
+                        <div class="mun-desc"><input id="uploadInput" name="file" type="file" accept=".gif, .jpg, .png"></div>
                     </li>
                     <li class="mun-list clear-fix">
                         <div class="mun-title">첨부파일2</div>
@@ -586,7 +615,7 @@
 <div class="mun-button-Area">
             <a href="/board/qa/6/" class="mun-btn mun-left">cancel</a>
             <a href="#none" class="mun-btn mun-left displaynone" onclick="">관리자 답변보기</a>
-            <a href="#none" class="mun-btn mun-right confirm ok" input type="submit" onclick="BOARD_WRITE.form_submit('boardWriteForm');">ok</a>
+            <a href="../board/content.do" class="mun-btn mun-right confirm ok" input type="submit" onclick="passFrom()">ok</a>
         </div>
 </div>
 <input name="_subject" id="tmp_subject" value="상품문의" type="hidden"><textarea name="_message" id="tmp_content" style="display:none">&lt;p&gt;&lt;br&gt;&lt;/p&gt;</textarea>

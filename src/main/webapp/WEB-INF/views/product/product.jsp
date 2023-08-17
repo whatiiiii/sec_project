@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+
 <!DOCTYPE html>
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" id="main-id" >
 <head>
@@ -8,6 +9,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="../../css/product.css" rel ="stylesheet"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><script>
+    function passFrom()
+    {
+        let price = '${detail.gprice}';
+        let size = document.getElementById("sizeSelect").value;
+        let quantity = document.getElementById("quantity").value;
+        let totalPrice = document.getElementById("totalPrice").value;
+        let name = '${detail.gname}';
+        let code = '${detail.gcode}';
+      //  let size = document.getElementById("sizeSelect").value;
+        console.log(size);
+        console.log(name);
+
+        $.ajax({
+            url: "../../cart/cart.do?price="+price+"&size="+size+"&quantity="+quantity+"&totalPrice="+totalPrice+"&name="+name+"&code="+code,
+            type: "POST",
+            contentType: "application/json",
+            error: function (err) {
+            }
+        })
+    }
+</script>
 </head>
 
 <body class="Mtype_layout">        <div id="loading" style="display: none;"></div>
@@ -105,7 +131,7 @@ $jointbuy_page = /product/jointbuy.html
     출력 갯수 지정 변수, 없으면 설정된 전체가 나옵니다.
     count = 10
 -->
-
+<!-- <button onclick='passFrom()'>test</button> -->
 <ul>
 <li class="mun-detail-list  xans-record-">
         <div class="mun-detail-title"><span style="font-size:13px;color:#111111;">상품명</span></div>
@@ -130,10 +156,10 @@ $jointbuy_page = /product/jointbuy.html
         <select id="sizeSelect" class="ProductOption0">
             <option value="*" selected>사이즈를 선택해 주세요.</option>
             <option value="**" disabled ling image>---------------------------------------------</option>
-            <option value="사이즈 S">사이즈 S</option>
-            <option value="사이즈 M">사이즈 M</option>
-            <option value="사이즈 L">사이즈 L</option>
-            <option value="사이즈 XL">사이즈 XL</option>
+            <option value="S">사이즈 S</option>
+            <option value="M">사이즈 M</option>
+            <option value="L">사이즈 L</option>
+            <option value="XL">사이즈 XL</option>
         </select>
     </div>
     <div class="ec-base-qty mun-detail-qty">
@@ -180,7 +206,7 @@ $jointbuy_page = /product/jointbuy.html
 <a href="/board/content.do">문의게시판<span>(10)</span></a>
 </div>
 
-<div id="mun_paymentButton" class="xans-element- xans-product xans-product-action "><a href="/cart/cart.do" class="cart " onclick="product_submit(2, '/exec/front/order/basket/', this)">장바구니</a>
+<div id="mun_paymentButton" class="xans-element- xans-product xans-product-action "><a href="/cart/cart.do" class="cart" onclick="passFrom()">장바구니</a>
 <a href="#none" class="buy " onclick="product_submit(1, '/exec/front/order/basket/', this)"><span id="btnBuy">바로 구매<span></span></span>
 
                             <!--리뷰게시판-->
@@ -701,4 +727,5 @@ EC$('[async_section=before]').addClass('displaynone');
 <script src="../../js/product.js"></script>
 <script type="text/javascript" id="bigdata_log" src="/exec/front/External/Save?referer=https%3A%2F%2Faviemuah.com%2Fproduct%2Flist.html%3Fcate_no%3D88&amp;href=https%3A%2F%2Faviemuah.com%2Fproduct%2Fdetail.html%3Fproduct_no%3D1189%26cate_no%3D88%26display_group%3D1"></script>
 </body>
+
 </html>

@@ -12,7 +12,11 @@
                      function setParentText(gname){
                       opener.document.getElementById("pInput").value = gname;
                      }
-                </script>
+               </script>
+
+
+
+
       <script>
           /*
           $(document).ready(function(){
