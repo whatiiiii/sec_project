@@ -9,7 +9,9 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link href="../css/main.css" rel ="stylesheet"/>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 </head>
@@ -32,10 +34,12 @@
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
+
 <li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="order/login.do">로그인</a>
 </li>
 <li class="group sub"><a href="#;" id ="s-btn" class="search-btn">검색</a></li>
 <li class="group sub cart"><a href="/cart/cate.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
+
 <span class="EC-Layout-Basket-count">0</span>
 )
 </span>
@@ -72,15 +76,19 @@
     <div style="display: inline-block;width: 700px;"><span class="desc font-bellefair">AVIE MUAH IS AN ARTISAN CLOTHING BRAND BASED ON THE UNIQUE TASTES OF ITS FOUNDER.THE BRAND USES NATURAL FIBERS TO CREATE COMFORTABLE CLOTHING FOR A WIDE VARIETY OF LIFESTYLES.AVIE MUAH VALUES THE WORK OF INDEPENDENT EMERGING DESIGNERS WHO HELP TO OFFER HIGH QUALITY.HANDMADE GARMENTS FOR EVERY CUSTOMER.</span>
     </div>
     <div style="float: right;">
+
         <a href="/product/content.do?cate_no=258">SHOP NOW</a>
+
     </div>
 </div>
 </li>
                 <li class="displaynone xans-record-">
+
 <span class="desc font-bellefair"></span><a href="/product/content.do?cate_no=239"></a>
 </li>
 <li class="displaynone xans-record-">
 <span class="desc font-bellefair"></span><a href="/product/content.do?cate_no=243"></a>
+
 </li>
             </ul>
 </div>
@@ -249,6 +257,7 @@
 </div>
 <div id="main_4" class="displaynone">
 
+
 <div id="a_WF_3_3" class="fade_section">
 <div class="a_WF_3_3">
     <div fade_set_top="0" fade_set_speed="2" fade_set_delay="0" class="xans-element- xans-product xans-product-listmain-4 xans-product-listmain xans-product-4 image-Area fade-list" style="transition-property: opacity, top; transition-duration: 2s; transition-delay: 0s; top: 0px; opacity: 1;"><div class="a_WF_3_3-slide swiper swiper-container-initialized swiper-container-horizontal">
@@ -271,6 +280,7 @@
     <div class="xans-element- xans-product xans-product-listmain-4 xans-product-listmain xans-product-4 text-Area"><div class="cover fade-list" fade_set_top="15" fade_set_speed="3" fade_set_delay=".5" style="transition-property: opacity, top; transition-duration: 3s; transition-delay: 0.5s; top: 0px; opacity: 1;">
             <ul>
 <li class="xans-record-">
+
 <span class="name"><span style="font-size:12px;color:#555555;">메인 배너 텍스트 및 링크 수정 전용상품</span></span><span class="desc">AVIE MUAH IS AN ARTISAN CLOTHING BRAND BASED ON THE UNIQUE TASTES OF ITS FOUNDER.THE BRAND USES NATURAL FIBERS TO CREATE COMFORTABLE CLOTHING FOR A WIDE VARIETY OF LIFESTYLES.AVIE MUAH VALUES THE WORK OF INDEPENDENT EMERGING DESIGNERS WHO HELP TO OFFER HIGH QUALITY.HANDMADE GARMENTS FOR EVERY CUSTOMER.</span><a href="/product/content.do?cate_no=258" class="banner-link">SHOP NOW</a>
 </li>
                 <li class="displaynone xans-record-">
@@ -278,6 +288,7 @@
 </li>
 <li class="displaynone xans-record-">
 <span class="name"><span style="font-size:12px;color:#555555;">메인 배너 3</span></span><span class="desc"></span><a href="/product/content.do?cate_no=243" class="banner-link"></a>
+
 </li>
             </ul>
 </div>
@@ -293,6 +304,7 @@
 <!-- ------------------------------ 네비게이션 (상/하단) 레이아웃 ------------------------------ -->
 <!-- 카테고리 --><div id="category">
 <div class="category-cover mun_select">
+
     <ul><li class="group"><a href="/product/content.do?cate_no=230">모두 보기</a></li>
         <li class="group image">
             <a href="/product/content.do?cate_no=230">카테고리</a>
@@ -340,12 +352,14 @@
                     <li class="group"><a href="/product/content.do?cate_no=161" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" title="신발" button_text="바로 가기" button_link="/product/content.do?cate_no=161">신발</a></li>
                     <li class="group"><a href="/product/content.do?cate_no=160" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="악세서리" button_text="바로 가기" button_link="/product/content.do?cate_no=160">악세서리</a>
 
+
                 </ul></div>
         </li>
     </ul><ul>
         <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
         <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
         <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
+
 
         <li class="group"><a href="/board/content.do">문의게시판</a></li>
 
@@ -367,6 +381,7 @@
                                             <a href="/product/content.do?cate_no=161"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" alt="">
                                                 <span class="title">신발</span><span>바로 가기</span></a></div>
                                                 <div class="image-list" data_check="홈/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg"><a href="/product/content.do?cate_no=160">
+
                                                     <img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" alt=""><span class="title">악세서리</span>
                                                     <span>바로 가기</span></a></div>
 </div>
@@ -409,13 +424,16 @@
     <div class="section1">
         <div id="category">
 <div style="padding-top:20px;" class="category-cover mun_select">
+
     <ul><li class="group"><a href="/product/content.do?cate_no=230">모두 보기</a></li>
         <li class="group image">
             <a href="/product/content.do?cate_no=230">카테고리</a>
+
             <div class="middle-category">
                 <!-- 진짜 메뉴 -->
                 <ul>
                     <li class="group" id="group_top">
+
                         <a href="/product/content.do/cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/content.do?cate_no=89">상의</a>
                         <div class="sub-category">
                             <ul><li><a href="/product/content.do?cate_no=89">티셔츠</a></li>
@@ -442,6 +460,7 @@
                     <li class="group" id="group_shoes"><a href="/product/content.do?cate_no=161" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" title="신발" button_text="바로 가기" button_link="/product/content.do?cate_no=161">신발</a></li>
                     <li class="group" id="group_accessory"><a href="/product/content.do?cate_no=97" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="악세서리" button_text="바로 가기" button_link="/product/content.do?cate_no=160">악세서리</a>
 
+
                 </ul></div>
         </li>
     </ul><ul>
@@ -449,6 +468,7 @@
         <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
         <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
         <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
+
         <li class="group"><a href="/board/content.do">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
         <!-- 진짜메뉴 이미지 호버 -->
@@ -466,6 +486,7 @@
     <div class="image-list" id="image-list-bag" data_check="가방/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg"><a href="/product/content.do?cate_no=95"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" alt=""><span class="title">가방</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-shoes" data_check="신발/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg"><a href="/product/content.do?cate_no=161"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" alt=""><span class="title">신발</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-accessory" data_check="악세서리/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg"><a href="/product/content.do?cate_no=253"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" alt=""><span class="title">악세서리</span><span>바로 가기</span></a></div></li></ul></div>
+
 
 </div>
         <div class="multi-Area M_mobile">
@@ -551,7 +572,9 @@
 </div>
 </form></div>
 
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="../js/main.js"></script>
+
 </body>
 </html>
