@@ -63,14 +63,9 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
             <a href="/product/list.html?cate_no=230">카테고리</a>
             <div class="middle-category">
                 <ul>
-
                 <!-- 진짜 카테고리 -->
                     <li class="group mun-select">
                         <a href="/product/content.do/cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/list.html?cate_no=89" class="mun-select">상의</a>
-
-                    <li class="group mun-select">
-                        <a href="/product/list.html?cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/list.html?cate_no=89" class="mun-select">상의</a>
-
                         <div class="sub-category">
                             <ul><li><a href="/product/content.do/goods_no=2011&2019">티셔츠</a></li>
                                 <li><a href="/product/content.do/goods_no=2021&2026">탑/바디슈트</a></li>
@@ -129,11 +124,7 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
 <li class="mun-prd-list xans-record- fade-in">
                     <div class="mun-prd-list-cover">
                         <div class="mun-prd-thumb">
-
 <img src="/img/${goods.gname}.jpg"  id="eListPrdImage1191_1" alt=""><div class="mun-prd-thumb-hover"><a href="/product/product.do/product_no=${goods.gcode}&cate_no=${goods.cgcode}"><img src="/detail_img/${goods.gname}1.jpg"></a></div>
-
-<img src="/img/${goods.gname}.jpg"  id="eListPrdImage1191_1" alt=""><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=1191&amp;cate_no=88"><img src="//aviemuah.com/web/product/small/202305/d9eb93d18109df597833dcbd797f44fd.jpg"></a></div>
-
 </div>
                         <div class="mun-prd-info">
                             <div class="name"><a href="/product/product.do/product_no=${goods.gcode}&cate_no=${goods.cgcode}" class=""><span class="title displaynone"><span style="font-size:12px;color:#111111;">상품명</span> :</span> <span style="font-size:12px;color:#111111;">${goods.gname}</span></a></div>
@@ -150,7 +141,6 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
 <script>
 var productItems = document.querySelectorAll('.mun-prd-list');
 
-
 productItems.forEach(function(item) {
     item.addEventListener('mouseover', function() {
         item.classList.add('hover');
@@ -161,7 +151,6 @@ productItems.forEach(function(item) {
     });
 });
 </script>
-
                  </c:forEach>
 
 </div>
