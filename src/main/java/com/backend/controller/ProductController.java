@@ -1,0 +1,30 @@
+package com.backend.controller;
+
+import com.backend.domain.Goods;
+import com.backend.service.GoodsService;
+import lombok.AllArgsConstructor;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@RequestMapping("product")
+@Controller
+@AllArgsConstructor
+public class ProductController {
+    private final GoodsService goodsService;
+    @GetMapping("product.do")
+    public String product(){
+        return "product/product";
+    }
+
+    @GetMapping("/product.do/product_no={gcode}&cate_no={cgcode}")
+    public String detail(@PathVariable int gcode, @PathVariable int cgcode, Model model){
+        Goods goods = goodsService.findByGcodeAndCgcode(gcode, cgcode);
+        model.addAttribute("detail", goods);
+        System.out.println(goods);
+        return "/product/product";
+    }
+
+}
