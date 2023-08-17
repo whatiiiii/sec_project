@@ -12,7 +12,11 @@ public interface GoodsService {
 
     List<Goods> findGoodsDistinctBy();
 
-    List<Goods> getFileUp(int cgcode, String sname);
+   // List<Goods> getFileUpAll();
+
+   // List<Goods> getFileUp(int cgcode, String sname);
 
     //List<Goods> findDistinctGoods();
+    List<Goods> getFileUpAll();
+
 }

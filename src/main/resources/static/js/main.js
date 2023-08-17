@@ -155,3 +155,15 @@ $(document).ready(function() {
 //         replaceClass3("main-id", "mobile-slide");
 //     }
 // });
+
+var productItems = document.querySelectorAll('.mun-prd-list');
+
+productItems.forEach(function(item) {
+    item.addEventListener('mouseover', function() {
+        item.classList.add('hover');
+    });
+
+    item.addEventListener('mouseout', function() {
+        item.classList.remove('hover');
+    });
+});
