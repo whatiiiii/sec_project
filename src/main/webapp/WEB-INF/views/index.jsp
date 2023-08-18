@@ -35,7 +35,7 @@
 <li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="order/login.do">로그인</a>
 </li>
 <li class="group sub"><a href="#;" id ="s-btn" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/cart/cate.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
+<li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
 <span class="EC-Layout-Basket-count">0</span>
 )
 </span>
@@ -221,8 +221,6 @@
 </div>
 </div>
 
-
-
     <div class="xans-element- xans-product xans-product-listmain-3 xans-product-listmain xans-product-3 ec-base-product text-Area M_modal"><h2 class="fade_section"><span class="M_c_WF_7_1_title font-bellefair fade-list" transition_property="top" fade_set_size="20" fade_set_speed="2" fade_set_delay=".2" style="transition-property: opacity, top; transition-duration: 2s; transition-delay: 0.2s; top: 0px; opacity: 1;">Archive</span></h2>
 <div id="grid">
             <ul>
@@ -293,7 +291,7 @@
 <!-- ------------------------------ 네비게이션 (상/하단) 레이아웃 ------------------------------ -->
 <!-- 카테고리 --><div id="category">
 <div class="category-cover mun_select">
-    <ul><li class="group"><a href="/product/content.do?cate_no=230">모두 보기</a></li>
+    <ul><li class="group"><a href="/product/content.do">모두 보기</a></li>
         <li class="group image">
             <a href="/product/content.do?cate_no=230">카테고리</a>
             <div class="middle-category">
@@ -383,9 +381,9 @@
     <div class="section1">
         <div id="category">
 <div style="padding-top:20px;" class="category-cover mun_select">
-    <ul><li class="group"><a href="/product/content.do?cate_no=230">모두 보기</a></li>
+    <ul><li class="group"><a href="/product/content.do">모두 보기</a></li>
         <li class="group image">
-            <a href="/product/content.do?cate_no=230">카테고리</a>
+            <a href="/product/content.do">카테고리</a>
             <div class="middle-category">
                 <!-- 진짜 메뉴 -->
                 <ul>
@@ -487,24 +485,17 @@
 </div>
 </div>
 
-<span class="M_search_target displaynone">238</span>
+
 <div class="search_menu search_fullpage">
 <div class="search_btn search-background"><a href="#;"></a></div>
-<form id="searchForm" name="" action="/product/search.html" method="get" target="_self" enctype="multipart/form-data">
-<input id="view_type" name="view_type" value="" type="hidden">
-<input id="supplier_code" name="supplier_code" value="" type="hidden"><div class="xans-element- xans-search xans-search-form menu-search "><!--
-        $product_page=/product/detail.html
-        $category_page=/product/list.html
-    -->
+<form id="searchForm" name="" action="/search/search.do" method="get" target="_self" enctype="multipart/form-data">
+
+<div class="xans-element- xans-search xans-search-form menu-search ">
 <fieldset>
 <legend>검색</legend>
-        <span class="displaynone"><select id="category_no" name="category_no" fw-filter="" fw-label="" fw-msg="">
-<option value="0" selected="selected">상품분류 선택</option>
-<option value="85">아비에무아</option>
-<option value="166">컬렉션</option>
-<option value="238" selected="selected">검색</option>
-</select></span>
-        <input id="keyword" name="keyword" fw-filter="" fw-label="상품명/제조사" fw-msg="" class="inputTypeText" placeholder="" size="15" value="" type="text"> <input type="image" src="https://aviemuah.com/web/upload/mundane/search_.png" alt="검색" onclick="">
+<form id="searchForm" action="/search/search.do" method="get">
+        <input id="keyword" name="keyword" fw-filter="" fw-label="상품명" fw-msg="" class="inputTypeText" placeholder="" size="15" value="" type="text"> <input type="image" src="https://aviemuah.com/web/upload/mundane/search_.png" alt="검색" onclick="">
+        </form>
 </fieldset>
 </div>
 </form></div>

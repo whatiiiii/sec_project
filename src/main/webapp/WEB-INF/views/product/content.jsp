@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="../../css/content.css" rel ="stylesheet"/>
-
 </head>
 
 <body class="Mtype_layout">        <div id="loading" style="display: none;"></div>
@@ -280,24 +279,16 @@ productItems.forEach(function(item) {
 </div>
 </div>
 
-<span class="M_search_target displaynone">238</span>
 <div class="search_menu search_fullpage">
 <div class="search_btn search-background"><a href="#;"></a></div>
-<form id="searchForm" name="" action="/product/search.html" method="get" target="_self" enctype="multipart/form-data">
-<input id="view_type" name="view_type" value="" type="hidden">
-<input id="supplier_code" name="supplier_code" value="" type="hidden"><div class="xans-element- xans-search xans-search-form menu-search "><!--
-        $product_page=/product/detail.html
-        $category_page=/product/list.html
-    -->
+<form id="searchForm" name="" action="/search/search.do" method="get" target="_self" enctype="multipart/form-data">
+
+<div class="xans-element- xans-search xans-search-form menu-search ">
 <fieldset>
 <legend>검색</legend>
-        <span class="displaynone"><select id="category_no" name="category_no" fw-filter="" fw-label="" fw-msg="">
-<option value="0" selected="selected">상품분류 선택</option>
-<option value="85">아비에무아</option>
-<option value="166">컬렉션</option>
-<option value="238" selected="selected">검색</option>
-</select></span>
-        <input id="keyword" name="keyword" fw-filter="" fw-label="상품명/제조사" fw-msg="" class="inputTypeText" placeholder="" size="15" value="" type="text"> <input type="image" src="   https://aviemuah.com/web/upload/mundane/search_.png" alt="검색" onclick="">
+<form id="searchForm" action="/search/search.do" method="get">
+        <input id="keyword" name="keyword" fw-filter="" fw-label="상품명" fw-msg="" class="inputTypeText" placeholder="" size="15" value="" type="text"> <input type="image" src="https://aviemuah.com/web/upload/mundane/search_.png" alt="검색" onclick="">
+        </form>
 </fieldset>
 </div>
 </form></div>

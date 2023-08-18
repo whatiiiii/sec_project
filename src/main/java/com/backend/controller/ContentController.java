@@ -32,8 +32,10 @@ public class ContentController {
     private final FileService fileService;
 
     @GetMapping("content.do")
-    public String content(){
-        return "product/content";
+    public String content(String sname, Model model){
+        List<Goods> goods = goodsService.findAllDistinctBySname("S");
+        model.addAttribute("goods", goods);
+        return "/product/content";
     }
 
     @GetMapping("#;")
@@ -67,7 +69,6 @@ public class ContentController {
         System.out.println(goods);
         return "/product/content";
     }
-
 
     @GetMapping("/images/{file_id}")
     @ResponseBody
