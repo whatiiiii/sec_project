@@ -1,8 +1,11 @@
 package com.backend.domain;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.Embeddable;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.IdClass;
+import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +18,7 @@ public class Goods {
     @Id
     @Column(name = "g_code")
     private int gcode;
+
     @Column(name = "s_name")
     private String sname;
     @Column(name = "g_name")
@@ -29,4 +33,5 @@ public class Goods {
     private String gexp;
     @Column(name = "cg_code")
     private int cgcode;
+
 }

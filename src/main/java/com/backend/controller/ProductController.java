@@ -2,6 +2,7 @@ package com.backend.controller;
 
 import com.backend.domain.Goods;
 import com.backend.service.GoodsService;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,7 +24,6 @@ public class ProductController {
     public String detail(@PathVariable int gcode, @PathVariable int cgcode, Model model){
         Goods goods = goodsService.findByGcodeAndCgcode(gcode, cgcode);
         model.addAttribute("detail", goods);
-        System.out.println(goods);
         return "/product/product";
     }
 

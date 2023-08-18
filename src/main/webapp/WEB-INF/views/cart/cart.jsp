@@ -12,7 +12,6 @@
     <link href="../css/cart.css" rel ="stylesheet"/>
 </head>
 
-
 <body class="Mtype_layout">        <div id="loading" style="display: none;"></div>
     <div id="background-opacity"></div>
 
@@ -44,8 +43,6 @@
     </div>
 </div>
 </div>
-
-
     <div id="contents" class="header_notice_margin" style="margin-top: 0px;">
 
 <div class="xans-element- xans-order xans-order-basketpackage "><p class="orderStep"><img src="/cart/cart.do" alt="01 장바구니"></p>
@@ -58,7 +55,10 @@
     <!-- 전체선택 -->
 
     <div class="xans-element- xans-order xans-order-normnormal xans-record-"><div class="check_all"><input type="checkbox" onclick="Basket.setCheckBasketList('basket_product_normal_type_normal', this);"></div>
-<div class="xans-element- xans-order xans-order-list form-typeList"><ul>
+<div class="xans-element- xans-order xans-order-list form-typeList">
+
+<ul>
+<c:forEach items = "${list}" var ="list">
 <li class="mun-list clear-fix xans-record-">
         <div class="thumb">
             <!-- 상품 개별선택 -->
@@ -67,11 +67,12 @@
         </div>
         <div class="info">
             <div class="mun-name">
-<strong><a href="/product/발레리아-뷔스티에-탑-화이트/1217/category/89/" class="ec-product-name">발레리아 뷔스티에 탑 (화이트)</a></strong>
+<strong><a href="/product/발레리아-뷔스티에-탑-화이트/1217/category/89/" class="ec-product-name">${list.gname}</a></strong>
+
 </div>
             <div class="mun-option">
                 <ul class="xans-element- xans-order xans-order-optionall"><li class="xans-record-">
-<strong class="displaynone">발레리아 뷔스티에 탑 (화이트)</strong>[옵션: 사이즈 0] <span class="displaynone">(4개)</span>
+<strong class="displaynone">${list.gname}</strong>[옵션: 사이즈 0] <span class="displaynone">(4개)</span>
                         <span class=""><a href="#none" onclick="showOptionChangeLayer(this)" class="mun-underline ">옵션변경</a></span>
                                                                 <script>
                                                                 function showOptionChangeLayer(element) {
@@ -85,8 +86,9 @@
                                                                         layer.style.display = 'block';
                                                                     }
                                                                 }
-                                                                </script>
                     </li>
+                    </c:forEach>
+                    </script>
 </ul>
 </div>
 
@@ -196,6 +198,7 @@ function closeOptionChangeLayer() {
     layer.style.display = 'none';
 }
 </script>
+
 </div></div>
 
 

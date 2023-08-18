@@ -24,15 +24,16 @@ public class GoodsServiceImpl implements GoodsService {
         return goods;
     }
 
-  //  public List<Goods> findDistinctGoods(){
-  //      List<Goods> goods = repository.findDistinctGoods();
-   //     return goods;
- //   }
+    @Override
+    public List<Goods> findAllDistinctBySname(String sname) {
+        List<Goods> goods = repository.findAllDistinctBySname(sname);
+        return goods;
+    }
+
     public List<Goods> findGoodsDistinctBy(){
         List<Goods> goods =repository.findGoodsDistinctBy();
         return goods;
     }
-
 
     @Override
     public Goods findByGcodeAndCgcode(int gcode, int cgcode) {
@@ -53,23 +54,20 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public List<Goods> findDistinctByGcodeLikeAndSname(int gcode, String sname) {
-        List<Goods> goods = repository.findDistinctByGcodeLikeAndSname(gcode, sname);
-        return goods;
+    public Goods getGoodsByCode(int gcode) {
+
+        return repository.findByGcode(gcode);
     }
-
-
-
-    //(2) 파일 다운로드
- /*  @Override
-    public List<Goods> getFileUp(int cgcode, String sname) {
-        List<Goods> goods = repository.findDistinctByCgcodeAndSname(cgcode, sname);
-        return goods;
-    }*/
 
     @Override
-    public List<Goods> getFileUpAll(){
-        List<Goods> fileUps = repository.findAll();
-        return fileUps;
+    public List<Goods> getFileUpAll() {
+        return null;
     }
+
+    @Override
+    public List<Goods> findDistinctByGnameContainingAndSname(String keyword, String sname) {
+        List<Goods> goods = repository.findDistinctByGnameContainingAndSname(keyword, sname);
+        return goods;
+    }
+
 }

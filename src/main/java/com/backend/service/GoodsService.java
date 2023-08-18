@@ -9,22 +9,13 @@ public interface GoodsService {
     List<Goods> listS();
 
     List<Goods> findDistinctByCgcodeAndSname(int cgcode, String sname);
-
+    List<Goods> findAllDistinctBySname(String sname);
     List<Goods> findGoodsDistinctBy();
     Goods findByGcodeAndCgcode(int gcode, int cgcode);
     List<Goods> findDistinctByGcodeAndSname(int gcode, String sname);
     List<Goods> findDistinctByGcodeBetweenAndSname(int startGcode, int endGcode, String sname);
-    List<Goods> findDistinctByGcodeLikeAndSname(int gcode, String sname);
-
-
+    Goods getGoodsByCode(int gcode);
     List<Goods> getFileUpAll();
-
-
-   // List<Goods> getFileUpAll();
-
-   // List<Goods> getFileUp(int cgcode, String sname);
-
-    //List<Goods> findDistinctGoods();
-
+    List<Goods> findDistinctByGnameContainingAndSname(String keyword, String sname);
 
 }

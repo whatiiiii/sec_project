@@ -31,7 +31,7 @@ public class MemberController {
         System.out.println("result" + result);
         if(result == YES_ID_PWD){
             Member loginOkUser = memberService.getLogin(member.getEmail());
-            session.setAttribute("loginOkUser", loginOkUser);
+            session.setAttribute("loginOkUser", loginOkUser.getEmail());
         }
         model.addAttribute("result", result);
 
