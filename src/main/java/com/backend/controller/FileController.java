@@ -39,6 +39,7 @@ public class FileController {
       //  for(MultipartFile mfile:files){
       //      fileService.saveFile(mfile);
       //  }
+        System.err.println("파일 업로드함");
         return fileName;
     }
 
