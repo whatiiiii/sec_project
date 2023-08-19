@@ -23,4 +23,6 @@ public interface GoodsRepository extends JpaRepository<Goods, Integer> {
     Goods findByGcode(int gcode);
     Goods getByGcode(int gcode);
 
+    List<Goods> getByGname(String gname);
+
 }

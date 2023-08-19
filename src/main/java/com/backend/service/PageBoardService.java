@@ -1,7 +1,8 @@
 package com.backend.service;
 
+import com.backend.domain.Board;
 import com.backend.domain.Goods;
-import com.backend.dto.GoodsListResult;
+import com.backend.dto.BoardListResult;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -11,10 +12,11 @@ import java.util.List;
 
 
 public interface PageBoardService {
-  //  Page<Goods> findAll(Pageable pageable);
+    Page<Board> findAll(Pageable pageable);
 
-  //  GoodsListResult getGoodsListResult(Pageable pageable);
+    BoardListResult getBoardListResult(Pageable pageable);
 
+    Board insertS(Board board);
 
     Goods getByGcode(int gcode);
 

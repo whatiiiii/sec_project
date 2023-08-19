@@ -33,7 +33,7 @@ public class FileServiceImpl implements FileService {
         String extension = origName.substring(origName.lastIndexOf(".")); //확장자추출(ex: .png)
         String savedName = uuid + extension; //uuid 와 확장자 결합
         String savedPath = fileDir+savedName; //파일 불러올 때 사용할 파일 경로(물리적 경로)
-
+        System.out.println("savedPath: "+savedPath);
         FileUp fileUp = FileUp.builder()
                 .orgnm(origName)
                 .savednm(savedName)

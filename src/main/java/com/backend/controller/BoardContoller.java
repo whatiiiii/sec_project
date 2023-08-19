@@ -1,14 +1,28 @@
 package com.backend.controller;
 
+import com.backend.domain.Board;
 import com.backend.domain.Goods;
+import com.backend.dto.BoardListResult;
+import com.backend.repository.BoardRepository;
+import com.backend.service.BoardService;
+import com.backend.service.FileService;
+import com.backend.service.GoodsService;
 import com.backend.service.PageBoardService;
+import jakarta.servlet.ServletRegistration;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import lombok.AllArgsConstructor;
+import oracle.jdbc.proxy.annotation.Post;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 
 @RequestMapping("board")
@@ -18,27 +32,96 @@ public class BoardContoller {
 
     public final PageBoardService pageBoardService;
 
-    @GetMapping("content.do")
+    public final GoodsService goodsService;
+
+    public final BoardService boardService;
+
+    public final FileService fileService;
+ /*   @GetMapping("content.do")
     public String content(){
 
         return "board/board";
     }
-
-    @PostMapping("content.do")
-    public String content2(HttpServletRequest request){
-
-        String test3 = request.getParameter("productDetail");
-        String test4 = request.getParameter("subject");
-        String test5 = request.getParameter("content");
-        String test6 = request.getParameter("fileName");
-
-        System.err.println(test3);
-        System.err.println(test4);
-        System.err.println(test5);
-        System.err.println(test6);
-
+*/
+    @GetMapping("content.do")
+    public String list(@PageableDefault(size=3, sort="seq", direction = Sort.Direction.DESC) Pageable pageable, Model model){
+        BoardListResult listResult= pageBoardService.getBoardListResult(pageable);
+        System.err.println("listResult: "+listResult);
+        model.addAttribute("listResult", listResult);
         return "board/board";
     }
+
+
+
+    @PostMapping("content.do")
+    @ResponseBody
+    public List<Board> content2(HttpServletRequest request, Model model) throws IOException{
+        HttpSession session = request.getSession();
+        String email = session.getAttribute("loginOkUser").toString();
+
+        Long savedFileName = (Long) session.getAttribute("saveFileName");
+        System.err.println("savedFileName: " + savedFileName);
+        // long fileName1 = fileService.saveFile(file); //단일파일
+            // System.err.println("단일파일: "+fileName1);
+            String productDetail = request.getParameter("productDetail");
+            String subject = request.getParameter("subject");
+            String content = request.getParameter("content");
+            String fileName = request.getParameter("fileName");
+            System.err.println("파일이름: " + fileName);
+            System.err.println("상품상세이름: " + productDetail);
+            //   if(fileName!=null){
+            //    long savefileName = fileService.saveFile(file);
+            //     System.err.println("savefileName:  "+savefileName);
+            //     return null;
+            //   }
+
+            List<Goods> goods = goodsService.getByGname(productDetail);
+            Goods firstGoods = goods.get(0);
+            //    Goods goods = goodsService.getByGname(productDetail);
+
+            Board board = Board.builder()
+                    .subject(subject)
+                    .content(content)
+                    .email(email)
+                    .bcgcode(2)
+                    .gcode(firstGoods.getGcode())
+                    .sname(firstGoods.getSname())
+                    .id(savedFileName)
+                    .gname(productDetail)
+                    .build();
+            System.err.println(board);
+
+            Board board1 = boardService.insertS(board);
+
+            //System.err.println(test3);
+            List<Board> boardList = boardService.findBySeq(board1.getSeq());
+            model.addAttribute("boardList", boardList);
+            System.err.println(boardList);
+
+            return boardList;
+
+    }
+
+
+
+    @PostMapping("update.do")
+    @ResponseBody
+    public long write11(MultipartFile file, HttpSession session)throws IOException {
+
+        long savefileName = fileService.saveFile(file);
+        System.err.println("확인용:"+savefileName);
+        if(savefileName==0){
+            savefileName=0;
+            return savefileName;
+        }
+        session.setAttribute("saveFileName", savefileName);
+        System.err.println("savefileName:  "+savefileName);
+        return savefileName;
+
+    }
+
+
+
     @GetMapping("write.do")
     public String write(){
         return "board/write";
