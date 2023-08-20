@@ -22,41 +22,40 @@ public class CartController {
 
     private final CartService cartService;
     @PostMapping("cart.do")
-    @ResponseBody
-    public List<Cart> cart(HttpServletRequest request, Model model){
+  //  @ResponseBody
+    public String cart(HttpServletRequest request, Model model){
 
         HttpSession session = request.getSession();
         String email = session.getAttribute("loginOkUser").toString();
-        String test = request.getParameter("price");
-        String test2 = request.getParameter("size");
-        String test3 = request.getParameter("quantity");
+        String price = request.getParameter("price");
+        String size = request.getParameter("size");
+        int quantity =  Integer.parseInt(request.getParameter("quantity"));
         String test4 = request.getParameter("name");
         String test5 = request.getParameter("totalPrice");
-        int test6 = Integer.parseInt(request.getParameter("code"));
-        Goods goods = goodsService.getGoodsByCode(test6);
-        /*
+        int code = Integer.parseInt(request.getParameter("code"));
+        Goods goods = goodsService.getGoodsByCodeAndSname(code, size);
+        System.err.println("goods: "+goods);
+
         Cart cart = Cart.builder()
-            .sname(test2)
             .email(email)
-            .quan(test3)
-            .gcode(test6)
-            .gname(goods.getGname())
-            .gprice(goods.getGprice())
+            .quan(quantity)
+            .goods(goods)
             .build();
+
+        System.err.println("cart: "+cart);
+
         cartService.insertS(cart);
 
-        List<Cart> list = cartService.findByEmail(email);
-        System.err.println("시퀀스: " + list);
-        model.addAttribute("list", list);
-        return list;
-        */
-        //System.err.println(cart.toString());
-        //return cart1;
-        return null;
+        List<Cart> cartList = cartService.findByEmail(email);
+        System.err.println("cart리스트: " + cartList);
+        model.addAttribute("cart", cartList);
+        return "cart/cart";
+
     }
 
     @GetMapping("cart.do")
     public String getPara(){
+
         return "cart/cart";
     }
 }

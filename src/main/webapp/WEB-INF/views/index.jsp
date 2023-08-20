@@ -319,8 +319,8 @@
                 </ul></div>
         </li>
     </ul><ul>
-        <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
-        <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
+        <li class="group"><a href="/menu/brandIntro.do">브랜드 소개</a></li>
+        <li class="group"><a href="/menu/info.do">정보</a></li>
         <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
         <li class="group"><a href="/board/content.do">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
@@ -411,8 +411,8 @@
         </li>
     </ul><ul>
       <!-- 여기가 진짜 메뉴 -->
-        <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
-        <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
+        <li class="group"><a href="/menu/brandIntro.do">브랜드 소개</a></li>
+        <li class="group"><a href="/menu/info.do">정보</a></li>
         <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
         <li class="group"><a href="/board/content.do">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">

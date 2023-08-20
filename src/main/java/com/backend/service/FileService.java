@@ -14,4 +14,6 @@ public interface FileService {
     List<FileUp> getFileUpAll();
     //(3)파일 삭제
     void remove(long id);
+
+    FileUp findById(long id);
 }

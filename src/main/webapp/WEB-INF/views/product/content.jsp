@@ -92,7 +92,7 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
               </ul>
         </li>
     </ul><ul>
-        <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
+        <li class="group"><a href="/menu/boardIntro.do">브랜드 소개</a></li>
         <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
         <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
         <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>
@@ -198,7 +198,7 @@ productItems.forEach(function(item) {
                 </ul></div>
         </li>
     </ul><ul>
-        <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
+        <li class="group"><a href="/menu/boardIntro.do">브랜드 소개</a></li>
         <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
         <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
         <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>

@@ -1,6 +1,7 @@
 package com.backend.controller;
 
 import com.backend.domain.Board;
+import com.backend.domain.FileUp;
 import com.backend.domain.Goods;
 import com.backend.dto.BoardListResult;
 import com.backend.repository.BoardRepository;
@@ -62,43 +63,45 @@ public class BoardContoller {
         Long savedFileName = (Long) session.getAttribute("saveFileName");
         System.err.println("savedFileName: " + savedFileName);
         // long fileName1 = fileService.saveFile(file); //단일파일
-            // System.err.println("단일파일: "+fileName1);
-            String productDetail = request.getParameter("productDetail");
-            String subject = request.getParameter("subject");
-            String content = request.getParameter("content");
-            String fileName = request.getParameter("fileName");
-            System.err.println("파일이름: " + fileName);
-            System.err.println("상품상세이름: " + productDetail);
-            //   if(fileName!=null){
-            //    long savefileName = fileService.saveFile(file);
-            //     System.err.println("savefileName:  "+savefileName);
-            //     return null;
-            //   }
+        // System.err.println("단일파일: "+fileName1);
+        String productDetail = request.getParameter("productDetail");
+        String subject = request.getParameter("subject");
+        String content = request.getParameter("content");
+        String fileName = request.getParameter("fileName");
+        System.err.println("파일이름: " + fileName);
+        System.err.println("상품상세이름: " + productDetail);
+        //   if(fileName!=null){
+        //    long savefileName = fileService.saveFile(file);
+        //     System.err.println("savefileName:  "+savefileName);
+        //     return null;
+        //   }
 
-            List<Goods> goods = goodsService.getByGname(productDetail);
-            Goods firstGoods = goods.get(0);
-            //    Goods goods = goodsService.getByGname(productDetail);
+        FileUp fileUp = fileService.findById(savedFileName);
+        System.err.println("fileUp은 뭐야??: "+fileUp);
+        List<Goods> goods = goodsService.getByGname(productDetail);
+        Goods firstGoods = goods.get(0);
+        //    Goods goods = goodsService.getByGname(productDetail);
 
-            Board board = Board.builder()
-                    .subject(subject)
-                    .content(content)
-                    .email(email)
-                    .bcgcode(2)
-                    .gcode(firstGoods.getGcode())
-                    .sname(firstGoods.getSname())
-                    .id(savedFileName)
-                    .gname(productDetail)
-                    .build();
-            System.err.println(board);
+        Board board = Board.builder()
+                .subject(subject)
+                .content(content)
+                .email(email)
+                .bcgcode(2)
+                .gcode(firstGoods.getGcode())
+                .sname(firstGoods.getSname())
+                .fileUp(fileUp)
+                .gname(productDetail)
+                .build();
+        System.err.println("board가 뭐지??: "+board);
 
-            Board board1 = boardService.insertS(board);
+        Board board1 = boardService.insertS(board);
 
-            //System.err.println(test3);
-            List<Board> boardList = boardService.findBySeq(board1.getSeq());
-            model.addAttribute("boardList", boardList);
-            System.err.println(boardList);
+        //System.err.println(test3);
+        List<Board> boardList = boardService.findBySeq(board1.getSeq());
+        model.addAttribute("boardList", boardList);
+        System.err.println(boardList);
 
-            return boardList;
+        return boardList;
 
     }
 
