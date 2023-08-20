@@ -19,27 +19,72 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+
+async function executeFunctions(event) {
+    event.preventDefault();
+
+    await uploadFile();
+    passFrom();
+}
+
+
+
+
+function uploadFile() {
+    // 파일 업로드 로직
+    console.log("uploadFile() executed");
+
+         let productDetail = document.getElementById("pInput").value;
+
+        var form = $('#ppp')[0].files[0];
+        var fileName = form.name;
+		var formData = new FormData();
+		formData.append('file', form);
+		 $.ajax({
+		        type: "POST",
+		        enctype: 'multipart/form-data',
+		        url: "../../board/update.do?fileName="+fileName,
+		        data: formData,
+		        async: false,
+		        processData: false,
+		        contentType: false,
+		        cache: false,
+		        success: function (data) {
+		            alert("성공");
+		        },
+		        error: function (e) {
+		            alert("실패");
+		        }
+		    });
+}
+
     function passFrom()
     {
+        // passFrom() 로직
+        console.log("passFrom() executed");
+
         let productDetail = document.getElementById("pInput").value;
         let subject = document.getElementById("subject").value;
         let content = document.getElementById("content").value;
-         var f = document.getElementById("uploadInput").files[0];
+         var f = document.getElementById("ppp").files[0];
          var fileName = f.name;
+
         console.log(productDetail);
         console.log(subject);
         console.log(content);
         console.log(fileName);
 
         $.ajax({
-            url: "../../board/content.do?productDetail="+productDetail+"&subject="+subject+"&content="+content+"&fileName="+fileName,
+            url: "../../board/content.do?productDetail="+productDetail+"&subject="+subject+"&content="+content,
             type: "POST",
             contentType: "application/json",
             error: function (err) {
             }
         })
     }
+
 </script>
 
 
@@ -587,11 +632,12 @@
                 </ul>
 <ul class="">
 <li class="mun-list clear-fix">
-    <form action="upload.do" method="post" enctype="multipart/form-data">
+<form id="uploadForm">
                         <div class="mun-title">첨부파일1</div>
-                        <div class="mun-desc"><input id="uploadInput" name="file" type="file" accept=".gif, .jpg, .png"></div>
+                        <div class="mun-desc"><input id="ppp" name="file" type="file" accept=".gif, .jpg, .png"></div>
                     </li>
-                    <li class="mun-list clear-fix">
+  </form>
+        <!--            <li class="mun-list clear-fix">
                         <div class="mun-title">첨부파일2</div>
                         <div class="mun-desc"><input name="file" type="file" accept=".gif, .jpg, .png"></div>
                     </li>
@@ -607,15 +653,14 @@
                         <div class="mun-title">첨부파일5</div>
                         <div class="mun-desc"><input name="file" type="file" accept=".gif, .jpg, .png"></div>
                     </li>
-
-                        </form>
+        -->
                 </ul>
 <ul>
 
 <div class="mun-button-Area">
             <a href="/board/qa/6/" class="mun-btn mun-left">cancel</a>
             <a href="#none" class="mun-btn mun-left displaynone" onclick="">관리자 답변보기</a>
-            <a href="../board/content.do" class="mun-btn mun-right confirm ok" input type="submit" onclick="passFrom()">ok</a>
+            <a href="../board/content.do" class="mun-btn mun-right confirm ok" input type="submit" onclick="uploadFile(); passFrom();">ok</a>
         </div>
 </div>
 <input name="_subject" id="tmp_subject" value="상품문의" type="hidden"><textarea name="_message" id="tmp_content" style="display:none">&lt;p&gt;&lt;br&gt;&lt;/p&gt;</textarea>

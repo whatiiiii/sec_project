@@ -18,4 +18,7 @@ public interface GoodsService {
     List<Goods> getFileUpAll();
     List<Goods> findDistinctByGnameContainingAndSname(String keyword, String sname);
 
+    List<Goods> getByGname(String gname);
+
+
 }

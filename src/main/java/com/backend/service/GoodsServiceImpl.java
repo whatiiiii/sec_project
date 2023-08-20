@@ -69,5 +69,12 @@ public class GoodsServiceImpl implements GoodsService {
         List<Goods> goods = repository.findDistinctByGnameContainingAndSname(keyword, sname);
         return goods;
     }
+    @Override
+    public List<Goods> getByGname(String gname) {
+        List<Goods> goods = repository.getByGname(gname);
+        return goods;
+    }
+
+
 
 }

@@ -34,6 +34,7 @@ public class CartController {
         String test5 = request.getParameter("totalPrice");
         int test6 = Integer.parseInt(request.getParameter("code"));
         Goods goods = goodsService.getGoodsByCode(test6);
+        /*
         Cart cart = Cart.builder()
             .sname(test2)
             .email(email)
@@ -48,9 +49,10 @@ public class CartController {
         System.err.println("시퀀스: " + list);
         model.addAttribute("list", list);
         return list;
-
+        */
         //System.err.println(cart.toString());
         //return cart1;
+        return null;
     }
 
     @GetMapping("cart.do")
