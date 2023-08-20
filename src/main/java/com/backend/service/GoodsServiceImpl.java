@@ -36,8 +36,8 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public Goods findByGcodeAndCgcode(int gcode, int cgcode) {
-        Goods goods = repository.findByGcodeAndCgcode(gcode, cgcode);
+    public List<Goods> findByGcodeAndCgcode(int gcode, int cgcode) {
+        List<Goods> goods = repository.findByGcodeAndCgcode(gcode, cgcode);
         return goods;
     }
 
@@ -54,9 +54,9 @@ public class GoodsServiceImpl implements GoodsService {
     }
 
     @Override
-    public Goods getGoodsByCode(int gcode) {
+    public Goods getGoodsByCodeAndSname(int gcode, String sname){
 
-        return repository.findByGcode(gcode);
+        return repository.findByGcodeAndSname(gcode, sname);
     }
 
     @Override
@@ -74,7 +74,6 @@ public class GoodsServiceImpl implements GoodsService {
         List<Goods> goods = repository.getByGname(gname);
         return goods;
     }
-
 
 
 }

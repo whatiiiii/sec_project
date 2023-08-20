@@ -9,7 +9,7 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="../../css/article.css" rel ="stylesheet"/>
+    <link href="../../css/info.css" rel ="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 </head>
@@ -31,11 +31,11 @@
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogon group sub account "><a href="/myshop/index.html">나의 계정</a>
+<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
 </li>
 <li class="group sub"><a href="#;" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count EC-Layout_Basket-count-display">(
-<span class="EC-Layout-Basket-count">2</span>
+<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
+<span class="EC-Layout-Basket-count">0</span>
 )
 </span>
 </a></li>
@@ -58,254 +58,145 @@
 
 
         <div id="contents" class="header_notice_margin">
-<div class="xans-element- xans-board xans-board-readpackage-4 xans-board-readpackage xans-board-4 "><div class="xans-element- xans-board xans-board-product-4 xans-board-product xans-board-4 ec-base-table typeList"><div class="form-typeList">
-            <ul>
-<li class="mun-list clear-fix">
-                    <div class="thumb ">
-                        <a href="/product/텐셀-코듀로이-숏-슬리브-재킷-화이트/1189/"><img src="/img/${board.gname}.jpg" alt="" onerror="this.src='//img.echosting.cafe24.com/thumb/75x75.gif'"></a>
-                    </div>
-                    <div class="info ">
-                        <div class="mun-name"><strong>${board.gname}</strong></div>
-                        <div class="mun-price">KRW 138,000 <span id="sPrdTaxText"></span></div>
-                        <!--<div class="mun-total right"><a href="/product/텐셀-코듀로이-숏-슬리브-재킷-화이트/1189/" class="btnEm" title="새창으로 이동">상품 상세보기</a></div>-->
-                    </div>
-<!--info-->
-                </li>
-            </ul>
-</div>
-</div>
-<form id="BoardDelForm" name="" action="/exec/front/Board/del/4" method="post" target="_self" enctype="multipart/form-data">
-<input id="no" name="no" value="97701" type="hidden">
-<input id="bulletin_no" name="bulletin_no" value="55486" type="hidden">
-<input id="board_no" name="board_no" value="4" type="hidden">
-<input id="member_id" name="member_id" value="cheerfully" type="hidden">
-<input id="list_url" name="list_url" value="/board/product/list.html?board_no=4" type="hidden">
-<input id="bdf_modify_url" name="bdf_modify_url" value="/board/product/modify.html?board_act=edit&amp;no=97701&amp;board_no=4" type="hidden">
-<input id="bdf_del_url" name="bdf_del_url" value="/exec/front/Board/del/4" type="hidden">
-<input id="bdf_action_type" name="bdf_action_type" value="" type="hidden"><div class="xans-element- xans-board xans-board-read-4 xans-board-read xans-board-4"><!--
-            $login_page_url = /member/login.html
-            $deny_access_url = /board/product/list.html
-        -->
-<div class="ec-base-table typeWrite ">
-            <div class="form-typeWrite">
-                <ul>
-<li class="mun-list">
-                        <div class="mun-desc">${board.subject}<br><span class="writer">${board.email} | ${board.rdate} <!--<span class="">(ip:218.49.4.119)</span> --></span>
-</div>
-                    </li>
-                    <li class="mun-list">
-                        <div class="mun-desc contents detail"><img src="/file/images/${board.fileUp.id}" border="0" alt="" width="587px"><br><div class="fr-view fr-view-article">${board.content}</div></div>
-                    </li>
-                    <li class="mun-list attach ">
-                        <div class="mun-title">첨부파일</div>
-                        <div class="mun-desc"><a href="/file/attach/${board.fileUp.id}" onclick="BOARD_READ.file_download('/exec/front/Board/download/?no=97701&amp;realname=2023/06/06/4186f6611284c543d508ec995e32446a.jpeg&amp;filename=84AC4437-1C0F-4DBE-BBD7-758008558158.jpeg');">${board.fileUp.savednm}</a> </div>
-                    </li>
-                    <li class="mun-list clear-fix password displaynone displaynone">
-                        <div class="mun-title">password</div>
-                        <div class="mun-desc ePlaceholder" title="삭제하려면 비밀번호를 입력하세요."><input id="password" name="password" fw-filter="" fw-label="비밀번호" fw-msg="" onkeydown="if (event.keyCode == 13 || event.which == 13) { return false; }" value="" type="password" placeholder="삭제하려면 비밀번호를 입력하세요."></div>
-                    </li>
-                </ul>
-</div>
-        </div>
-<div class="mun-button-Area ">
-            <a href="/board/product/modify.html?board_act=edit&amp;no=97701&amp;board_no=4" class="mun-btn mun-left displaynone">modify</a>
-            <a href="#none" onclick="BOARD_READ.article_delete('BoardDelForm','4');" class="mun-btn mun-left displaynone">delete</a>
-            <a href="/board/product/reply.html" class="mun-btn mun-left displaynone">답변</a>
-                <!--
-                <span class="displaynone">
-                    <a href="#none" onclick="" class="btnNormalFix sizeS ">스팸신고</a>
-                    <a href="#none" onclick="" class="btnNormalFix sizeS ">스팸해제</a>
-                </span>
-                -->
-            <a href="#none" onclick="" class="mun-btn mun-left displaynone displaynone"></a>
-            <a href="#none" onclick="" class="mun-btn mun-left displaynone displaynone"></a>
-            <a href="/board/review/4/" class="mun-btn mun-right confirm">list</a>
-        </div>
-</div>
-</form></div>
 
 
+<div id="customer_care">
+    <h2><b>배송 정보</b></h2>
+    <br>· 우체국 택배로 배송되며 기본 배송비는 3,000원입니다.
+    <br>· 7만 원 이상 구매 시 무료배송됩니다.
+    <br>· 재고 보유 상품에 한하여, 오전 10시 이전 결제 완료 시 1~3영업일 이내 배송됩니다.
+    <br>· 전 제품은 아비에무아 자체 제작 상품으로, 공정 상황에 따라 배송이 지연될 수 있습니다.
+    <br><br><br><br><h2><b>결제 안내</b></h2>
+    <br>· 무통장 입금 주문 시 주문자와 입금자명이 같아야 자동 입금 처리됩니다.
+    <br>· 입금자명이나 금액이 같지 않을 시에는 반드시 Q&amp;A 게시판 또는
+    <br>&nbsp;&nbsp;고객센터로 연락해 주셔야 확인이 가능합니다.
+    <br>· 주문 후 48시간 내로 미입금 시 자동 주문 취소됩니다.
+    <br>· 오전 10시 이전 '상품 준비중' 단계일 경우, 나의 계정 내 주문 처리 현황에서 직접 주문 취소 처리가 가능합니다.
+    <br>(무통장 입금을 하셨을 경우, 환불 받아보실 계좌번호와 은행을 문의게시판에 남겨주시면 빠른 처리가 가능합니다.)
+    <br>· '배송 준비중' 단계에서는 출고 작업이 진행 중이며, 취소 처리가 불가합니다.
 
-<div class="xans-element- xans-board xans-board-commentpackage-4 xans-board-commentpackage xans-board-4 ec-base-table typeWrite board "><div class="form-typeWrite">
+    <br><br><br><br><h2><b>적립금</b></h2>
+    <br>· 적립된 포인트(적립금)은 결제한 아이디의 회원 본인만 사용가능하며,
+    <br>&nbsp;&nbsp;타인 및 다른 아이디로 양도할 수 없습니다.
+    <br>· 세일 상품은 적립금 사용 및 지급이 제한될 수 있습니다.
+    <br>· 쿠폰 사용 시, 적립금 지급이 불가합니다.
 
-        <ul class="xans-element- xans-board xans-board-commentlist-4 xans-board-commentlist xans-board-4 boardList"><!--리스트,리스트안에 댓글달기폼(대댓글), 리스트안에 수정폼--><!--
-                $delete_page_url = /board/product/comment_del.html
-                $delete_success_url = /board/product/read.html
-            --><li class="mun-list clear-fix  xans-record-">
-                <div class="mun-title"> Avie muah</div>
-                <div class="mun-desc">
-                    <div class="mun-comment"><span id="comment_contents9020">고객님의 소중한 후기 정말 감사합니다! 스타일 리뷰 적립금으로 2,000원이 지급되었습니다.<br>
-아비에무아의 옷이 고객님의 집에 가장 오래도록 남아있을 양품이 되었으면 좋겠습니다❤</span></div>
-                    <div class="mun-button">
-                        <a href="javascript:;" class="btn" onclick="BOARD_COMMENT.comment_update('97701','9020',this);">M</a>
-                        <a href="javascript:;" class="btn" onclick="BOARD_COMMENT.comment_delete('/board/product/comment_del.html?board_no=4&amp;no=97701&amp;comment_no=9020&amp;page=&amp;return_url=/board/product/read.html');">D</a>
-                        <a href="javascript:;" onclick="" class="btn displaynone">R</a>
-                    </div>
-                </div>
-            </li>
-<!--
-            <div class="ec-base-button typeBG spam displaynone">
-                <span class="gLeft">
-                    <a href="#none" onclick="" class="btnNormalFix sizeS ">스팸신고</a>
-                    <a href="#none" onclick="" class="btnNormalFix sizeS ">스팸해제</a>
-                </span>
-            </div>
-            -->
-</ul>
+    <br><br><br><br><h2><b>교환 및 반품 정보</b></h2>
+    <br>· 의류의 경우, 고객의 단순 변심이나 주문 실수로 인한
+    <br>&nbsp;&nbsp;교환 및 반품의 경우 왕복 배송비는 고객이 부담합니다.
+    <br><br>· 왕복 배송비: 6,000원
+    <br>&nbsp;&nbsp;(입금계좌: KB국민은행 295401-01-229788, ㈜아비에무아)
+    <br><br>· 세일 상품의 경우 단순 변심으로 인한 교환 및 반품이 불가합니다.
+    <br>· 수공예품의 경우, 소재와 형태의 특성상 하자에 해당하지 않는 경우
+    <br>&nbsp;&nbsp;단순 변심으로 인한 교환 및 반품이 불가합니다.
+    <br>· SHOES 제품의 경우, 핸드메이드 제작 상품으로
+    <br>&nbsp;&nbsp;단순 변심에 의한 교환 및 반품이 불가합니다.
+    <br>· 피부에 직접 닿는 주얼리는 세균 및 질병 감염의 우려가 있을 수 있으며,
+    <br>&nbsp;&nbsp;착용여부를 확인하기가 어려우므로, 단순 변심으로 인한
+    <br>&nbsp;&nbsp;교환 및 반품이 불가합니다.
+    <br>· 주문 상품 오배송 혹은 제품의 하자로 인한 교환 및 반품의 경우
+    <br>&nbsp;&nbsp;왕복 배송비는 아비에 무아에서 부담합니다.
+    <br>· 교환 및 반품 시에는, 처음 받아보셨던 구성품 그대로 보내주셔야 합니다.
+    <br>&nbsp;&nbsp;(단추, 옷걸이 등 상품의 부속품, 상품의 택 외 기타 구성품)
+    <br>· Q&amp;A 게시판을 통해 접수하지 않고 반품하신 경우
+    <br>&nbsp;&nbsp;미확인 제품으로 간주하여 교환 및 반품 처리가 불가하며, 반송됩니다.
+    <br>&nbsp;&nbsp;(상품 수령일로부터 7일 이내 교환 및 반품 등 철회 의사를 Q&amp;A게시판으로 작성해 주세요)
 
+     <br><br><br><br><h2><b>교환 및 반품 절차</b></h2>
+    <br>(1) 교환 및 반품 접수는 상품 수령 후 7일 이내로
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q&amp;A 게시판 또는 고객센터로 연락해 주세요.
+    <br>(2) 접수 완료 시, 교환 및 반품에 따른 배송비 안내와
+     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;우체국 택배를 통한 택배 회수를 도와드립니다.
+    <br>(3) 상품을 받았을 때와 같은 상태로 포장하여 보내주세요.
+    <br>(4) 검수 후, 제품에 이상이 없는 경우 접수 내용을 토대로
+     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;교환 및 반품이 이루어집니다.
+    <br><br>*우체국 택배가 아닌 타 택배사로 반송하실 경우, 반드시 Q&amp;A 게시판 또는 고객센터로 문의하셔야 합니다.
+    <br>확인되지 않은 택배물은 자동 반송 처리될 수 있으며, 이로 인해 발생한 배송비는 고객 부담으로 처리됩니다.
+    <br>안전하고 원활한 반품 처리를 위해 반드시 확인해 주시길 당부드립니다.
 
-        <form id="commentForm" name="" action="/exec/front/Board/CommentUpdate/4" method="post" target="_self" enctype="multipart/form-data" style="display: none;">
-<input id="board_no" name="board_no" value="4" type="hidden">
-<input id="no" name="no" value="97701" type="hidden">
-<input id="comment_no" name="comment_no" value="" type="hidden">
-<input id="member_id" name="member_id" value="senidi0" type="hidden"><ul class="xans-element- xans-board xans-board-commentform-4 xans-board-commentform xans-board-4 boardModify "><li class="mun-list clear-fix password">
-                <div class="mun-password mun-inline">
-                    <div class="mun-title text-en">password</div>
-                    <div class="mun-desc"><input id="comment_password" name="comment_password" fw-filter="isFill" fw-label="댓글비밀번호" fw-msg="" value="" type="password"></div>
-                </div>
-                <div class="mun-secret mun-inline displaynone"><label>비밀댓글</label></div>
-                <div class="mun-comment"><textarea id="comment_modify" name="comment_modify" fw-filter="isFill" fw-label="댓글내용" fw-msg=""></textarea></div>
-                <div class="mun-button">
-                    <a href="#none" class="mun-btn" onclick="BOARD_COMMENT.comment_cancel_ok('commentForm');">cancel</a>
-                    <a href="#none" class="mun-btn ok" onclick="BOARD_COMMENT.comment_update_ok('commentForm');">ok</a>
-                </div>
-            </li>
-</ul>
-</form><form id="commentSecretForm" name="" action="/exec/front/Board/CommentSecret/4" method="post" target="_self" enctype="multipart/form-data" style="display: none;">
-<input id="board_no" name="board_no" value="4" type="hidden">
-<input id="comment_no" name="comment_no" value="" type="hidden">
-<input id="pass_check" name="pass_check" value="F" type="hidden"><ul class="xans-element- xans-board xans-board-commentformsecret-1002 xans-board-commentformsecret xans-board-1002 boardSecret "><li class="mun-list clear-fix password">
-                <div class="mun-title text-en">password</div>
-                <div class="mun-desc"><input id="secure_password" name="secure_password" fw-filter="isFill" fw-label="댓글비밀번호" fw-msg="" value="" type="password"></div>
-            </li>
-<div class="mun-button">
-                <a href="#none" class="mun-btn" onclick="BOARD_COMMENT.hide_secret_comment_form('commentSecretForm');">cancel</a>
-                <a href="#none" class="mun-btn ok" onclick="BOARD_COMMENT.show_secret_comment('commentSecretForm');">ok</a>
-            </div>
-</ul>
-</form><ul class="xans-element- xans-board xans-board-commentwrite-4 xans-board-commentwrite xans-board-4 boardWriteReply "><!-- 댓글권한 있음 --><li class="mun-list clear-fix password displaynone">
-                <div class="mun-name mun-inline displaynone">
-                    <div class="mun-title text-en displaynone">name</div>
-                    <div class="mun-desc"></div>
-                </div>
-                <div class="mun-password mun-inline">
-                    <div class="mun-title text-en">password</div>
-                    <div class="mun-desc"></div>
-                </div>
-                <div class="mun-comment"></div>
-                <div class="mun-comment-btn">
-                    <span class="mun-secret displaynone"><a href="#none" onclick="" class="btnNormal displaynone">관리자답변보기</a> 비밀댓글</span>
-                    <a href="#none" onclick="" class="mun-btn ok paddingL10 displaynone">ok</a>
-                </div>
-                <div class="mun-capcha displaynone">
-<div class="mun-title"> </div>
-<div class="mun-desc"></div>
-</div>
-            </li>
-<li class="mun-list clear-fix ">
-                <p>관리자에게만 댓글 작성 권한이 있습니다.</p>
-            </li>
-</ul>
-</div>
-</div>
+    <br><br><br><br><h2><b>교환 및 반품을 할 수 없는 경우</b></h2>
+    <br>- 의류 · 가죽 · 패브릭 제품
+    <br><br>· 상품에 사용감이 있거나 구매자의 부주의 등 기타의 사유로
+    <br>&nbsp;&nbsp;상품의 가치가 하락한 경우
+    <br>&nbsp;&nbsp;(향수/화장품/바디로션/섬유 탈취제 냄새, 세탁, 수선 등)
+    <br>· 라벨, 태그 등 상품의 포장재 또는 구성품이 훼손된 경우
+    <br>&nbsp;&nbsp;(내용 확인을 위한 포장 손상 제외)
+    <br>· 실밥 처리, 라벨 손상, 단추 탈부착의 경우
+    <br><br>*상품을 받아보신 후 제품의 상태를 꼭 확인해 주세요.
+    <br>의류 상품의 경우, 단순 시착이 아닌, 상품에 사용감이 있거나 구매자의 부주의 등 기타의 사유로 상품의 가치가 하락된 경우에는 교환 및 반품이 불가합니다.
+    <br>(니트웨어 또는 밝은 색상의 의류는 시착만으로도 오염 및 변형이 될 수 있어, 착용 전 주의해 주시기 바랍니다.)
+    <br><br>*본 품과 함께 동봉되어 나가는 내부 상자, 유산지, 스티커, 파우치, 케이스, 택, 브랜드 카드 등의 포장재는 상품으로써 제공하는 물품이 아니기 때문에 훼손 또는 오염이 발생할 수 있으며, 본 품의 불량 또는 하자 사유로 간주하지 않습니다. 또한,&nbsp;배송 시기에 따라 구성품이 변경될 수 있습니다.
+    <br>해당 부분은 상품의 가치와는 무관함으로 교환 및 반품이 불가합니다.&nbsp;
 
 
+    <br><br><br><br><h2><b>제품의 하자 또는 불량 사유가 아닌 경우</b> </h2>
+    <br>
+    (아래의 내용에 해당하는 경우 제품 하자 사유로 보기 어려우며, 반입, 검수 시 하자가 아닌 상품은 반품 및 교환 처리 시 택배비가 발생할 수 있습니다.)
+    <br><br>- 의류 · 가죽  · 패브릭 제품
+    <br><br>· 안전한 배송을 위해 의류를 접어 포장한 뒤,
+    <br>&nbsp;&nbsp;배송 과정을 거치기 때문에 단순 구김이 발생할 수 있습니다.
+    <br>· 모니터의 해상도와 밝기에 따라 실제 제품의 색상과 차이가 있을 수
+    <br>&nbsp;&nbsp;있습니다. 또한, 사이즈 측정 방법에 따라 사이트상 안내해드린 치수와
+    <br>&nbsp;&nbsp;1~3cm 정도 차이가 날 수 있습니다.
+    <br>· 상품의 소재에 따라 미세한 잡사가 보여질 수 있으며,
+    <br>&nbsp;&nbsp;특정한 냄새 또는 공정이 완료된 시기에 따라
+    <br>&nbsp;&nbsp;새 옷에서 나는 냄새의 편차가 느껴질 수 있습니다.
+    <br>· 데님 상품의 경우 소재 특성상 이염/물 빠짐이 불가피하게 발생하며,
+    <br>&nbsp;&nbsp;밝은 계열의 옷이나 가방을 착용하실 경우 매칭한 제품에
+    <br>&nbsp;&nbsp;염료가 이염될 수 있으므로 반드시 주의해 주셔야 합니다.
+    <br>· 상품 제작 과정에서 단단한 재단을 위해 제작 공정이 기계만으로
+     <br>&nbsp;&nbsp;이뤄지는 게 아니라, 수작업 과정도 포함되기 때문에
+    <br>&nbsp;&nbsp;실밥이 발생할 수 있습니다.
+    <br>· 제품 마다 스티치 · 박음질 라인이 미세하게 다를 수 있으며,
+    <br>&nbsp;&nbsp;이는 공정상 불가피한 부분입니다.
+    <br>· 천연가죽의 경우 그 특성상 표면의 주름과 잔스크래치,
+    <br>&nbsp;&nbsp;모공 등이 눈에 띌 수 있습니다.
+    <br>· 사용에 의해 패브릭 표면이 마모될 수 있으며,
+    <br>&nbsp;&nbsp;이는 직물 소재의 특성입니다.
+    <br><br>*각 제품에 부착된 취급방법 라벨의 취급상 주의사항에 따르지 않은 고객의 세탁 부주의로 인한 제품 손상 및 변형에 대해서는 보상의 책임을 지지 않습니다.
+    <br><br>- 수공예품 &amp; 주얼리 제품
+    <br><br>· 수공예 제품 특성상 생기는 미세한 색상의 톤,
+    <br>&nbsp;&nbsp;질감 차이 및 높이와 폭의 편차
+    <br>· 시유 과정 중 유약의 흐름으로 생기는 무늬 등의 차이
+    <br>· 가마 소성 중 생기는 작은 티끌(검은 점),
+    <br>&nbsp;&nbsp;기공 및 요철 및 기물의 수축에 따른 제품 수평의 차이
+    <br>· 유약 흐름과 맺힘: 초벌한 기물에 유약을 입힐 때 생기는 자연스러운 현상
+    <br>· 나무, 돌 등 자연소재의 흠, 갈라짐
+    <br>· 주물 제작 방식의 특성으로 생기는 주얼리 제품의 기포 자국과 줄 자국
+    <br><br>*각 제품의 상세페이지에 안내되어 있는 취급상 주의사항에 따르지 않은 고객의 관리 부주의로 인한 제품 손상 및 변형에 대해서는 보상의 책임을 지지 않습니다.
+   <br><br><br><br><br><h2><b>A/S 안내</b>
+    <br>· 구매 내역 미확인 및 회원 정보가 일치하지 않으면 A/S 접수가 어렵습니다.
+   <br>· 편도 배송비 3,000원이 발생하며 회수 접수가 어려운 경우 착불로 발송 부탁드립니다.
+   <br>· 아비에무아의 A/S 절차에 따라 접수하지 않으신 경우 미확인 제품으로 간주하여 반송 처리될 수 있습니다.
+   <br>· 사용으로 인해 자연스럽게 발생한 현상의 복구에 대한 문의는 처리가 어렵습니다.
+   <br>· 부품 수급이 어려운 일부 제품의 경우 서비스가 제한될 수 있는 점 양해 부탁드립니다.
+   <br>· 제품 상태, 사용 경과 일수, 품질보증기간, 고객 과실 여부, 제품 하자 여부에 따라 유상 수리비가 발생할 수 있습니다.
+   <br>· A/S는 최대한 원 상태와 유사하게 진행되지만, 완전한 원상 복구가 어려운 경우 새 상품과 다를 수 있으며 수선 흔적이 있을 수 있습니다.
+
+    <br><br><br><br></h2><h2><b>환급 안내</b></h2>
+    <br>· 신용카드: 4~5영업일 이내 취소 (주말 및 공휴일 제외)
+    <br>· 실시간 계좌이체: 2~3영업일 이내 원 결제 계좌로 환급
+    <br>· 무통장 입금: 2~3영업일 이내 입력한 계좌로 환급
+    <br>· 휴대전화 결제 (부분 취소 불가)
+    <br>· 결제 당월 취소 시: 통신사 사정에 따라 4~5영업일 이내 취소
+    <br>· 결제 다음 달 취소 시: 2~7영업일 이내 입력한 계좌로 환급
+    <br>(이동 통신사의 정책에 따라, 결제 당월이 지나면 휴대폰 결제 취소가 불가합니다. 따라서 당월 이후 취소 처리를 원하실 경우에는 결제 수수료(3.75%) 차감한 계좌 환불 또는 온라인 스토어 예치금으로 환급 가능합니다.)
+    <br>· 신용카드로 결제하신 경우는 신용카드 승인을 취소하여 결제 대금이 청구되지 않게 하며, 신용카드 대금 결제가 이미 이루어졌을 때는 익월 카드사에서 환급처리 됩니다.
+
+    <br><br><br><br><h2><b>고객센터</b></h2>
+    <br>1577-0793
+    <br>평일 오후 2시 - 6시
+    <br>주말 및 공휴일 제외
+    <br>(유선 연결이 어려울 경우 Q&amp;A 게시판 / 카카오톡 ID - aviemuah를
+    <br>&nbsp;통해 문의 남겨 주시면 신속하게 답변 드리겠습니다.)
+    <br><br><br><br><h2><b>CONTACT<b></b></b></h2>
+    <br>For customer care, please contact info@aviemuah.com
+    <br>For wholesale inquiry, please contact sales@aviemuah.com
+    <br>For press Inquiry, please contact press@aviemuah.com
+</div></div>
 
 
-
-
-
-<div class="xans-element- xans-board xans-board-movement-4 xans-board-movement xans-board-4 "><ul>
-<li class="prev ">
-<strong class="text-en">prev</strong>&nbsp;&nbsp;&nbsp;<a href="/article/review/4/97702/">착용감이 좋아요</a>
-</li>
-        <li class="next ">
-<strong class="text-en">next</strong>&nbsp;&nbsp;&nbsp;<a href="/article/review/4/97700/">진짜 예뻐욤</a>
-</li>
-    </ul>
-</div>
-
-<div class="xans-element- xans-board xans-board-listsgroup-4 xans-board-listsgroup xans-board-4 displaynone"><h3>관련 글 보기</h3>
-<!--
-        $count = 5
-        $product_name_cut = 30
-    -->
-<div class="ec-base-table typeList gBorder">
-        <table border="1" summary="">
-<caption>관련글 모음</caption>
-            <colgroup>
-<col style="width:70px;">
-<col style="width:134px;">
-<col style="width:auto;">
-<col style="width:84px;">
-<col style="width:77px;" class="">
-<col style="width:55px;" class="">
-</colgroup>
-<thead><tr>
-<th scope="col">번호</th>
-                    <th scope="col">상품명</th>
-                    <th scope="col">제목</th>
-                    <th scope="col">작성자</th>
-                    <th scope="col" class="">작성일</th>
-                    <th scope="col" class="">조회</th>
-                </tr></thead>
-<tbody class="center">
-<tr class="xans-record-">
-<td>98763</td>
-                    <td><span>텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></td>
-                    <td class="subject left txtBreak">
-                         <a href="/article/review/4/98763/">예뻐요</a> <img src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_attach2.gif" alt="파일첨부" class="ec-common-rwd-image" onmouseover="BOARD.load_attached_image('afile_98763','1','4');" onmouseout="BOARD.load_attached_image('afile_98763','0','4');"><span id="afile_98763" style="display:none;"></span>                    </td>
-                    <td>김****</td>
-                    <td class=""><span class="txtNum">2023-08-19</span></td>
-                    <td class=""><span class="txtNum">304</span></td>
-                </tr>
-<tr class="xans-record-">
-<td>97701</td>
-                    <td><span>텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></td>
-                    <td class="subject left txtBreak">
-                         <a href="/article/review/4/97701/">여름에 딱</a> <img src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_attach2.gif" alt="파일첨부" class="ec-common-rwd-image" onmouseover="BOARD.load_attached_image('afile_97701','1','4');" onmouseout="BOARD.load_attached_image('afile_97701','0','4');"><span id="afile_97701" style="display:none;"></span>                    </td>
-                    <td>홍****</td>
-                    <td class=""><span class="txtNum">2023-08-19</span></td>
-                    <td class=""><span class="txtNum">455</span></td>
-                </tr>
-<tr class="xans-record-">
-<td>96699</td>
-                    <td><span>텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></td>
-                    <td class="subject left txtBreak">
-                         <a href="/article/review/4/96699/">예뻐요🤍</a> <img src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_attach2.gif" alt="파일첨부" class="ec-common-rwd-image" onmouseover="BOARD.load_attached_image('afile_96699','1','4');" onmouseout="BOARD.load_attached_image('afile_96699','0','4');"><span id="afile_96699" style="display:none;"></span>                    </td>
-                    <td>백****</td>
-                    <td class=""><span class="txtNum">2023-08-19</span></td>
-                    <td class=""><span class="txtNum">488</span></td>
-                </tr>
-<tr class="xans-record-">
-<td>96597</td>
-                    <td><span>텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></td>
-                    <td class="subject left txtBreak">
-                         <a href="/article/review/4/96597/">다른 색상도 구입하고 싶어요</a>                     </td>
-                    <td>오****</td>
-                    <td class=""><span class="txtNum">2023-08-19</span></td>
-                    <td class=""><span class="txtNum">213</span></td>
-                </tr>
-<tr class="xans-record-">
-<td>95484</td>
-                    <td><span>텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></td>
-                    <td class="subject left txtBreak">
-                         <a href="/article/review/4/95484/">힙힙</a> <img src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_attach2.gif" alt="파일첨부" class="ec-common-rwd-image" onmouseover="BOARD.load_attached_image('afile_95484','1','4');" onmouseout="BOARD.load_attached_image('afile_95484','0','4');"><span id="afile_95484" style="display:none;"></span>                    </td>
-                    <td>이****</td>
-                    <td class=""><span class="txtNum">2023-08-19</span></td>
-                    <td class=""><span class="txtNum">690</span></td>
-                </tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<!-- 관리자 전용 메뉴 -->
-<!-- // 관리자 전용 메뉴 -->
-</div>
-
-
-<div class="mobile-category header_layout_padding" style="padding-top: 110px;">
+<div class="mobile-category header_layout_padding" style="padding-top: 64px;">
     <div class="cover header_notice_margin">
         <div class="section1">
             <div id="category">
@@ -367,7 +258,7 @@
             </li>
         </ul><ul><li class="group"><a href="/mundane/html/product/collection.html?cate_no=166">컬렉션</a></li>
             <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
-            <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
+            <li class="group mun-select"><a href="/mundane/html/sub_page/info.html" class="mun-select">정보</a></li>
             <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
             <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>
         </ul><ul class="M_pc"><li class="group image-box">
@@ -386,11 +277,11 @@
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogon group sub account "><a href="/myshop/index.html">나의 계정</a>
+<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
 </li>
 <li class="group sub"><a href="#;" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count EC-Layout_Basket-count-display">(
-<span class="EC-Layout-Basket-count">2</span>
+<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
+<span class="EC-Layout-Basket-count">0</span>
 )
 </span>
 </a></li>
@@ -402,11 +293,11 @@
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogon group sub account "><a href="/myshop/index.html">나의 계정</a>
+<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
 </li>
 <li class="group sub"><a href="#;" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count EC-Layout_Basket-count-display">(
-<span class="EC-Layout-Basket-count">2</span>
+<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
+<span class="EC-Layout-Basket-count">0</span>
 )
 </span>
 </a></li>
@@ -499,8 +390,7 @@
             </div>
         </div>
         <!-- // 결제를 위한 필수 영역 -->
-    <script type="text/javascript">var sAuthSSLDomain = "https://login2.cafe24ssl.com";</script><script type="text/javascript" src="https://login2.cafe24ssl.com/crypt/AuthSSLManager.js"></script><script type="text/javascript" src="https://login2.cafe24ssl.com/crypt/AuthSSLManager.plugin.js"></script>
-<span itemscope="" itemtype="https://schema.org/Organization">
+    <span itemscope="" itemtype="https://schema.org/Organization">
 <link itemprop="url" href="https://aviemuah.com">
 </span>
 
@@ -517,7 +407,7 @@
                     wcs.checkoutWhitelist = ["aviemuah2020.cafe24.com", "www.aviemuah2020.cafe24.com", "m.aviemuah2020.cafe24.com", "aviemuah.com", "www.aviemuah.com", "m.aviemuah.com"];
 
                     // 레퍼러 (스크립트 인젠션 공격 대응 strip_tags) ECQAINT-15101
-                    wcs.setReferer("https://aviemuah.com/board/product/list.html?board_no=4&link_product_no=1189");
+                    wcs.setReferer("https://aviemuah.com/mundane/html/sub_page/about.html");
 
                     // 유입 추적 함수 호출
                     wcs.inflow("aviemuah.com");
@@ -529,7 +419,7 @@
 
 <script type="text/javascript" src="/ind-script/i18n.php?lang=ko_KR&amp;domain=front&amp;v=2308161002" charset="utf-8"></script>
 
-<script src="/ind-script/optimizer.php?filename=zVhLc9s2EL5bvPZ3sGlnOr3G8rjJRJ5obGdyBsEluSaARfGwTP_6LiW5taOKIkF5JheKgvb7sNg3lDekIf_wm8srJzRsyLW5A0_RScgffI4f_jTZg_8lH5KLaIVs84e_I7hu__F79kf260QkPAVwRii_X8gkUYswlyU6lXSEDGRWmWSoUCh8Gpp_DeR-OLh1VDP-jXtKESAgC2iWMiEHebN9-Y6huX--EkFkGs0EHoUFo-Ce30-jvHVoQjWCnmTs1bomp5dkgiOlwJ3GrVX0H629dFjWI_SJAdVpqcrR1lIXnhQjyFwEshcKDVwUwpgxeu0oJGlNZqz0kzCcToZj0zoI43fZ4gJoq9gv_w8S1uY3VKCC_PYVfqffgFWO4DSVkZf8Bu20DatoZG_QXq6MMmT6aBCPZRhQgkM1_7bLntcUSjx3ikQ5CaRjEP2-XwsP7vGYc46ALamuQjU69EqoRFShN4HXwoXLgajrhe4asm82vN7SfBGtoLztn2t8AjWUJQM0y22UfBsMkiPQKyhiPRl1CxU4MBKW0fWf3dqhnF3kixq3oJ-j5ZRcP43ngPJzmUB4NPVcFg1BlH03OOqsSxKufOMtXs2KfjUNFKVMAxaKZJsGdWDJhVTsjzXjpJmtijVydX7kVs_WJfdi7n8XkoaAQ9ren6b0h_TMYDnI4P12aEBZePdzNMKUBxPBOTfgmo5V9378XP_D2czECSC4MbZ0uqP8p8FJ0Y8xNHd3q7Ts6GcJHuCm9UVHGv207o1a1NwdPD5DmqLsCMiiPT4BvDaJFoa344Enelg4rJswEVM6UU-EvIw4A3PRTvz1-TbAVbGeZMmX7pp7bsMLe9hjJ-Hl_tui4hFehLmanItm3MTfBK04eDEg-NPSS9fZQF-gm-Qh4Tsjd89knAZdDA2CJ-BfXQlOmpBMcCl8C2E-w0CwjeZY7y8AqSxLitwZ55zlhiuJqNPPccXDiMf0_b-jb1bo5xFIijNM4EDCDPjtFt5Cx-2vnMlyT0Go5azTbPMjPSzBQIVzU2Mluhk6_OVEmR6QPAAQF12UWxq-nW3Sc4Pvr7gmG206RbfCFvZpPs-xb6hmpcwKH0GhaSe254Mo-4T9H3jdGeJ1z3QvirPwfA6gZ1loS3bF10lUn01F6fVZCZ71CgUzNLIiNI4ULE5MwWMcf3RePAK2Cf1p198XPMnhtPjym4xvBKP-MnUUA1zjE0v-Aw&amp;type=js&amp;k=7f19f05d3734b44ee7e4e5b490c4238083327fd8&amp;t=1691969664"></script><script src="/ind-script/optimizer.php?filename=rdJBDgIxCAXQA9St58C48zhMizMoBR1ajbe3Gj3BsPsLePkkwGKVgHLqTqsDPphqx-V4OB7g1ifhnJZWBbxQKuQ8K_iV9QS1a0EluDjMnQuBWuNMu4vvIcwUmy1WrCiSWM_hLGuseFut9NzGVEOWWNvVg0GTYr0Fo4RrXmJNnAJr_mIU59Qa67yJE3yNA2FC5_wxv2GTOJBstZpuVer4Z6F_w3vnfE1j_zncNw&amp;type=js&amp;k=dc1e37f8fbfc7b41afcfd0d9bc823007ec9a350d&amp;t=1692234856&amp;user=T"></script>
+<script src="/ind-script/optimizer.php?filename=zVhLc9s2EL5bvPZ3MGlnOr3G8jjNxJ5oHGdyXoJLck0Ai-Jhmfn1BSm5tauIIgl5pheSovb7drHYF5g3rDB__6vNKwsKt2zb3KLjYAXmDy6n93_o7MH9ko_JBTIg2vzhr4C2299-y37P3s1E4pNHq0G6_YtMMLeEqSzBykVLyFBklV4MBUnglqHjv57tfxZuLNcR_2p7SvDoKQqoKKV9juJ2ePhOvrn_cQUeMkV6Bo-kIqLwPj6fRjljSftqAj2L0Jt1zVatWXvLUqI9jdvI4D4Yc2mprCfYEzzJ01KV5cFTF45lRLC-8GwuJGm8KEDrKXbtKAQrxXqq9BPomE46xqax6KdrGXAelZFxX34OAmPyWy5IYn73Ar-zb8QrR3CKyxBfuS2ZeQqroEXv0F6uDMJn6mgQT2UYMSKGav5tlz0vKST86CRDOQukgode75fCoX08tjlHwIZlV5GcHHolVhCk713gFFh_ORJ1vdDXhs0rhdcDzWdogfO2v27oCeVYlozQrIco-TYaJEegV1iEejbqDiu0qAWug-3v3caSSC7yRU0D6P_RcspYP7WLAeVSmRAc6TqVRaGHsu8G83iMDDXF8vMYe1mEs33m--fFoi53SNsbrEt3SB8ZTPQivp2GBqXBN19HA7o8aHnnVBCLFlXd2_HHAufP5ibJAmLlb_l0yfzXgpOiCjTU_SgUHK4s1Y2fiSkt1DMhzw1rpMvtxF_WwS0WkutZPea5VuYuFtWVOayYs_Bi_2tVxYEMfKol56KZNr81Xsk4S5IndKel17Yznj9jN2uHwHVa7K6LcQpVMdbWT8C_2BKt0H4xwSW4Fn06w0iwTebY7Me5pSxrDrENpKzlNo6aUC9fxxUadrRc_3dyzQ25NALBIcEFFgUmwO8GeItdrPVlIss9e5DrpNUM-bE8LFFjRampcQNdgg0fLZTLA_JD8ByLLomBJs7a2-W5EU8jtGETzHKK7oZa3Kd52sa-okpKmRt6xHiub2e254Mo-5P6zzHdGeJ1z3QPxVl4PnlUSR4ayK7i4YDkJ13x8vosgRQUEhMsMuAbyxJXJ0a-KRt_9Px_BGwW9Kddf1_FSY7mxZfbZnH8nfQBzHLweE1PUfJv&amp;type=js&amp;k=92dc3d7bb8456964391370643da4799ae867e8c1&amp;t=1691969664"></script><script src="/ind-script/optimizer.php?filename=rdJBDgIxCAXQA9St58C48zhMizMoBR1ajbe3Gj3BsPsLePkkwGKVgHLqTqsDPphqx-V4OB7g1ifhnJZWBbxQKuQ8K_iV9QS1a0EluDjMnQuBWuNMu4vvIcwUmy1WrCiSWM_hLGuseFut9NzGVEOWWNvVg0GTYr0Fo4RrXmJNnAJr_mIU59Qa67yJE3yNA2FC5_wxv2GTOJBstZpuVer4Z6F_w3vnfE1j_zncNw&amp;type=js&amp;k=dc1e37f8fbfc7b41afcfd0d9bc823007ec9a350d&amp;t=1692234856&amp;user=T"></script>
 <script type="text/javascript">
 var currentPageURL = window.location.href;
 var targetPagePaths = ['/order/basket_channel.html','/order/orderform_channel.html','/order/order_result_channel.html','/product/detail_channel.html'];
@@ -670,35 +560,7 @@ isUseLoginKeepingSubmit = true;
 isUseLoginKeeping();
 } catch(e) {
 }
-EC$(function() {
-try{
-var ifame_width = parent.EC$('#blog_97701').parent().width();
-parent.EC$('#blog_97701').contents().find('body').css( 'min-width', ifame_width);
-parent.EC$('#blog_97701').css('width', ifame_width);
-if (parseInt(parent.EC$('#blog_97701').css('height')) < (document.body.scrollHeight + 70)) {
-parent.EC$('#blog_97701').css('height', document.body.scrollHeight + 70);
-}
-}catch(e){};
-});
-EC$(function(){
-FwValidator.bind("BoardDelForm", false);
-});
-var sFormId = 'BoardDelForm'
-var sEleId = ["BoardDelForm::password"]
-AuthSSL.Bind(sFormId, sEleId);
-EC$(function(){
-FwValidator.bind("commentForm", false);
-});
-EC$(function() {
-EC$('#commentForm').css('display', 'none');
-});
-EC$(function(){
-FwValidator.bind("commentSecretForm", false);
-});
-EC$(function() {
-EC$('#commentSecretForm').css('display', 'none');
-});
-var aLogData = {"log_server1":"eclog2-260.cafe24.com","log_server2":"elg-db-svcm-293.cafe24.com","mid":"aviemuah2020","stype":"e","domain":"","shop_no":1,"lang":"ko_KR","ver":2,"hash":"0ad030f289aa0076cac5ad7f298e165d","ca":"cfa-js.cafe24.com\/cfa.js","etc":"","mobile_flag":"F"};
+var aLogData = {"log_server1":"eclog2-260.cafe24.com","log_server2":"elg-db-svcm-293.cafe24.com","mid":"aviemuah2020","stype":"e","domain":"","shop_no":1,"lang":"ko_KR","ver":2,"hash":"320c8396f46075395b227d053ec32d51","ca":"cfa-js.cafe24.com\/cfa.js","etc":"","mobile_flag":"F"};
 var sMileageName = '적립금';
 var sMileageUnit = '[:PRICE:] P';
 var sDepositName = '예치금';
@@ -710,6 +572,7 @@ EC$('[async_section=before]').addClass('displaynone');
 }
 
 </script>
-<iframe src="/exec/front/eclog/main/?&amp;rloc=https%3A//aviemuah.com/article/review/4/97701/&amp;rref=https%3A//aviemuah.com/board/product/list.html%3Fboard_no%3D4%26link_product_no%3D1189&amp;udim=1920*1080&amp;rserv=elg-db-svcm-293.cafe24.com&amp;cid=CID70953863dc1666b8e94e37b70ae59f06&amp;role_path=BOARD_PRODUCT_DETAIL&amp;stype=e&amp;shop_no=1&amp;lang=ko_KR&amp;ver=2" id="log_realtime" style="display: none;"></iframe><div id="modalBackpanel"></div><div id="modalContainer">
+<iframe src="/exec/front/eclog/main/?&amp;rloc=https%3A//aviemuah.com/mundane/html/sub_page/info.html&amp;rref=https%3A//aviemuah.com/mundane/html/sub_page/about.html&amp;udim=1920*1080&amp;rserv=elg-db-svcm-293.cafe24.com&amp;cid=CIDaea85aeeebca562b4de08521b65be639&amp;role_path=ETC&amp;stype=e&amp;shop_no=1&amp;lang=ko_KR&amp;ver=2" id="log_realtime" style="display: none;"></iframe><div id="modalBackpanel"></div><div id="modalContainer">
     <iframe id="modalContent" scroll="0" scrolling="no" frameborder="0"></iframe>
 </div></body>
+</html>
