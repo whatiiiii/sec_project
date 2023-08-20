@@ -9,7 +9,7 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="../../css/article.css" rel ="stylesheet"/>
+    <link href="../../css/brandIntro.css" rel ="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 </head>
@@ -31,11 +31,11 @@
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogon group sub account "><a href="/myshop/index.html">나의 계정</a>
+<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
 </li>
 <li class="group sub"><a href="#;" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count EC-Layout_Basket-count-display">(
-<span class="EC-Layout-Basket-count">2</span>
+<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
+<span class="EC-Layout-Basket-count">0</span>
 )
 </span>
 </a></li>
@@ -58,254 +58,38 @@
 
 
         <div id="contents" class="header_notice_margin">
-<div class="xans-element- xans-board xans-board-readpackage-4 xans-board-readpackage xans-board-4 "><div class="xans-element- xans-board xans-board-product-4 xans-board-product xans-board-4 ec-base-table typeList"><div class="form-typeList">
-            <ul>
-<li class="mun-list clear-fix">
-                    <div class="thumb ">
-                        <a href="/product/텐셀-코듀로이-숏-슬리브-재킷-화이트/1189/"><img src="/img/${board.gname}.jpg" alt="" onerror="this.src='//img.echosting.cafe24.com/thumb/75x75.gif'"></a>
-                    </div>
-                    <div class="info ">
-                        <div class="mun-name"><strong>${board.gname}</strong></div>
-                        <div class="mun-price">KRW 138,000 <span id="sPrdTaxText"></span></div>
-                        <!--<div class="mun-total right"><a href="/product/텐셀-코듀로이-숏-슬리브-재킷-화이트/1189/" class="btnEm" title="새창으로 이동">상품 상세보기</a></div>-->
-                    </div>
-<!--info-->
-                </li>
-            </ul>
-</div>
-</div>
-<form id="BoardDelForm" name="" action="/exec/front/Board/del/4" method="post" target="_self" enctype="multipart/form-data">
-<input id="no" name="no" value="97701" type="hidden">
-<input id="bulletin_no" name="bulletin_no" value="55486" type="hidden">
-<input id="board_no" name="board_no" value="4" type="hidden">
-<input id="member_id" name="member_id" value="cheerfully" type="hidden">
-<input id="list_url" name="list_url" value="/board/product/list.html?board_no=4" type="hidden">
-<input id="bdf_modify_url" name="bdf_modify_url" value="/board/product/modify.html?board_act=edit&amp;no=97701&amp;board_no=4" type="hidden">
-<input id="bdf_del_url" name="bdf_del_url" value="/exec/front/Board/del/4" type="hidden">
-<input id="bdf_action_type" name="bdf_action_type" value="" type="hidden"><div class="xans-element- xans-board xans-board-read-4 xans-board-read xans-board-4"><!--
-            $login_page_url = /member/login.html
-            $deny_access_url = /board/product/list.html
-        -->
-<div class="ec-base-table typeWrite ">
-            <div class="form-typeWrite">
-                <ul>
-<li class="mun-list">
-                        <div class="mun-desc">${board.subject}<br><span class="writer">${board.email} | ${board.rdate} <!--<span class="">(ip:218.49.4.119)</span> --></span>
-</div>
-                    </li>
-                    <li class="mun-list">
-                        <div class="mun-desc contents detail"><img src="/file/images/${board.fileUp.id}" border="0" alt="" width="587px"><br><div class="fr-view fr-view-article">${board.content}</div></div>
-                    </li>
-                    <li class="mun-list attach ">
-                        <div class="mun-title">첨부파일</div>
-                        <div class="mun-desc"><a href="/file/attach/${board.fileUp.id}" onclick="BOARD_READ.file_download('/exec/front/Board/download/?no=97701&amp;realname=2023/06/06/4186f6611284c543d508ec995e32446a.jpeg&amp;filename=84AC4437-1C0F-4DBE-BBD7-758008558158.jpeg');">${board.fileUp.savednm}</a> </div>
-                    </li>
-                    <li class="mun-list clear-fix password displaynone displaynone">
-                        <div class="mun-title">password</div>
-                        <div class="mun-desc ePlaceholder" title="삭제하려면 비밀번호를 입력하세요."><input id="password" name="password" fw-filter="" fw-label="비밀번호" fw-msg="" onkeydown="if (event.keyCode == 13 || event.which == 13) { return false; }" value="" type="password" placeholder="삭제하려면 비밀번호를 입력하세요."></div>
-                    </li>
-                </ul>
-</div>
-        </div>
-<div class="mun-button-Area ">
-            <a href="/board/product/modify.html?board_act=edit&amp;no=97701&amp;board_no=4" class="mun-btn mun-left displaynone">modify</a>
-            <a href="#none" onclick="BOARD_READ.article_delete('BoardDelForm','4');" class="mun-btn mun-left displaynone">delete</a>
-            <a href="/board/product/reply.html" class="mun-btn mun-left displaynone">답변</a>
-                <!--
-                <span class="displaynone">
-                    <a href="#none" onclick="" class="btnNormalFix sizeS ">스팸신고</a>
-                    <a href="#none" onclick="" class="btnNormalFix sizeS ">스팸해제</a>
-                </span>
-                -->
-            <a href="#none" onclick="" class="mun-btn mun-left displaynone displaynone"></a>
-            <a href="#none" onclick="" class="mun-btn mun-left displaynone displaynone"></a>
-            <a href="/board/review/4/" class="mun-btn mun-right confirm">list</a>
-        </div>
-</div>
-</form></div>
+<style>
+    html body #contents { width:100%; max-width:none; margin-top:0; padding-left:0; padding-right:0; }
+</style>
 
 
-
-<div class="xans-element- xans-board xans-board-commentpackage-4 xans-board-commentpackage xans-board-4 ec-base-table typeWrite board "><div class="form-typeWrite">
-
-        <ul class="xans-element- xans-board xans-board-commentlist-4 xans-board-commentlist xans-board-4 boardList"><!--리스트,리스트안에 댓글달기폼(대댓글), 리스트안에 수정폼--><!--
-                $delete_page_url = /board/product/comment_del.html
-                $delete_success_url = /board/product/read.html
-            --><li class="mun-list clear-fix  xans-record-">
-                <div class="mun-title"> Avie muah</div>
-                <div class="mun-desc">
-                    <div class="mun-comment"><span id="comment_contents9020">고객님의 소중한 후기 정말 감사합니다! 스타일 리뷰 적립금으로 2,000원이 지급되었습니다.<br>
-아비에무아의 옷이 고객님의 집에 가장 오래도록 남아있을 양품이 되었으면 좋겠습니다❤</span></div>
-                    <div class="mun-button">
-                        <a href="javascript:;" class="btn" onclick="BOARD_COMMENT.comment_update('97701','9020',this);">M</a>
-                        <a href="javascript:;" class="btn" onclick="BOARD_COMMENT.comment_delete('/board/product/comment_del.html?board_no=4&amp;no=97701&amp;comment_no=9020&amp;page=&amp;return_url=/board/product/read.html');">D</a>
-                        <a href="javascript:;" onclick="" class="btn displaynone">R</a>
-                    </div>
-                </div>
-            </li>
-<!--
-            <div class="ec-base-button typeBG spam displaynone">
-                <span class="gLeft">
-                    <a href="#none" onclick="" class="btnNormalFix sizeS ">스팸신고</a>
-                    <a href="#none" onclick="" class="btnNormalFix sizeS ">스팸해제</a>
-                </span>
+<div id="k_WF_5_1">
+    <div class="k_WF_5_1">
+        <div class="cover">
+            <div class="video">
+                <iframe src="https://player.vimeo.com/video/685745495?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
             </div>
-            -->
-</ul>
-
-
-        <form id="commentForm" name="" action="/exec/front/Board/CommentUpdate/4" method="post" target="_self" enctype="multipart/form-data" style="display: none;">
-<input id="board_no" name="board_no" value="4" type="hidden">
-<input id="no" name="no" value="97701" type="hidden">
-<input id="comment_no" name="comment_no" value="" type="hidden">
-<input id="member_id" name="member_id" value="senidi0" type="hidden"><ul class="xans-element- xans-board xans-board-commentform-4 xans-board-commentform xans-board-4 boardModify "><li class="mun-list clear-fix password">
-                <div class="mun-password mun-inline">
-                    <div class="mun-title text-en">password</div>
-                    <div class="mun-desc"><input id="comment_password" name="comment_password" fw-filter="isFill" fw-label="댓글비밀번호" fw-msg="" value="" type="password"></div>
-                </div>
-                <div class="mun-secret mun-inline displaynone"><label>비밀댓글</label></div>
-                <div class="mun-comment"><textarea id="comment_modify" name="comment_modify" fw-filter="isFill" fw-label="댓글내용" fw-msg=""></textarea></div>
-                <div class="mun-button">
-                    <a href="#none" class="mun-btn" onclick="BOARD_COMMENT.comment_cancel_ok('commentForm');">cancel</a>
-                    <a href="#none" class="mun-btn ok" onclick="BOARD_COMMENT.comment_update_ok('commentForm');">ok</a>
-                </div>
-            </li>
-</ul>
-</form><form id="commentSecretForm" name="" action="/exec/front/Board/CommentSecret/4" method="post" target="_self" enctype="multipart/form-data" style="display: none;">
-<input id="board_no" name="board_no" value="4" type="hidden">
-<input id="comment_no" name="comment_no" value="" type="hidden">
-<input id="pass_check" name="pass_check" value="F" type="hidden"><ul class="xans-element- xans-board xans-board-commentformsecret-1002 xans-board-commentformsecret xans-board-1002 boardSecret "><li class="mun-list clear-fix password">
-                <div class="mun-title text-en">password</div>
-                <div class="mun-desc"><input id="secure_password" name="secure_password" fw-filter="isFill" fw-label="댓글비밀번호" fw-msg="" value="" type="password"></div>
-            </li>
-<div class="mun-button">
-                <a href="#none" class="mun-btn" onclick="BOARD_COMMENT.hide_secret_comment_form('commentSecretForm');">cancel</a>
-                <a href="#none" class="mun-btn ok" onclick="BOARD_COMMENT.show_secret_comment('commentSecretForm');">ok</a>
+            <div class="info">
+                <h3>ABOUT</h3>
+                <p>
+                    Àvie muah는 설립자의 취향을 기반으로 만들어진 브랜드입니다.<br>
+                    우리는 자연스러움에 가치를 두고 각자의 다양한 삶을 보다 편안하게 할 옷을 소개하며, 독립적인 신흥 디자이너들과 함께 당신의 집에 가장 오래도록 남아 있을 양품을 제공합니다.<br><br>
+                    Àvie muah is an artisan clothing brand based on the unique tastes of its founder.<br>
+                    The brand uses natural fibers to create comfortable clothing for a wide variety of lifestyles.<br>
+                    Àvie muah values the work of independent emerging designers who help to offer high quality,handmade garments for every customer.
+                </p>
+                <br><br><br><br><h3>CONTACT</h3>
+                <p>
+                    Tel / <span class="M_tel">1577-0793</span><br>
+                    Email / <span class="M_email">info@aviemuah.com</span><br><span class="M_Addr">04048 서울특별시 마포구 양화로 6길 88 (합정동) 주식회사 아비에무아</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (2PM – 6PM)</span> / <span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
+                </p>
             </div>
-</ul>
-</form><ul class="xans-element- xans-board xans-board-commentwrite-4 xans-board-commentwrite xans-board-4 boardWriteReply "><!-- 댓글권한 있음 --><li class="mun-list clear-fix password displaynone">
-                <div class="mun-name mun-inline displaynone">
-                    <div class="mun-title text-en displaynone">name</div>
-                    <div class="mun-desc"></div>
-                </div>
-                <div class="mun-password mun-inline">
-                    <div class="mun-title text-en">password</div>
-                    <div class="mun-desc"></div>
-                </div>
-                <div class="mun-comment"></div>
-                <div class="mun-comment-btn">
-                    <span class="mun-secret displaynone"><a href="#none" onclick="" class="btnNormal displaynone">관리자답변보기</a> 비밀댓글</span>
-                    <a href="#none" onclick="" class="mun-btn ok paddingL10 displaynone">ok</a>
-                </div>
-                <div class="mun-capcha displaynone">
-<div class="mun-title"> </div>
-<div class="mun-desc"></div>
-</div>
-            </li>
-<li class="mun-list clear-fix ">
-                <p>관리자에게만 댓글 작성 권한이 있습니다.</p>
-            </li>
-</ul>
-</div>
-</div>
+        </div>
+    </div>
+</div></div>
 
 
-
-
-
-
-
-<div class="xans-element- xans-board xans-board-movement-4 xans-board-movement xans-board-4 "><ul>
-<li class="prev ">
-<strong class="text-en">prev</strong>&nbsp;&nbsp;&nbsp;<a href="/article/review/4/97702/">착용감이 좋아요</a>
-</li>
-        <li class="next ">
-<strong class="text-en">next</strong>&nbsp;&nbsp;&nbsp;<a href="/article/review/4/97700/">진짜 예뻐욤</a>
-</li>
-    </ul>
-</div>
-
-<div class="xans-element- xans-board xans-board-listsgroup-4 xans-board-listsgroup xans-board-4 displaynone"><h3>관련 글 보기</h3>
-<!--
-        $count = 5
-        $product_name_cut = 30
-    -->
-<div class="ec-base-table typeList gBorder">
-        <table border="1" summary="">
-<caption>관련글 모음</caption>
-            <colgroup>
-<col style="width:70px;">
-<col style="width:134px;">
-<col style="width:auto;">
-<col style="width:84px;">
-<col style="width:77px;" class="">
-<col style="width:55px;" class="">
-</colgroup>
-<thead><tr>
-<th scope="col">번호</th>
-                    <th scope="col">상품명</th>
-                    <th scope="col">제목</th>
-                    <th scope="col">작성자</th>
-                    <th scope="col" class="">작성일</th>
-                    <th scope="col" class="">조회</th>
-                </tr></thead>
-<tbody class="center">
-<tr class="xans-record-">
-<td>98763</td>
-                    <td><span>텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></td>
-                    <td class="subject left txtBreak">
-                         <a href="/article/review/4/98763/">예뻐요</a> <img src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_attach2.gif" alt="파일첨부" class="ec-common-rwd-image" onmouseover="BOARD.load_attached_image('afile_98763','1','4');" onmouseout="BOARD.load_attached_image('afile_98763','0','4');"><span id="afile_98763" style="display:none;"></span>                    </td>
-                    <td>김****</td>
-                    <td class=""><span class="txtNum">2023-08-19</span></td>
-                    <td class=""><span class="txtNum">304</span></td>
-                </tr>
-<tr class="xans-record-">
-<td>97701</td>
-                    <td><span>텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></td>
-                    <td class="subject left txtBreak">
-                         <a href="/article/review/4/97701/">여름에 딱</a> <img src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_attach2.gif" alt="파일첨부" class="ec-common-rwd-image" onmouseover="BOARD.load_attached_image('afile_97701','1','4');" onmouseout="BOARD.load_attached_image('afile_97701','0','4');"><span id="afile_97701" style="display:none;"></span>                    </td>
-                    <td>홍****</td>
-                    <td class=""><span class="txtNum">2023-08-19</span></td>
-                    <td class=""><span class="txtNum">455</span></td>
-                </tr>
-<tr class="xans-record-">
-<td>96699</td>
-                    <td><span>텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></td>
-                    <td class="subject left txtBreak">
-                         <a href="/article/review/4/96699/">예뻐요🤍</a> <img src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_attach2.gif" alt="파일첨부" class="ec-common-rwd-image" onmouseover="BOARD.load_attached_image('afile_96699','1','4');" onmouseout="BOARD.load_attached_image('afile_96699','0','4');"><span id="afile_96699" style="display:none;"></span>                    </td>
-                    <td>백****</td>
-                    <td class=""><span class="txtNum">2023-08-19</span></td>
-                    <td class=""><span class="txtNum">488</span></td>
-                </tr>
-<tr class="xans-record-">
-<td>96597</td>
-                    <td><span>텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></td>
-                    <td class="subject left txtBreak">
-                         <a href="/article/review/4/96597/">다른 색상도 구입하고 싶어요</a>                     </td>
-                    <td>오****</td>
-                    <td class=""><span class="txtNum">2023-08-19</span></td>
-                    <td class=""><span class="txtNum">213</span></td>
-                </tr>
-<tr class="xans-record-">
-<td>95484</td>
-                    <td><span>텐셀 코듀로이 숏 슬리브 재킷 (화이트)</span></td>
-                    <td class="subject left txtBreak">
-                         <a href="/article/review/4/95484/">힙힙</a> <img src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_attach2.gif" alt="파일첨부" class="ec-common-rwd-image" onmouseover="BOARD.load_attached_image('afile_95484','1','4');" onmouseout="BOARD.load_attached_image('afile_95484','0','4');"><span id="afile_95484" style="display:none;"></span>                    </td>
-                    <td>이****</td>
-                    <td class=""><span class="txtNum">2023-08-19</span></td>
-                    <td class=""><span class="txtNum">690</span></td>
-                </tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<!-- 관리자 전용 메뉴 -->
-<!-- // 관리자 전용 메뉴 -->
-</div>
-
-
-<div class="mobile-category header_layout_padding" style="padding-top: 110px;">
+<div class="mobile-category header_layout_padding" style="padding-top: 64px;">
     <div class="cover header_notice_margin">
         <div class="section1">
             <div id="category">
@@ -366,7 +150,7 @@
                     </ul></div>
             </li>
         </ul><ul><li class="group"><a href="/mundane/html/product/collection.html?cate_no=166">컬렉션</a></li>
-            <li class="group"><a href="/mundane/html/sub_page/about.html">브랜드 소개</a></li>
+            <li class="group mun-select"><a href="/mundane/html/sub_page/about.html" class="mun-select">브랜드 소개</a></li>
             <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
             <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
             <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>
@@ -386,11 +170,11 @@
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogon group sub account "><a href="/myshop/index.html">나의 계정</a>
+<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
 </li>
 <li class="group sub"><a href="#;" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count EC-Layout_Basket-count-display">(
-<span class="EC-Layout-Basket-count">2</span>
+<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
+<span class="EC-Layout-Basket-count">0</span>
 )
 </span>
 </a></li>
@@ -402,11 +186,11 @@
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogon group sub account "><a href="/myshop/index.html">나의 계정</a>
+<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
 </li>
 <li class="group sub"><a href="#;" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count EC-Layout_Basket-count-display">(
-<span class="EC-Layout-Basket-count">2</span>
+<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
+<span class="EC-Layout-Basket-count">0</span>
 )
 </span>
 </a></li>
@@ -499,8 +283,7 @@
             </div>
         </div>
         <!-- // 결제를 위한 필수 영역 -->
-    <script type="text/javascript">var sAuthSSLDomain = "https://login2.cafe24ssl.com";</script><script type="text/javascript" src="https://login2.cafe24ssl.com/crypt/AuthSSLManager.js"></script><script type="text/javascript" src="https://login2.cafe24ssl.com/crypt/AuthSSLManager.plugin.js"></script>
-<span itemscope="" itemtype="https://schema.org/Organization">
+    <span itemscope="" itemtype="https://schema.org/Organization">
 <link itemprop="url" href="https://aviemuah.com">
 </span>
 
@@ -517,7 +300,7 @@
                     wcs.checkoutWhitelist = ["aviemuah2020.cafe24.com", "www.aviemuah2020.cafe24.com", "m.aviemuah2020.cafe24.com", "aviemuah.com", "www.aviemuah.com", "m.aviemuah.com"];
 
                     // 레퍼러 (스크립트 인젠션 공격 대응 strip_tags) ECQAINT-15101
-                    wcs.setReferer("https://aviemuah.com/board/product/list.html?board_no=4&link_product_no=1189");
+                    wcs.setReferer("https://aviemuah.com/board/free/list.html?board_no=1");
 
                     // 유입 추적 함수 호출
                     wcs.inflow("aviemuah.com");
@@ -529,7 +312,7 @@
 
 <script type="text/javascript" src="/ind-script/i18n.php?lang=ko_KR&amp;domain=front&amp;v=2308161002" charset="utf-8"></script>
 
-<script src="/ind-script/optimizer.php?filename=zVhLc9s2EL5bvPZ3sGlnOr3G8rjJRJ5obGdyBsEluSaARfGwTP_6LiW5taOKIkF5JheKgvb7sNg3lDekIf_wm8srJzRsyLW5A0_RScgffI4f_jTZg_8lH5KLaIVs84e_I7hu__F79kf260QkPAVwRii_X8gkUYswlyU6lXSEDGRWmWSoUCh8Gpp_DeR-OLh1VDP-jXtKESAgC2iWMiEHebN9-Y6huX--EkFkGs0EHoUFo-Ce30-jvHVoQjWCnmTs1bomp5dkgiOlwJ3GrVX0H629dFjWI_SJAdVpqcrR1lIXnhQjyFwEshcKDVwUwpgxeu0oJGlNZqz0kzCcToZj0zoI43fZ4gJoq9gv_w8S1uY3VKCC_PYVfqffgFWO4DSVkZf8Bu20DatoZG_QXq6MMmT6aBCPZRhQgkM1_7bLntcUSjx3ikQ5CaRjEP2-XwsP7vGYc46ALamuQjU69EqoRFShN4HXwoXLgajrhe4asm82vN7SfBGtoLztn2t8AjWUJQM0y22UfBsMkiPQKyhiPRl1CxU4MBKW0fWf3dqhnF3kixq3oJ-j5ZRcP43ngPJzmUB4NPVcFg1BlH03OOqsSxKufOMtXs2KfjUNFKVMAxaKZJsGdWDJhVTsjzXjpJmtijVydX7kVs_WJfdi7n8XkoaAQ9ren6b0h_TMYDnI4P12aEBZePdzNMKUBxPBOTfgmo5V9378XP_D2czECSC4MbZ0uqP8p8FJ0Y8xNHd3q7Ts6GcJHuCm9UVHGv207o1a1NwdPD5DmqLsCMiiPT4BvDaJFoa344Enelg4rJswEVM6UU-EvIw4A3PRTvz1-TbAVbGeZMmX7pp7bsMLe9hjJ-Hl_tui4hFehLmanItm3MTfBK04eDEg-NPSS9fZQF-gm-Qh4Tsjd89knAZdDA2CJ-BfXQlOmpBMcCl8C2E-w0CwjeZY7y8AqSxLitwZ55zlhiuJqNPPccXDiMf0_b-jb1bo5xFIijNM4EDCDPjtFt5Cx-2vnMlyT0Go5azTbPMjPSzBQIVzU2Mluhk6_OVEmR6QPAAQF12UWxq-nW3Sc4Pvr7gmG206RbfCFvZpPs-xb6hmpcwKH0GhaSe254Mo-4T9H3jdGeJ1z3QvirPwfA6gZ1loS3bF10lUn01F6fVZCZ71CgUzNLIiNI4ULE5MwWMcf3RePAK2Cf1p198XPMnhtPjym4xvBKP-MnUUA1zjE0v-Aw&amp;type=js&amp;k=7f19f05d3734b44ee7e4e5b490c4238083327fd8&amp;t=1691969664"></script><script src="/ind-script/optimizer.php?filename=rdJBDgIxCAXQA9St58C48zhMizMoBR1ajbe3Gj3BsPsLePkkwGKVgHLqTqsDPphqx-V4OB7g1ifhnJZWBbxQKuQ8K_iV9QS1a0EluDjMnQuBWuNMu4vvIcwUmy1WrCiSWM_hLGuseFut9NzGVEOWWNvVg0GTYr0Fo4RrXmJNnAJr_mIU59Qa67yJE3yNA2FC5_wxv2GTOJBstZpuVer4Z6F_w3vnfE1j_zncNw&amp;type=js&amp;k=dc1e37f8fbfc7b41afcfd0d9bc823007ec9a350d&amp;t=1692234856&amp;user=T"></script>
+<script src="/ind-script/optimizer.php?filename=zVhLc9s2EL5bvPZ3MGlnOr3G8jjNxJ5oHGdyXoJLck0Ai-Jhmfn1BSm5tauIIgl5pheSovb7drHYF5g3rDB__6vNKwsKt2zb3KLjYAXmDy6n93_o7MH9ko_JBTIg2vzhr4C2299-y37P3s1E4pNHq0G6_YtMMLeEqSzBykVLyFBklV4MBUnglqHjv57tfxZuLNcR_2p7SvDoKQqoKKV9juJ2ePhOvrn_cQUeMkV6Bo-kIqLwPj6fRjljSftqAj2L0Jt1zVatWXvLUqI9jdvI4D4Yc2mprCfYEzzJ01KV5cFTF45lRLC-8GwuJGm8KEDrKXbtKAQrxXqq9BPomE46xqax6KdrGXAelZFxX34OAmPyWy5IYn73Ar-zb8QrR3CKyxBfuS2ZeQqroEXv0F6uDMJn6mgQT2UYMSKGav5tlz0vKST86CRDOQukgode75fCoX08tjlHwIZlV5GcHHolVhCk713gFFh_ORJ1vdDXhs0rhdcDzWdogfO2v27oCeVYlozQrIco-TYaJEegV1iEejbqDiu0qAWug-3v3caSSC7yRU0D6P_RcspYP7WLAeVSmRAc6TqVRaGHsu8G83iMDDXF8vMYe1mEs33m--fFoi53SNsbrEt3SB8ZTPQivp2GBqXBN19HA7o8aHnnVBCLFlXd2_HHAufP5ibJAmLlb_l0yfzXgpOiCjTU_SgUHK4s1Y2fiSkt1DMhzw1rpMvtxF_WwS0WkutZPea5VuYuFtWVOayYs_Bi_2tVxYEMfKol56KZNr81Xsk4S5IndKel17Yznj9jN2uHwHVa7K6LcQpVMdbWT8C_2BKt0H4xwSW4Fn06w0iwTebY7Me5pSxrDrENpKzlNo6aUC9fxxUadrRc_3dyzQ25NALBIcEFFgUmwO8GeItdrPVlIss9e5DrpNUM-bE8LFFjRampcQNdgg0fLZTLA_JD8ByLLomBJs7a2-W5EU8jtGETzHKK7oZa3Kd52sa-okpKmRt6xHiub2e254Mo-5P6zzHdGeJ1z3QPxVl4PnlUSR4ayK7i4YDkJ13x8vosgRQUEhMsMuAbyxJXJ0a-KRt_9Px_BGwW9Kddf1_FSY7mxZfbZnH8nfQBzHLweE1PUfJv&amp;type=js&amp;k=92dc3d7bb8456964391370643da4799ae867e8c1&amp;t=1691969664"></script><script src="/ind-script/optimizer.php?filename=rdJBDgIxCAXQA9St58C48zhMizMoBR1ajbe3Gj3BsPsLePkkwGKVgHLqTqsDPphqx-V4OB7g1ifhnJZWBbxQKuQ8K_iV9QS1a0EluDjMnQuBWuNMu4vvIcwUmy1WrCiSWM_hLGuseFut9NzGVEOWWNvVg0GTYr0Fo4RrXmJNnAJr_mIU59Qa67yJE3yNA2FC5_wxv2GTOJBstZpuVer4Z6F_w3vnfE1j_zncNw&amp;type=js&amp;k=dc1e37f8fbfc7b41afcfd0d9bc823007ec9a350d&amp;t=1692234856&amp;user=T"></script>
 <script type="text/javascript">
 var currentPageURL = window.location.href;
 var targetPagePaths = ['/order/basket_channel.html','/order/orderform_channel.html','/order/order_result_channel.html','/product/detail_channel.html'];
@@ -670,35 +453,7 @@ isUseLoginKeepingSubmit = true;
 isUseLoginKeeping();
 } catch(e) {
 }
-EC$(function() {
-try{
-var ifame_width = parent.EC$('#blog_97701').parent().width();
-parent.EC$('#blog_97701').contents().find('body').css( 'min-width', ifame_width);
-parent.EC$('#blog_97701').css('width', ifame_width);
-if (parseInt(parent.EC$('#blog_97701').css('height')) < (document.body.scrollHeight + 70)) {
-parent.EC$('#blog_97701').css('height', document.body.scrollHeight + 70);
-}
-}catch(e){};
-});
-EC$(function(){
-FwValidator.bind("BoardDelForm", false);
-});
-var sFormId = 'BoardDelForm'
-var sEleId = ["BoardDelForm::password"]
-AuthSSL.Bind(sFormId, sEleId);
-EC$(function(){
-FwValidator.bind("commentForm", false);
-});
-EC$(function() {
-EC$('#commentForm').css('display', 'none');
-});
-EC$(function(){
-FwValidator.bind("commentSecretForm", false);
-});
-EC$(function() {
-EC$('#commentSecretForm').css('display', 'none');
-});
-var aLogData = {"log_server1":"eclog2-260.cafe24.com","log_server2":"elg-db-svcm-293.cafe24.com","mid":"aviemuah2020","stype":"e","domain":"","shop_no":1,"lang":"ko_KR","ver":2,"hash":"0ad030f289aa0076cac5ad7f298e165d","ca":"cfa-js.cafe24.com\/cfa.js","etc":"","mobile_flag":"F"};
+var aLogData = {"log_server1":"eclog2-260.cafe24.com","log_server2":"elg-db-svcm-293.cafe24.com","mid":"aviemuah2020","stype":"e","domain":"","shop_no":1,"lang":"ko_KR","ver":2,"hash":"320c8396f46075395b227d053ec32d51","ca":"cfa-js.cafe24.com\/cfa.js","etc":"","mobile_flag":"F"};
 var sMileageName = '적립금';
 var sMileageUnit = '[:PRICE:] P';
 var sDepositName = '예치금';
@@ -710,6 +465,7 @@ EC$('[async_section=before]').addClass('displaynone');
 }
 
 </script>
-<iframe src="/exec/front/eclog/main/?&amp;rloc=https%3A//aviemuah.com/article/review/4/97701/&amp;rref=https%3A//aviemuah.com/board/product/list.html%3Fboard_no%3D4%26link_product_no%3D1189&amp;udim=1920*1080&amp;rserv=elg-db-svcm-293.cafe24.com&amp;cid=CID70953863dc1666b8e94e37b70ae59f06&amp;role_path=BOARD_PRODUCT_DETAIL&amp;stype=e&amp;shop_no=1&amp;lang=ko_KR&amp;ver=2" id="log_realtime" style="display: none;"></iframe><div id="modalBackpanel"></div><div id="modalContainer">
+<iframe src="/exec/front/eclog/main/?&amp;rloc=https%3A//aviemuah.com/mundane/html/sub_page/about.html&amp;rref=https%3A//aviemuah.com/&amp;udim=1920*1080&amp;rserv=elg-db-svcm-293.cafe24.com&amp;cid=CIDaea85aeeebca562b4de08521b65be639&amp;role_path=ETC&amp;stype=e&amp;shop_no=1&amp;lang=ko_KR&amp;ver=2" id="log_realtime" style="display: none;"></iframe><div id="modalBackpanel"></div><div id="modalContainer">
     <iframe id="modalContent" scroll="0" scrolling="no" frameborder="0"></iframe>
 </div></body>
+</html>

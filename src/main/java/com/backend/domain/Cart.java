@@ -39,26 +39,17 @@ public class Cart {
     }
 
 
-    /*
-    @OneToOne
-    @JoinColumn(name = "s_name")
-    private Goods sname;
-    @OneToOne
-    @JoinColumn(name = "g_code")
-    private Goods gcode;
-
-     */
     @Column(name = "m_email")
     private String email;
-    /*
+
+
     @Builder
-    public Cart(String quan, String sname, int gcode, String email)
+    public Cart(int quan, String email, Goods goods)
     {
         this.quan = quan;
-        this.sname = sname;
-        this.gcode = gcode;
         this.email = email;
-    }*/
+        this.goods = goods;
+    }
 
     public Cart(int seq, String email){
         this.seq =seq;

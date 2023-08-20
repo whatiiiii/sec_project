@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.List;
+
 @RequestMapping("product")
 @Controller
 @AllArgsConstructor
@@ -22,8 +24,9 @@ public class ProductController {
 
     @GetMapping("/product.do/product_no={gcode}&cate_no={cgcode}")
     public String detail(@PathVariable int gcode, @PathVariable int cgcode, Model model){
-        Goods goods = goodsService.findByGcodeAndCgcode(gcode, cgcode);
-        model.addAttribute("detail", goods);
+        List<Goods> goods = goodsService.findByGcodeAndCgcode(gcode, cgcode);
+        Goods firstGoods = goods.get(0);
+        model.addAttribute("detail", firstGoods);
         return "/product/product";
     }
 

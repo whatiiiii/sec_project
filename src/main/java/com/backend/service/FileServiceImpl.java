@@ -67,6 +67,11 @@ public class FileServiceImpl implements FileService {
             f.delete();
         }
         fileRepository.deleteById(id); //(2)DB에서 삭제
+    }
 
+    @Override
+    public FileUp findById(long id) {
+        FileUp fileup = fileRepository.findById(id).orElse(null); //만약 db에서 file이 없다면 null
+        return fileup;
     }
 }
