@@ -72,7 +72,7 @@ $url = /member/login.html
 </div>
 
 <div class="xans-element- xans-myshop xans-myshop-main "><ul>
-<li><a href="/member/modify.html" class="text-en">edit an account</a></li>
+<li><a href="/account/change.do?email=your_email@example.com" class="text-en">edit an account</a></li>
     <li><a href="/myshop/board_list.html" class="text-en">brand</a></li>
     <li><a href="/myshop/addr/list.html" class="text-en">notice</a></li>
     <li class="xans-element- xans-layout xans-layout-statelogon "><a href="/exec/front/Member/logout/">Logout</a>

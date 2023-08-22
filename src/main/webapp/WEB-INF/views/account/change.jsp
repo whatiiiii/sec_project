@@ -140,10 +140,10 @@
 <div class="ec-base-table typeWrite ">
     <div class="form-typeWrite">
         <ul>
-<li class="mun-list clear-fix">
+            <li class="mun-list clear-fix">
                 <div class="mun-title">아이디 <img src="https://aviemuah.com/web/upload/mundane/grey_dot.png" alt="필수"></div>
                 <div class="mun-desc">
-                    <div class="ePlaceholder" title="(영문소문자/숫자, 4~16자)"><input id="member_id" name="member_id" fw-filter="isFill&amp;isFill&amp;isMin[4]&amp;isMax[16]&amp;isIdentity" fw-label="아이디" fw-msg="" class="inputTypeText" placeholder="(영문소문자/숫자, 4~16자)" readonly="readonly" value="" type="text"></div>
+                    <div class="ePlaceholder" title="(영문소문자/숫자, 4~16자)"><input id="email" name="email" value="${signIn.email}" type="text"></div>
 
                 </div>
             </li>
@@ -191,86 +191,42 @@
             </li>
             <li class="mun-list clear-fix" style="display:1">
                 <div class="mun-title" id="">이름 <img src="	https://aviemuah.com/web/upload/mundane/grey_dot.png" alt="필수"></div>
-                <div class="mun-desc"><input id="name" name="name" fw-filter="isFill&amp;isMax[30]" fw-label="이름" fw-msg="" class="ec-member-name" placeholder="" maxlength="30" readonly="readonly" value="김현지" type="text"></div>
+                <div class="mun-desc"><input id="name" name="name" fw-filter="isFill&amp;isMax[30]" fw-label="이름" fw-msg="" class="ec-member-name" placeholder="" maxlength="30" value="" type="text"></div>
             </li>
-            <li class="mun-list clear-fix ">
-                <div class="mun-title">주소 <img src="	https://aviemuah.com/web/upload/mundane/grey_dot.png" class="displaynone" alt="필수"></div>
-                <div class="mun-desc">
-                    <span class="mun-formS"><input id="postcode1" name="postcode1" fw-filter="isLengthRange[1][14]" fw-label="우편번호1" fw-msg="" class="inputTypeText" placeholder="" readonly="readonly" maxlength="14" value="" type="text"></span>
-                    <a href="#none" class="btnNormal mun-underline" onclick="ZipcodeFinder.Opener.bind('postBtn', 'postcode1', 'postcode2', 'addr1', 'layer', 'ko_KR');" id="postBtn">우편번호검색</a>
-                    <div class="ePlaceholder" title="기본주소"><input id="addr1" name="addr1" fw-filter="" fw-label="주소" fw-msg="" class="inputTypeText" placeholder="기본주소" readonly="readonly" value="" type="text"></div>
-                    <div class="ePlaceholder" title="나머지주소 (선택입력가능)"><input id="addr2" name="addr2" fw-filter="" fw-label="주소" fw-msg="" class="inputTypeText" placeholder="나머지주소 (선택입력가능)" value="" type="text"></div>
+            <label for="postcode"></label>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="button" class="btn btn-link" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
                 </div>
-            </li>
-            <li class="mun-list ">
-                <div class="mun-title">일반전화 <img src="	https://aviemuah.com/web/upload/mundane/grey_dot.png" class="displaynone" alt="필수"></div>
-                <div class="mun-desc"><span class="mun-formSP"><select id="phone1" name="phone[]" fw-filter="isNumber&amp;isNumber" fw-label="일반전화" fw-alone="N" fw-msg="">
-<option value="02">02</option>
-<option value="031">031</option>
-<option value="032">032</option>
-<option value="033">033</option>
-<option value="041">041</option>
-<option value="042">042</option>
-<option value="043">043</option>
-<option value="044">044</option>
-<option value="051">051</option>
-<option value="052">052</option>
-<option value="053">053</option>
-<option value="054">054</option>
-<option value="055">055</option>
-<option value="061">061</option>
-<option value="062">062</option>
-<option value="063">063</option>
-<option value="064">064</option>
-<option value="0502">0502</option>
-<option value="0503">0503</option>
-<option value="0504">0504</option>
-<option value="0505">0505</option>
-<option value="0506">0506</option>
-<option value="0507">0507</option>
-<option value="070">070</option>
-<option value="010">010</option>
-<option value="011">011</option>
-<option value="016">016</option>
-<option value="017">017</option>
-<option value="018">018</option>
-<option value="019">019</option>
-<option value="0508">0508</option>
-</select><span class="mun-formText">-</span><input id="phone2" name="phone[]" maxlength="4" fw-filter="isNumber&amp;isNumber" fw-label="일반전화" fw-alone="N" fw-msg="" value="" type="text"><span class="mun-formText">-</span><input id="phone3" name="phone[]" maxlength="4" fw-filter="isNumber&amp;isNumber" fw-label="일반전화" fw-alone="N" fw-msg="" value="" type="text"></span></div>
-            </li>
+                <div class="col-md-6 mb-3">
+                                    <input type="text" id="sample6_postcode" placeholder="우편번호">
+                </div>
+            </div>
+            <label for="addr">주소</label>
+            <div class="mb-3">
+                <input type="text" id="sample6_address" name="addr1" placeholder="주소"><br>
+                <input type="text" id="sample6_detailAddress" name="addr2" placeholder="상세주소">
+                <input type="text" id="sample6_extraAddress" name="addr3" placeholder="참고항목">
+            </div>
+
+
             <li class="mun-list ">
                 <div class="mun-title">휴대전화 <img src="	https://aviemuah.com/web/upload/mundane/grey_dot.png" class="" alt="필수"> &nbsp;<a href="#;" id="btn_action_verify_mobile" class="mun-underline displaynone" onclick="memberVerifyMobile.editSendVerificationNumber(); return false;">인증번호받기</a>
 </div>
                 <div class="mun-desc">
-                    <span class="mun-formSP"><select id="mobile1" name="mobile[]" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="">
+                    <span class="mun-formSP"><select id="mobile1" name="phone1" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="">
 <option value="010">010</option>
 <option value="011">011</option>
 <option value="016">016</option>
 <option value="017">017</option>
 <option value="018">018</option>
 <option value="019">019</option>
-</select><span class="mun-formText">-</span><input id="mobile2" name="mobile[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" placeholder="" value="" type="text"><span class="mun-formText">-</span><input id="mobile3" name="mobile[]" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" placeholder="" value="" type="text"><span class="mun-formText">                            </span><p class="txtWarn gBlank5 displaynone" id="result_send_verify_mobile_fail"></p><span class="mun-formText">
+</select><span class="mun-formText">-</span><input id="mobile2" name="phone2" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" placeholder="" value="" type="text"><span class="mun-formText">-</span><input id="mobile3" name="phone3" maxlength="4" fw-filter="isNumber&amp;isFill" fw-label="휴대전화" fw-alone="N" fw-msg="" placeholder="" value="" type="text"><span class="mun-formText">                            </span><p class="txtWarn gBlank5 displaynone" id="result_send_verify_mobile_fail"></p><span class="mun-formText">
                         </span><ul class="txtInfo gBlank5 displaynone" id="result_send_verify_mobile_success">
 <li>인증번호가 발송되었습니다.</li>
                             <li>인증번호를 받지 못하셨다면 휴대폰 번호를 확인해 주세요.</li>
                         </ul></span>
                 </div>
-            </li>
-            <li class="mun-list clear-fix ">
-                <div class="mun-title">SMS 수신여부 <img src="	https://aviemuah.com/web/upload/mundane/grey_dot.png" alt="필수"></div>
-                <div class="mun-desc"><input id="is_sms0" name="is_sms" fw-filter="isFill" fw-label="is_sms" fw-msg="" value="T" type="radio"><label for="is_sms0">수신함</label>
-<input id="is_sms1" name="is_sms" fw-filter="isFill" fw-label="is_sms" fw-msg="" value="F" type="radio" checked="checked"><label for="is_sms1">수신안함</label></div>
-            </li>
-            <li class="mun-list clear-fix">
-                <div class="mun-title">이메일 <img src="	https://aviemuah.com/web/upload/mundane/grey_dot.png" alt="필수"></div>
-                <div class="mun-desc">
-<span class="mun-formSE"><input id="email1" name="email1" fw-filter="isFill&amp;isEmail" fw-label="이메일" fw-alone="N" fw-msg="" placeholder="" value="" type="text"></span> <span id="emailMsg"></span>
-</div>
-            </li>
-            <li class="mun-list clear-fix ">
-                <div class="mun-title">이메일 수신여부 <img src="	https://aviemuah.com/web/upload/mundane/grey_dot.png" alt="필수"></div>
-                <div class="mun-desc"><input id="is_news_mail0" name="is_news_mail" fw-filter="isFill" fw-label="is_news_mail" fw-msg="" value="T" type="radio"><label for="is_news_mail0">수신함</label>
-<input id="is_news_mail1" name="is_news_mail" fw-filter="isFill" fw-label="is_news_mail" fw-msg="" value="F" type="radio" checked="checked"><label for="is_news_mail1">수신안함</label></div>
             </li>
 
         </ul>
@@ -278,10 +234,12 @@
 </div>
 <!--<h3 class="">추가정보</h3>-->
 
+
+
 <div class="mun-button-Area">
     <a href="/myshop/index.html" class="mun-btn mun-left">cancel</a>
     <a href="#none" class="mun-btn mun-left" onclick="memberDelAction(3000, 0, -1)">회원탈퇴</a>
-    <a href="#none" class="mun-btn mun-right confirm ok" onclick="memberEditAction()">ok</a>
+    <a href="/account/change.do" class="mun-btn mun-right confirm ok" onclick="memberEditActionWithPost()">ok</a>
 </div>
 <div id="" class="layerLeave ec-base-layer ">
 
@@ -332,6 +290,101 @@
 </div>
 </div>
 <input type="hidden" name="agree_information_check_display" value="T"><input type="hidden" name="agree_consignment_check_display" value="T"></form></div>
+
+function memberEditActionWithPost() {
+    // 필요한 데이터나 파라미터 설정
+    var data = {}; // 필요한 데이터 객체 생성
+
+    // XMLHttpRequest 또는 jQuery.ajax 등을 사용하여 POST 요청 수행
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "change.do", true);
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // POST 요청이 성공적으로 완료됐을 때 수행할 동작
+            // 예: 성공 메시지를 화면에 표시하거나 리다이렉션
+        }
+    };
+    xhr.send(JSON.stringify(data));
+}
+
+
+
+ <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script>
+      function sample6_execDaumPostcode() {
+          new daum.Postcode({
+              oncomplete: function(data) {
+                  // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                  // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                  // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                  var addr = ''; // 주소 변수
+                  var extraAddr = ''; // 참고항목 변수
+
+                  //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                  if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                      addr = data.roadAddress;
+                  } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                      addr = data.jibunAddress;
+                  }
+
+                  // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                  if(data.userSelectedType === 'R'){
+                      // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                      // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                      if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                          extraAddr += data.bname;
+                      }
+                      // 건물명이 있고, 공동주택일 경우 추가한다.
+                      if(data.buildingName !== '' && data.apartment === 'Y'){
+                          extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                      }
+                      // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                      if(extraAddr !== ''){
+                          extraAddr = ' (' + extraAddr + ')';
+                      }
+                      // 조합된 참고항목을 해당 필드에 넣는다.
+                      document.getElementById("sample6_extraAddress").value = extraAddr;
+
+                  } else {
+                      document.getElementById("sample6_extraAddress").value = '';
+                  }
+
+                  // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                  document.getElementById('sample6_postcode').value = data.zonecode;
+                  document.getElementById("sample6_address").value = addr;
+                  // 커서를 상세주소 필드로 이동한다.
+                  document.getElementById("sample6_detailAddress").focus();
+              }
+          }).open();
+      }
+  </script>
+<script>
+    window.addEventListener('load', () => {
+      const forms = document.getElementsByClassName('validation-form');
+
+      Array.prototype.filter.call(forms, (form) => {
+        form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+
+</script>
+
+
+
+
+
+
+
+
 
 
 <div class="mobile-category header_layout_padding" style="padding-top: 110px;">

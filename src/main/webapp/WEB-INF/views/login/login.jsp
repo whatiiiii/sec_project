@@ -68,7 +68,14 @@
 
 <form id="member_form_7931326741" name="" action="/exec/front/Member/login/" method="post" target="_self" enctype="multipart/form-data">
     <input id="returnUrl" name="returnUrl" value="/myshop/order/list.html" type="hidden">
-    <!-- ... (나머지 input 태그들) ... -->
+    <input id="returnUrl" name="returnUrl" value="/myshop/order/list.html" type="hidden">
+    <input id="forbidIpUrl" name="forbidIpUrl" value="/index.html" type="hidden">
+    <input id="certificationUrl" name="certificationUrl" value="/intro/adult_certification.html?returnUrl=%2Fmyshop%2Forder%2Flist.html" type="hidden">
+    <input id="sIsSnsCheckid" name="sIsSnsCheckid" value="" type="hidden">
+    <input id="sProvider" name="sProvider" value="" type="hidden"><div class="xans-element- xans-member xans-member-login ec-base-box typeThin "><!--
+        $defaultReturnUrl = /index.html
+        $forbidIpUrl = member/adminFail.html
+    -->
     <div class="login">
         <h3 class="boxTitle">회원로그인</h3>
         <fieldset>
@@ -115,7 +122,7 @@
         <div class="modal-body">
                   <div class="mb-3">
                     <label for="email">이메일</label>
-                    <input type="email" class="form-control" id="email" placeholder="aaa@gmail.com" required>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="aaa@gmail.com" required>
                     <div class="invalid-feedback">
                       이메일을 입력해주세요.
                     </div>
@@ -174,9 +181,9 @@
                 </div>
 
               <div class="mb-3">
-                <input type="text" id="sample6_address" placeholder="주소"><br>
-                <input type="text" id="sample6_detailAddress" placeholder="상세주소">
-                <input type="text" id="sample6_extraAddress" placeholder="참고항목">
+                <input type="text" id="sample6_address" name="addr1" placeholder="주소"><br>
+                <input type="text" id="sample6_detailAddress" name="addr2" placeholder="상세주소">
+                <input type="text" id="sample6_extraAddress" name="addr3" placeholder="참고항목">
               </div>
 
               <div class="row">
