@@ -32,8 +32,18 @@
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="order/login.do">로그인</a>
-</li>
+<c:choose>
+    <c:when test="${empty loginOkUser}">
+        <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
+            <a href="login/login.do">로그인</a>
+        </li>
+    </c:when>
+    <c:otherwise>
+        <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
+            <a href="account/mypage.do">나의 정보</a>
+        </li>
+    </c:otherwise>
+</c:choose>
 <li class="group sub"><a href="#;" id ="s-btn" class="search-btn">검색</a></li>
 <li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
 <span class="EC-Layout-Basket-count">0</span>
