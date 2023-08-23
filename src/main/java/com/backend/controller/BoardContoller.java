@@ -358,6 +358,9 @@ public class BoardContoller {
 
         }
     }
-
+    @GetMapping("question.do")
+    public String question(){
+        return "board/question";
+    }
 
 }

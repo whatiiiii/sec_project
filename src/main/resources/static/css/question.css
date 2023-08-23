@@ -1,544 +1,173 @@
-.logo-black {
-    color: black; /* 로고 텍스트 색상 변경 */
-}
-
-.logo-black img {
-    filter: brightness(0%); /* 로고 이미지 무채색으로 변경 */
-}
-li {
-    list-style: none;
-}
-
-table {
-    width: 100%;
-    border: 0;
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-
-caption {
-    display: none;
-}
-
-h1,h3 {
-    margin: 0;
-}
-
-.ec-base-layer {
-    position: absolute;
-    z-index: 100;
-    border: 1px solid #ccc;
-    background: #fff;
-}
-
-.ec-base-layer.layer-fix {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 90%;
-    min-width: 340px;
-    max-width: 450px;
-    z-index: 1000;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-}
-
-.ec-base-layer .header {
-    padding: 17px 20px 20px;
-    color: #111;
-    background: none;
-}
-
-.ec-base-layer .header > h1,.ec-base-layer .header > h3 {
-    font-size: 13px;
-    line-height: 1.5;
-    font-weight: 400;
-}
-
-.ec-base-layer .content {
-    padding: 0 20px 20px;
-}
-
-.ec-base-layer .content p {
-    font-size: 11px;
-    text-align: center;
-    padding: 50px 0;
-}
-
-.ec-base-layer .content p.left {
-    text-align: left;
-    padding: 0px 0 10px;
-}
-
-.ec-base-layer .content * {
-    font-weight: 400;
-}
-
-.ec-base-layer .content .product-Area {
-    font-size: 0;
-}
-
-.ec-base-layer .content .product-Area .mun-list {
-    display: inline-block;
-    width: 25%;
-    padding: 0 15px 15px;
-    box-sizing: border-box;
-    vertical-align: top;
-}
-
-.ec-base-layer .content .product-Area .mun-list .box {
-    font-size: 11px;
-}
-
-.ec-base-layer .content .product-Area .mun-list .thumb {
-    width: 100%;
-}
-
-.ec-base-layer .content .product-Area .mun-list .name {
-    display: block;
-    padding-top: 10px;
-}
-
-.ec-base-layer .content .product-Area .mun-list .option {
-    display: block;
-}
-
-#reason_detail {
-    height: 150px;
-}
-
-.ec-base-layer div.ec-base-help {
-    margin-top: 0;
-}
-
-.ec-base-layer .ec-base-button {
-    padding: 9px;
-    text-align: center;
-    background: #fff;
-}
-
-.ec-base-layer .close {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 17px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
-.ec-base-layer .close a {
-    display: block;
-    height: 100%;
-}
-
-.ec-base-layer .close img {
-    display: none;
-    opacity: 0;
-}
-
-.ec-base-layer .close::before {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 10px;
-    right: 0;
-    width: 20px;
-    height: 1px;
-    background: #111;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.ec-base-layer .close::after {
-    display: block;
-    content: '';
-    position: absolute;
-    top: 10px;
-    right: 0;
-    width: 20px;
-    height: 1px;
-    background: #111;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-#popup .ec-base-layer {
-    position: relative;
-    border: 0;
-}
-
-.ec-base-layer .content > .ec-base-table table:first-child {
-    margin-top: 0;
-}
-
-.ec-base-layer .ec-base-table thead th {
-    padding: 9px 0;
-}
-
-.ec-base-layer .ec-base-table tbody th {
-    padding: 9px 0 9px 10px;
-}
-
-.ec-base-layer .ec-base-table td {
-    padding: 9px 10px;
-}
-
-.ec-base-layer .ec-base-table.typeWrite td {
-    padding: 5px 10px;
-}
-
-.ec-base-layer .ec-base-table.typeList tfoot td {
-    padding: 12px;
-}
-
-.ec-base-layer .ec-base-table.typeBorder tfoot td {
-    padding: 12px;
-}
-
-.optionModify.ec-base-layer {
-    display: none;
-    min-width: 245px;
-}
-
-.optionModify.ec-base-layer .prdInfo {
-    padding-bottom: 20px;
-}
-
-.optionModify.ec-base-layer .prdModify {
-}
-
-.optionModify.ec-base-layer .prdModify h4 {
-    display: none;
-}
-
-.optionModify.ec-base-layer .prdModify li {
-    padding: 5px 0;
-}
-
-.optionModify.ec-base-layer .prdModify li > span {
-    display: block;
-    padding-bottom: 5px;
-}
-
-#contents {
-    position: relative;
-}
-
-.check_all {
-    display: inline-block;
-    padding: 5px;
-}
-
-.xans-order-basketpackage .ec-base-table.typeList tfoot,.xans-order-basketpackage .ec-base-table thead th:first-child,.xans-order-basketpackage .ec-base-table tbody td:first-child {
-    display: none;
-}
-
-.ec-base-table.typeList .button a:last-child i {
-    display: none;
-}
-
-.mun-button-Area .mun-btn {
-    width: 215px !important;
+.ec-base-table.typeWrite {
     max-width: none !important;
-    padding: 5px 0;
 }
 
-.mun-button-Area .Npay {
-    display: none;
-    float: right;
-    width: 215px;
-    margin-top: 5px;
-    padding: 10px 0;
-    background: #00ca30;
-}
-
-.mun-button-Area .Npay img {
-    height: 20px;
-}
-
-@media only screen and ( max-width: 600px ) {
-    .mun-button-Area .mun-btn {
-        width:100% !important;
-    }
-
-    .mun-button-Area .Npay {
-        width: 100%;
-    }
-}
-
-.xans-order-basketpackage .xans-order-tabinfo {
-    margin: 0;
-}
-
-.xans-order-basketpackage .orderListArea .title {
-    display: none;
-    height: 38px;
-    margin: 20px 0 0;
-    padding: 0 0 0 9px;
-}
-
-.xans-order-basketpackage .orderListArea .title h3 {
-    color: #353535;
-    font-size: 12px;
-}
-
-.xans-order-basketpackage .orderListArea .title + table {
-    margin: 0;
-}
-
-.xans-order-basketpackage .ec-base-table tfoot td .gLeft {
-    float: left;
-    margin: 6px 0 0;
-}
-
-.xans-order-basketpackage .ec-base-table td.thumb img {
-    max-width: 80px;
-}
-
-.xans-order-basketpackage .ec-base-table td.button a {
-    width: 90px;
-    margin: 1px 0;
-}
-
-.xans-order-basketpackage .ec-base-table .name .ec-set-product-name {
-    display: block;
-}
-
-.xans-order-basketpackage .ec-base-table .engName {
-    display: block;
-}
-
-.xans-order-basketpackage .ec-base-table td div.option,.xans-order-basketpackage .ec-base-table td ul.option > li {
-    margin: 9px 0 0;
-    color: #707070;
-    line-height: 16px;
-}
-
-.xans-order-basketpackage .ec-base-table td ul.option > li > strong {
-    display: block;
-    color: #353535;
-}
-
-.xans-order-basketpackage .ec-base-table td div.option span.file a,.xans-order-basketpackage .ec-base-table td ul.option > li > span.file a {
-    margin: 0 0 0 4px;
-    padding: 0 0 0 11px;
-    color: #707070;
-    text-decoration: underline;
-    background: url("//img.echosting.cafe24.com/skin/base/common/ico_file.gif") no-repeat 0 2px;
-}
-
-.xans-order-basketpackage .xans-order-allotmentinfo {
-    padding: 10px 0 8px 10px;
-    border-bottom: 1px solid #e8e5e4;
-}
-
-.xans-order-basketpackage .xans-order-allotmentinfo .info {
-    padding: 8px 0 0 23px;
-    color: #707070;
-    font-size: 11px;
-    line-height: 1.5;
-    background: url("//img.echosting.cafe24.com/skin/base/common/ico_info.gif") no-repeat 0 8px;
-}
-
-.xans-order-basketpackage .xans-order-basketpriceinfoguide {
+.xans-board-title {
     display: none;
 }
 
-.xans-order-basketpackage .xans-order-basketpriceinfoguide p.info {
-    padding: 8px 0 8px 33px;
-    border-bottom: 1px solid #e8e5e4;
-    color: #757575;
-    line-height: 1.5;
-    font-size: 11px;
-    background: url("//img.echosting.cafe24.com/skin/base/common/ico_info.gif") no-repeat 9px 8px;
+.xans-board-title .title {
+    min-height: 30px;
+    margin: 10px 0 20px;
+    border-bottom: 1px solid #e8e8e8;
 }
 
-.xans-order-basketpackage .xans-order-selectorder {
-    display: ;
-    margin: 5px 0 0;
-}
-
-.xans-order-basketpackage .xans-order-totalorder {
-    margin: 0;
-}
-
-#NaverChk_Button {
-    padding: 10px 0;
-    display: block;
-    clear: both;
-    text-align: right;
-}
-
-.xans-order-basketpackage .ec-base-table.total table {
-    border-color: #777;
-}
-
-.xans-order-basketpackage .ec-base-table.total table th {
-    height: 39px;
-}
-
-.xans-order-basketpackage .ec-base-table.total table td {
-    height: 58px;
-}
-
-.xans-order-basketpackage .ec-base-table.total table td .box {
-    word-break: normal;
-}
-
-.xans-order-basketpackage .ec-base-table.total table td .txt23 {
-    font-size: 23px;
-    letter-spacing: -1px;
-}
-
-.xans-order-basketpackage .totalDetail {
-    display: none;
-    z-index: 100;
-    width: 300px;
-    color: #707070;
-}
-
-.xans-order-basketpackage .totalDetail .content p {
-    text-align: right;
-}
-
-.xans-order-basketpackage .totalDetail .content .ec-base-desc {
-    margin: 8px 0 0;
-    padding-top: 6px;
-    border-top: 1px dotted #b0b1b3;
-}
-
-.xans-order-basketpackage .optionModify {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 90%;
-    min-width: 340px;
-    max-width: 450px;
-    transform: translate(-50%,-50%);
-}
-
-.xans-order-basketpackage .optionModify .prdInfo {
-    margin: 0 0 10px;
-    padding: 0 0 10px;
-    line-height: 1.5;
-}
-
-.xans-order-basketpackage .optionModify .prdModify h4 {
-    color: #353535;
-    font-size: 12px;
-}
-
-.xans-order-basketpackage .optionModify .prdModify li {
-    padding: 6px 0 0;
-}
-
-.xans-order-basketpackage .optionModify .prdModify li:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.xans-order-basketpackage .optionModify .prdModify li span {
-    float: left;
-    width: 20%;
-    margin-top: 6px;
-}
-
-.xans-order-basketpackage .optionModify .prdModify li select,.xans-order-basketpackage .optionModify .prdModify li input {
-    float: right;
-    width: 80%;
-}
-
-.xans-order-basketpackage td .box.shipping {
-    line-height: 1.3em;
-}
-
-.xans-order-basketpackage td .box.shipping .shippingArea {
-    font-size: 12px;
-    line-height: 1.3em;
-}
-
-.xans-order-basketpackage .shippingFee {
-    position: relative;
+.xans-board-title .title h2 {
     display: inline-block;
-    vertical-align: middle;
-    text-align: left;
+    padding: 0 0 0 12px;
+    color: #2e2e2e;
+    font-size: 16px;
+    *display: inline;
+    *zoom:1;background: url("//img.echosting.cafe24.com/skin/base/layout/ico_heading.gif") 0 50% no-repeat;
 }
 
-.xans-order-basketpackage .shippingFee .ec-base-tooltip {
-    display: block;
-    margin: 0 0 0 -180px;
-    width: 360px;
-}
-
-.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table {
-    border-color: #d7d5d5;
-}
-
-.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table th {
-    width: 40px;
-}
-
-.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table th,.xans-order-basketpackage .ec-base-table.total .ec-base-tooltip table td {
-    padding: 7px 10px 8px 10px;
-    height: auto;
-    font-size: 12px;
-    line-height: 1.5;
-    text-align: left;
-}
-
-.xans-order-dcinfo {
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-.xans-order-dcinfo h3 {
-    display: none;
-    font-size: 12px;
-}
-
-.xans-order-dcinfo .member {
-    display: none;
-}
-
-.xans-order-dcinfo .description .mileage {
-    margin: 6px 0 0;
-    padding: 10px 0 0;
+.xans-board-title .title p {
+    display: inline-block;
+    margin: 0 0 0 6px;
+    padding: 0 0 0 10px;
+    color: #939393;
+    vertical-align: bottom;
+    background: url("//img.echosting.cafe24.com/skin/base/common/ico_bar.gif") no-repeat 0 0;
+    *display: inline;
     *zoom:1;}
 
-.xans-order-dcinfo .description .mileage:after {
-    content: "";
-    display: block;
-    clear: both;
+.xans-board-title p.imgArea {
+    margin: 0 0 20px;
 }
 
-.xans-order-dcinfo .description .displaynone + .mileage {
-    margin: 0;
+.xans-board-read .ec-base-table .etcArea {
+    display: none;
+}
+
+.xans-board-read .ec-base-table .etcArea li {
+    display: inline-block;
     padding: 0;
-    border: 0;
+    vertical-align: top;
+    line-height: 22px;
 }
 
-.xans-order-dcinfo .description .mileage li {
-    float: left;
-    margin: 0 40px 0 0;
-}
-
-.xans-order-dcinfo .description .mileage li a {
+.xans-board-read .ec-base-table .etcArea li a {
     text-decoration: none;
 }
 
-.xans-order-dcinfo .description .mileage li strong {
+.xans-board-read .ec-base-table .detail {
+    min-height: 100px;
+    padding: 30px 0px;
+    border: 1px solid #111;
+    border-left: none;
+    border-right: none;
+    word-break: break-all;
+    line-height: normal;
+}
+
+.xans-board-read .ec-base-table .detail ol,.xans-board-read .ec-base-table .detail ul {
+    margin: 15px 0;
+    padding: 0 0 0 40px;
+}
+
+.xans-board-read .ec-base-table .detail ol li {
+    list-style: decimal;
+}
+
+.xans-board-read .ec-base-table .detail ul li {
+    list-style: disc;
+}
+
+.xans-board-read .ec-base-table tr.attach a {
+    padding: 0 0 0 12px;
+    background: url("//img.echosting.cafe24.com/skin/base/common/ico_file.gif") no-repeat 0 0;
+    color: #8f8f8f;
+}
+
+.xans-board-read .ec-base-table tr.attach a:hover {
+    text-decoration: underline;
+}
+
+.xans-board-read {
+    margin: 50px 0 0;
+}
+
+.xans-board-read .ec-base-table .writer {
+    display: block;
+    padding-top: 3px;
+    font-size: 10px;
+    color: #aaa;
+}
+
+.xans-board-read .ec-base-table .writer a {
+    color: #aaa;
+}
+
+.xans-board-read .ec-base-button {
+    margin: 10px 0 40px;
+}
+
+.xans-board-product.ec-base-box.typeProduct {
+    margin: 0 0 20px;
+}
+
+.xans-board-product .information .icon_img {
+    margin: 0 1px 0 0;
+}
+
+.xans-board-product .information h3 {
+    margin: 17px 0 5px;
+    font-size: 14px;
+    color: #2e2e2e;
+}
+
+.xans-board-product .information .price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #008bcc;
+}
+
+.xans-board-product .information .button {
+    margin: 19px 0 0 0;
+    padding: 13px 0 0 0;
+    border-top: 1px solid #e8e8e8;
+}
+
+.xans-board-movement {
+    margin: 20px 0;
+}
+
+.xans-board-movement ul {
+}
+
+.xans-board-movement ul li {
+}
+
+.xans-board-movement ul li strong {
+    color: #111;
+    font-weight: normal;
+}
+
+.xans-board-movement ul li a {
+    vertical-align: ;
+}
+
+.xans-board-listsgroup {
+    display: none;
+    margin: 20px 0;
+}
+
+.xans-board-listsgroup h3 {
+    margin: 0 0 10px;
+    font-size: 12px;
+    color: #353535;
+}
+
+.xans-board-function {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+    color: #757575;
+    font-size: 12px;
+}
+
+.xans-board-function p {
 }
 
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');.placeholder {
@@ -5424,6 +5053,231 @@ div.ec-base-help ul li {
     height: 2px;
     margin: -2px 0 0 0;
     background: #383838;
+}
+
+li {
+    list-style: none;
+}
+
+table {
+    width: 100%;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+caption {
+    display: none;
+}
+
+h1,h3 {
+    margin: 0;
+}
+
+.ec-base-layer {
+    position: absolute;
+    z-index: 100;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.ec-base-layer.layer-fix {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    min-width: 340px;
+    max-width: 450px;
+    z-index: 1000;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.ec-base-layer .header {
+    padding: 17px 20px 20px;
+    color: #111;
+    background: none;
+}
+
+.ec-base-layer .header > h1,.ec-base-layer .header > h3 {
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.ec-base-layer .content {
+    padding: 0 20px 20px;
+}
+
+.ec-base-layer .content p {
+    font-size: 11px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.ec-base-layer .content p.left {
+    text-align: left;
+    padding: 0px 0 10px;
+}
+
+.ec-base-layer .content * {
+    font-weight: 400;
+}
+
+.ec-base-layer .content .product-Area {
+    font-size: 0;
+}
+
+.ec-base-layer .content .product-Area .mun-list {
+    display: inline-block;
+    width: 25%;
+    padding: 0 15px 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.ec-base-layer .content .product-Area .mun-list .box {
+    font-size: 11px;
+}
+
+.ec-base-layer .content .product-Area .mun-list .thumb {
+    width: 100%;
+}
+
+.ec-base-layer .content .product-Area .mun-list .name {
+    display: block;
+    padding-top: 10px;
+}
+
+.ec-base-layer .content .product-Area .mun-list .option {
+    display: block;
+}
+
+#reason_detail {
+    height: 150px;
+}
+
+.ec-base-layer div.ec-base-help {
+    margin-top: 0;
+}
+
+.ec-base-layer .ec-base-button {
+    padding: 9px;
+    text-align: center;
+    background: #fff;
+}
+
+.ec-base-layer .close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 17px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.ec-base-layer .close a {
+    display: block;
+    height: 100%;
+}
+
+.ec-base-layer .close img {
+    display: none;
+    opacity: 0;
+}
+
+.ec-base-layer .close::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 20px;
+    height: 1px;
+    background: #111;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.ec-base-layer .close::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 20px;
+    height: 1px;
+    background: #111;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#popup .ec-base-layer {
+    position: relative;
+    border: 0;
+}
+
+.ec-base-layer .content > .ec-base-table table:first-child {
+    margin-top: 0;
+}
+
+.ec-base-layer .ec-base-table thead th {
+    padding: 9px 0;
+}
+
+.ec-base-layer .ec-base-table tbody th {
+    padding: 9px 0 9px 10px;
+}
+
+.ec-base-layer .ec-base-table td {
+    padding: 9px 10px;
+}
+
+.ec-base-layer .ec-base-table.typeWrite td {
+    padding: 5px 10px;
+}
+
+.ec-base-layer .ec-base-table.typeList tfoot td {
+    padding: 12px;
+}
+
+.ec-base-layer .ec-base-table.typeBorder tfoot td {
+    padding: 12px;
+}
+
+.optionModify.ec-base-layer {
+    display: none;
+    min-width: 245px;
+}
+
+.optionModify.ec-base-layer .prdInfo {
+    padding-bottom: 20px;
+}
+
+.optionModify.ec-base-layer .prdModify {
+}
+
+.optionModify.ec-base-layer .prdModify h4 {
+    display: none;
+}
+
+.optionModify.ec-base-layer .prdModify li {
+    padding: 5px 0;
+}
+
+.optionModify.ec-base-layer .prdModify li > span {
+    display: block;
+    padding-bottom: 5px;
 }
 
 :root {

@@ -19,20 +19,14 @@ public class Cart {
     private int seq;
     @Column(name = "c_quan")
     private int quan;
-    /*
-   @Column(name = "s_name")
-    private String sname;
-    @Column(name = "g_code")
-    private int gcode;
-*/
+
     @ManyToOne
     @JoinColumns({
-            @JoinColumn(name = "s_name", referencedColumnName = "s_name"),
-            @JoinColumn(name = "g_code", referencedColumnName = "g_code")
+        @JoinColumn(name = "s_name", referencedColumnName = "s_name"),
+        @JoinColumn(name = "g_code", referencedColumnName = "g_code")
     })
 
-
-    private Goods goods; // 컬렉션 타입이 아닌 단일 엔티티 필드
+    private Goods goods;
 
     public Goods getGoods(){
         return goods;
@@ -42,20 +36,19 @@ public class Cart {
     @Column(name = "m_email")
     private String email;
 
+    @Column(name = "c_check")
+    private String check;
 
     @Builder
-    public Cart(int quan, String email, Goods goods)
-    {
+    public Cart(int quan, String email, Goods goods, String check) {
         this.quan = quan;
         this.email = email;
         this.goods = goods;
+        this.check = check;
     }
 
     public Cart(int seq, String email){
         this.seq =seq;
         this.email =email;
-
     }
-
-
 }

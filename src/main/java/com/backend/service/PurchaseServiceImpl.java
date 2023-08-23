@@ -26,4 +26,5 @@ public class PurchaseServiceImpl implements PurchaseService {
         List<Purchase> list = repository.findByEmail(email);
         return list;
     }
+
 }
