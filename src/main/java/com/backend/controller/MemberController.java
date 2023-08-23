@@ -33,6 +33,7 @@ public class MemberController {
             Member loginOkUser = memberService.getLogin(member.getEmail());
             session.setAttribute("loginOkUser", loginOkUser.getEmail());
         }
+
         model.addAttribute("result", result);
 
         return "login/msg";

@@ -5,4 +5,6 @@ import com.backend.dto.SignUpDto;
 
 public interface SignUpService {
     SignUp insertS(SignUp signUp, SignUpDto signUpDto);
+
 }
+

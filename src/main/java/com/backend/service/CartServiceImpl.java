@@ -28,6 +28,18 @@ public class CartServiceImpl implements CartService {
         List<Cart> list = cartrepository.findByEmail(email);
         return list;
     }
+    @Override
+    public Cart findByCseq(int seq) {
+        Cart cart = cartrepository.getBySeq(seq);
+        return cart;
+    }
 
+    @Override
+    public Cart updateS(Cart cart, int quan){
+        Cart cart1 = cartrepository.getReferenceById(cart.getSeq());
+        cart1.setQuan(quan);
+        Cart cart2 = cartrepository.save(cart1);
+        return cart2;
+    }
 
 }

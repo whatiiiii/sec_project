@@ -93,14 +93,14 @@ $login_page_url = /member/login.html
 $deny_access_url = /index.html
 -->
  <c:forEach items = "${listResult.list.content}" var ="board">
-  <c:if test="${board.bcgcode == 2}">
+   <c:if test="${board.bcgcode == 1}">
 <li class="mun-list clear-fix xans-record-">
                 <div class="number">89325<br></div>
                 <div class="thumb">
                     <a href="/product/하트-크로셰-니트-재킷-아이보리/1219/"><img src="/img/${board.gname}.jpg"  border="0" alt=""></a>
                 </div>
                 <div class="info">
-                    <div class="mun-name"> <a href="../article/article.do/board_no=${board.seq}" style="color:#555555;">${board.subject}</a> <span class="txtEm"></span>
+                    <div class="mun-name"> <a href="../../article/article.do/board_no=${board.seq}" style="color:#555555;">${board.subject}</a> <span class="txtEm"></span>
 </div>
                     <div class="mun-writer-date">${board.email} <span class="">| ${board.rdate}</span>
 </div>
@@ -113,8 +113,7 @@ $deny_access_url = /index.html
 </div>
 <p class="xans-element- xans-board xans-board-empty-4 xans-board-empty xans-board-4 mun-empty message displaynone "></p>
 <div class="clear-fix board-footer">
-        <form id="boardSearchForm" name="" action="/search/review_search.do" method="get" target="_top" enctype="multipart/form-data">
-
+        <form id="boardSearchForm" name="" action="/search/review_searchReview.do" method="get" target="_top" enctype="multipart/form-data">
 <div class="xans-element- xans-board xans-board-search-4 xans-board-search xans-board-4 board-footer-left "><fieldset class="boardSearch">
 
 <legend>게시물 검색</legend>
@@ -128,18 +127,40 @@ $deny_access_url = /index.html
             </fieldset>
 </div>
 </form>
-         <div class="xans-element- xans-board xans-board-buttonlist-4 xans-board-buttonlist xans-board-4  mun-button-Area board-footer-right "><a href="/board/write.do" class="mun-btn mun-right confirm ">write</a></div>
+         <div class="xans-element- xans-board xans-board-buttonlist-4 xans-board-buttonlist xans-board-4  mun-button-Area board-footer-right "><a href="/board/review_write.do" class="mun-btn mun-right confirm ">write</a></div>
     </div>
 </div>
 
 <div class="xans-element- xans-board xans-board-paging-4 xans-board-paging xans-board-4 ec-base-paginate"><a href="?board_no=6&amp;page=1"><img src="/web/upload/mundane/i_arrival_prev.png" alt="이전 페이지"></a>
 <ol>
+
+<c:forEach items="${listResult.list.content}" var="board" varStatus="loop">
+    <c:if test="${loop.index eq 0}">
+        <c:set var="gcode" value="${board.gcode}" />
+    </c:if>
+</c:forEach>
+
  <c:forEach begin="0" end="${listResult.totalPageCount}" var="i">
-        <li class="xans-record-"><a href="content.do?page=${i}" class="other">${i+1}</a></li>
+        <li class="xans-record-"><a href="../review.do/goods_name=${gcode}?page=${i}" class="other">${i+1}</a></li>
 </c:forEach>
     </ol>
 <a href="?board_no=6&amp;page=2"><img src="/web/upload/mundane/i_arrival_next.png" alt="다음 페이지"></a>
 </div>
+
+<!--
+                <c:forEach begin="0" end="${listResult.totalPageCount}" var="i">
+                    <a href="list.do?page=${i}">
+               			<c:choose>
+               			    <c:when test="${i==listResult.page}">
+                            	<strong>${i+1}</strong>
+                            </c:when>
+                            <c:otherwise>
+                                ${i+1}
+                            </c:otherwise>
+            			</c:choose>
+                	</a>&nbsp;
+                </c:forEach>
+-->
 
 
 

@@ -18,4 +18,18 @@ public interface BoardRepository extends JpaRepository<Board, Integer> {
      List<Board> findAll();
 
     Page<Board> findByOrderBySeqDesc(Pageable pageable);
+
+    Page<Board> findByGcodeAndBcgcode(Pageable pageable, int gcode, int bcgcode);
+
+    Page<Board> findByGcode(Pageable pageable, int gcode);
+
+    List<Board> findBySeqAndBcgcode(int seq, int bcgcode);
+
+    Page<Board> findBySubjectContainingIgnoreCase(String subject, Pageable pageable);
+
+    Page<Board> findByEmailContainingIgnoreCase(String email, Pageable pageable);
+
+    Page<Board> findByGnameContainingIgnoreCase(String gname, Pageable pageable);
+
+    Page<Board> findByBcgcode(Pageable pageable, int bcgcode);
 }

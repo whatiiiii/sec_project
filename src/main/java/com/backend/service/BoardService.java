@@ -12,5 +12,9 @@ public interface BoardService {
    List<Board> findBySeq(int seq);
 
     Board getBySeq(int seq);
+
+   // List<Board> findByGcode(int gcode);
+
+    List<Board> findBySeqAndBcgcode(int seq, int bcgcode);
 }
 

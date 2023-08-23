@@ -25,4 +25,5 @@
 
         List<Goods> getByGname(String gname);
 
+        List<Goods> findDistinctByGnameContaining(String gname);
     }

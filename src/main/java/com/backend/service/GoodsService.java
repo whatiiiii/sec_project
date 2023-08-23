@@ -20,5 +20,4 @@ public interface GoodsService {
 
     List<Goods> getByGname(String gname);
 
-
 }

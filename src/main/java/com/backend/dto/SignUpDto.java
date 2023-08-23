@@ -1,6 +1,7 @@
 package com.backend.dto;
 
-import com.backend.domain.SignUp;
+
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -26,4 +27,3 @@ public class SignUpDto {
     }
 
 }
-

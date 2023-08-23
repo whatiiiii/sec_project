@@ -33,8 +33,6 @@ public class Purchase {
     @CreationTimestamp
     private Date pdate;
 
-    @Column(name = "p_price")
-    private int price;
     @Column(name = "p_situ")
     private String situ;
     @ManyToOne(targetEntity = Cart.class, fetch = FetchType.LAZY)
@@ -48,8 +46,7 @@ public class Purchase {
     private String email;
 
     @Builder
-    public Purchase(int price, String situ, Cart cart, String email){
-        this.price = price;
+    public Purchase(String situ, Cart cart, String email){
         this.situ = situ;
         this.email = email;
         this.cart = cart;

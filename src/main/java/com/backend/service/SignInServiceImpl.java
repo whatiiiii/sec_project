@@ -24,6 +24,7 @@ public class SignInServiceImpl implements SignInService {
 
     @Override
     public SignIn selectS(String email){
+        System.out.println("@selectS: " + email);
         return repository.findByEmail(email);
     }
 

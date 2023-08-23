@@ -3,6 +3,9 @@ package com.backend.controller;
 import com.backend.domain.SignIn;
 import com.backend.dto.SignInDto;
 import com.backend.service.SignInService;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,8 +27,14 @@ public class SignInController {
     }
 
     @GetMapping("change.do")
-    public String update(Model model, @RequestParam("email") String email){
+    public String update(Model model, HttpServletRequest request){
+
+        HttpSession session = request.getSession();
+        String email = session.getAttribute("loginOkUser").toString();
+
         SignIn signIn = service.selectS(email);
+        System.err.println("signIn: "+signIn);
+
         model.addAttribute("signIn", signIn);
         return  "/account/change";
     }
@@ -37,3 +46,4 @@ public class SignInController {
     }
 
 }
+
