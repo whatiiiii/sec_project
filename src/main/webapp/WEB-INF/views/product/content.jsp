@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="../../css/content.css" rel ="stylesheet"/>
+
 </head>
 
 <body class="Mtype_layout">        <div id="loading" style="display: none;"></div>
@@ -28,11 +29,10 @@
     &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
+<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/login/login.do">로그인</a>
 </li>
 <li class="group sub"><a href="#;" id="s-btn" class="search-btn">검색</a></li>
 <li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
-<span class="EC-Layout-Basket-count">0</span>
 )
 </span>
 </a></li>
@@ -53,7 +53,7 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
 <div class="e_WF_5_1">
     <div id="product_category">
         <div class="cover">
-          <div class="category-title">상의</div>
+          <div class="category-title" id="category-title">상의</div>
             <div class="category-sub">
                 <div id="category">
 <div class="category-cover mun_select">
@@ -63,39 +63,51 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
             <div class="middle-category">
                 <ul>
                 <!-- 진짜 카테고리 -->
-                    <li class="group mun-select">
+                        <li class="group" id="select_top">
                         <a href="/product/content.do/cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/list.html?cate_no=89" class="mun-select">상의</a>
                         <div class="sub-category">
                             <ul><li><a href="/product/content.do/goods_no=2011&2019">티셔츠</a></li>
                                 <li><a href="/product/content.do/goods_no=2021&2026">탑/바디슈트</a></li>
                                 <li><a href="/product/content.do/goods_no=2031&2036">셔츠/블라우스</a></li>
-                            </ul></div>
+                            </ul>
+                            </div>
                     </li>
-                    <li class="group">
+                    <li class="group" id="select_pants">
                         <a href="/product/content.do/cate_no=91" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" title="바지" button_text="바로 가기" button_link="/product/list.html?cate_no=91">바지</a>
                         <div class="sub-category">
-                            <ul><li><a href="/product/content.do/goods_no=4011">긴바지</a></li>
-                                <li><a href="/product/content.do/cate_no=912">반바지</a></li>
-                                <li><a href="/product/content.do/cate_no=913">스커트</a></li>
+                            <ul><li><a href="/product/content.do/goods_no=4011&4019">긴바지</a></li>
+                                <li><a href="/product/content.do/goods_no=4021&4026">반바지</a></li>
+                                <li><a href="/product/content.do/goods_no=4031&4036">스커트</a></li>
                             </ul></div>
                     </li>
-                    <li class="group"><a href="/product/content.do/cate_no=94" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" title="드레스" button_text="바로가기" button_link="/product/list.html?cate_no=94">드레스</a></li>
-                    <li class="group"><a href="/product/content.do/cate_no=95?free=FREE" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" title="가방" button_text="바로 가기" button_link="/product/list.html?cate_no=95">가방</a></li>
-                    <li class="group"><a href="/product/content.do/cate_no=161?shoe=38" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" title="신발" button_text="바로 가기" button_link="/product/list.html?cate_no=161">신발</a></li>
-                    <li class="group"><a href="/product/content.do/cate_no=97free=FREE" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="악세서리" button_text="바로 가기" button_link="/product/list.html?cate_no=160">악세서리</a>
+                    <li class="group" id="select_dress"><a href="/product/content.do/cate_no=94" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" title="드레스" button_text="바로가기" button_link="/product/list.html?cate_no=94">드레스</a></li>
+                    <li class="group" id="select_bag"><a href="/product/content.do/cate_no=95?free=FREE" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/bagggg.jpg" title="가방" button_text="바로 가기" button_link="/product/list.html?cate_no=95">가방</a>
                         <div class="sub-category">
-                            <ul><li><a href="/product/list.html?cate_no=240">벨트</a></li>
-                                <li><a href="/product/list.html?cate_no=241">브레이슬릿/네클리스</a></li>
-                                <li><a href="/product/list.html?cate_no=96">etc..</a></li>
+                            <ul><li><a href="/product/content.do/goods_no=8011&8016?free=FREE">크로스백</a></li>
+                                <li><a href="/product/content.do/goods_no=8021&8028?free=FREE">숄더백</a></li>
+                                <li><a href="/product/content.do/goods_no=8031&8036?free=FREE">미니백</a></li>
+                            </ul></div>
+                    </li>
+                    <li class="group" id="select_shoes"><a href="/product/content.do/cate_no=161?shoe=38" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" title="신발" button_text="바로 가기" button_link="/product/list.html?cate_no=161">신발</a>
+                        <div class="sub-category">
+                            <ul><li><a href="/product/content.do/goods_no=6011&6016?shoe=38">샌들</a></li>
+                                <li><a href="/product/content.do/goods_no=6021&6026?shoe=38">부츠</a></li>
+                                <li><a href="/product/content.do/goods_no=6031&6036?shoe=38">하이힐</a></li>
+                            </ul></div>
+                    </li>
+                    <li class="group" id="select_acc"><a href="/product/content.do/cate_no=97free=FREE" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/homee.jpg" title="악세서리" button_text="바로 가기" button_link="/product/list.html?cate_no=160">악세서리</a>
+                        <div class="sub-category">
+                            <ul><li><a href="/product/content.do/goods_no=10011&10016?free=FREE">벨트</a></li>
+                                <li><a href="/product/content.do/goods_no=10021&10028?free=FREE">브레이슬릿/네클리스</a></li>
+                                <li><a href="/product/content.do/goods_no=10031&10036?free=FREE">etc..</a></li>
                             </ul></div>
                     </li>
               </ul>
         </li>
     </ul><ul>
         <li class="group"><a href="/menu/boardIntro.do">브랜드 소개</a></li>
-        <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
-        <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
-        <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>
+        <li class="group"><a href="/menu/info.do">정보</a></li>
+        <li class="group"><a href="/board/content.do">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
     <div class="image-list" id="image-list-top" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg"><a href="/product/list.html?cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt=""><span class="title">상의</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-pants" data_check="바지/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg"><a href="/product/list.html?cate_no=91"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" alt=""><span class="title">바지</span><span>바로 가기</span></a></div>
@@ -108,15 +120,9 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
         </div>
     </div>
 
-    <div class="xans-element- xans-product xans-product-listnormal ec-base-product fade"><!--
-        $count = 12
-        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
-        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
-        $moreview = yes
-        $cache = yes
-        $basket_result = /product/add_basket.html
-        $basket_option = /product/basket_option.html
-        -->
+
+
+    <div class="xans-element- xans-product xans-product-listnormal ec-base-product fade">
 <div id="grid" class="grid1-2-3">
             <ul>
             <c:forEach items = "${goods}" var ="goods">
@@ -137,6 +143,68 @@ html body #contents { width:100%; max-width:none; margin:0 auto; padding:0; }
                         </div>
                     </div>
                 </li>
+
+
+
+   <script>
+       // ** 주소 값 받아옴
+
+       let goods_no = '${goods.cgcode}';
+
+         console.log("goods_no: " + goods_no);
+
+
+
+     // goods_no가 91인 경우 클래스 변경
+      if (goods_no === '91') {
+        const listItem = document.getElementById('select_pants');
+         let value =  document.getElementById('category-title');
+         value.textContent = '하의';
+        listItem.classList.add('mun-select');
+    }
+
+    if (goods_no === '89') {
+            const listItem = document.getElementById('select_top');
+            console.log("listItem: "+listItem);
+           let value =  document.getElementById('category-title');
+           value.textContent = '상의';
+            listItem.classList.add('mun-select');
+        }
+
+        if (goods_no === '95') {
+                const listItem = document.getElementById('select_bag');
+               let value =  document.getElementById('category-title');
+               value.textContent = '가방';
+                listItem.classList.add('mun-select');
+            }
+
+        if (goods_no === '161') {
+                const listItem = document.getElementById('select_shoes');
+               let value =  document.getElementById('category-title');
+               value.textContent = '신발';
+                listItem.classList.add('mun-select');
+            }
+
+         if (goods_no === '97') {
+                 const listItem = document.getElementById('select_acc');
+                 let value =  document.getElementById('category-title');
+                 value.textContent = '악세사리';
+                 listItem.classList.add('mun-select');
+             }
+
+         if (goods_no === '94') {
+                 const listItem = document.getElementById('select_dress');
+                 let value =  document.getElementById('category-title');
+                 value.textContent = '드레스';
+                 listItem.classList.add('mun-select');
+             }
+
+   </script>
+
+
+
+
+
 <script>
 var productItems = document.querySelectorAll('.mun-prd-list');
 
@@ -200,7 +268,6 @@ productItems.forEach(function(item) {
     </ul><ul>
         <li class="group"><a href="/menu/boardIntro.do">브랜드 소개</a></li>
         <li class="group"><a href="/mundane/html/sub_page/info.html">정보</a></li>
-        <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
         <li class="group"><a href="/board/product/list.html?board_no=6">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
     <div class="image-list" id="image-list-top" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg"><a href="/product/list.html?cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt=""><span class="title">상의</span><span>바로 가기</span></a></div>
@@ -210,20 +277,12 @@ productItems.forEach(function(item) {
     <div class="image-list" id="image-list-shoes" data_check="신발/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg"><a href="/product/list.html?cate_no=161"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2022%20WINTER/SHOES.jpg" alt=""><span class="title">신발</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-accessory" data_check="악세서리/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg"><a href="/product/list.html?cate_no=253"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/SALE/87c24f5c2c8bd3ca49fc792bbbadbb32.jpeg" alt=""><span class="title">악세서리</span><span>바로 가기</span></a></div></li></ul></div>
 </div>
-        <div class="sns-Area M_mobile">
-            <a href="http://instagram.com/aviemuah" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
-<a href="http://facebook.com/" target="_blank" class="M_facebookLink off">facebook</a>
-<a href="http://twitter.com/" target="_blank" class="M_twitterLink off">twitter</a>
-<a href="http://blog.naver.com/" target="_blank" class="M_blogLink off">blog</a>
-<a href="http://pinterest.com/" target="_blank" class="M_pinterestLink off">pinterest</a>
-<a href="http://kakao.com/" target="_blank" class="M_kakaoLink off">kakao</a>
-        </div>
         <div class="multi-Area M_mobile">
             <li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
+<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/login/login.do">로그인</a>
 </li>
 <li class="group sub"><a href="#;" id="s-btn" class="search-btn">검색</a></li>
 <li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
@@ -242,8 +301,7 @@ productItems.forEach(function(item) {
 <li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
 </li>
 <li class="group sub"><a href="#;" id="s-btn" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
-<span class="EC-Layout-Basket-count">0</span>
+<li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
 )
 </span>
 </a></li>
@@ -252,32 +310,27 @@ productItems.forEach(function(item) {
 </div>
 </div>
     <div id="Mpage_footer">
-<div id="footer" class="xans-element- xans-layout xans-layout-footer "><div class="cover">
-        <div class="section1">
-            <span class="M_mall_name" style="text-transform:none;">Àvie muah</span><br><span class="M_email mun-lowercase">info@aviemuah.com</span><br><span class="M_tel">1577-0793</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (2PM – 6PM)</span><br><span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
-        </div>
-        <div class="section2">
-            owner - <span class="M_ceo">kang min kyung</span><br>permit number. <span class="M_regno_2">제2020-서울용산-0912호</span><br>business number. <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=488-81-01678" class="M_regno_1" target="_blank">488-81-01678</a>
-        </div>
-        <div class="section3">
-            address<br><span class="M_Addr">04048 서울특별시 마포구 양화로 6길 88 (합정동) 주식회사 아비에무아</span>
-        </div>
-        <div class="section4">
+    <div id="footer" class="xans-element- xans-layout xans-layout-footer "><div class="cover">
+            <div class="section1">
+                <span class="M_mall_name" style="text-transform:none;">Àvie muah</span><br><span class="M_email mun-lowercase">dhkim310@naver.com</span><br><span class="M_tel">010-5390-0372</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (09:30 – 18:30)</span><br><span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
+            </div>
+            <div class="section2">
+                owner - <span class="M_ceo">Kim Hyun Ji</span><br>permit number. <span class="M_regno_2">제2020-서울금천-0912호</span><br>business number. <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=488-81-01678" class="M_regno_1" target="_blank">488-81-01678</a>
+            </div>
+            <div class="section3">
+                address<br><span class="M_Addr">08505 서울 금천구 가산디지털2로 101 B동 306호</span>
+            </div>
+            <div class="section4">
             <div class="sns-Area">
-<a href="http://instagram.com/aviemuah" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
-<a href="http://facebook.com/" target="_blank" class="M_facebookLink off">facebook</a>
-<a href="http://twitter.com/" target="_blank" class="M_twitterLink off">twitter</a>
-<a href="http://blog.naver.com/" target="_blank" class="M_blogLink off">blog</a>
-<a href="http://pinterest.com/" target="_blank" class="M_pinterestLink off">pinterest</a>
-<a href="http://kakao.com/" target="_blank" class="M_kakaoLink off">kakao</a>
-</div>
-        </div>
-        <div class="section5">
-            <a href="/member/agreement.html">Terms &amp; Conditions</a><br><a href="/shopinfo/guide.html">Guide</a><br><a href="/member/privacy.html">Policy Privacy</a><br><br>©<span class="M_mall_name">Àvie muah</span>  <a href="http://studiomundane.kr" target="_blank" style="color:#ddd;">Cafe24 / Mundane</a>
+            <a href="http://instagram.com/dhkim310" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
+            </div>
+            </div>
+            <div class="section5">
+                <a href="#">Terms &amp; Conditions</a><br><a href="#">Guide</a><br><a href="#">Policy Privacy</a><br><br>©<span class="M_mall_name">Àvie muah</span>
+            </div>
         </div>
     </div>
-</div>
-</div>
+    </div>
 
 <div class="search_menu search_fullpage">
 <div class="search_btn search-background"><a href="#;"></a></div>

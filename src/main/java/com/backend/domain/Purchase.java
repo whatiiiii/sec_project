@@ -1,6 +1,7 @@
 package com.backend.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -37,6 +38,7 @@ public class Purchase {
     private String situ;
     @ManyToOne(targetEntity = Cart.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "c_seq")
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Cart cart;
 
     public Cart getCart(){

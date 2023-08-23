@@ -27,7 +27,6 @@ public class PurchaseController {
         HttpSession session = request.getSession();
         String email = session.getAttribute("loginOkUser").toString();
         String name = request.getParameter("name");
-      //  String size = request.getParameter("size");
         String quanString = request.getParameter("quan");
         int quan = Integer.parseInt(quanString);
         String seqString = request.getParameter("seq");
@@ -36,7 +35,6 @@ public class PurchaseController {
         System.err.println("name: "+name);
         System.err.println("quan: "+quan);
         System.err.println("seq: "+seq);
-
 
         Cart cart = cartService.findByCseq(seq);
         System.err.println("cart: "+cart);
@@ -55,8 +53,8 @@ public class PurchaseController {
         System.err.println("purchaseList리스트: " + purchaseList);
 
         model.addAttribute("purchase", purchaseList);
-        return purchaseList;
 
+        return purchaseList;
     }
     @GetMapping("purchase.do")
     public String getPara(Model model, HttpSession session){
@@ -65,8 +63,8 @@ public class PurchaseController {
             List<Purchase> purchaseList = purchaseService.findByEmail(email);
             model.addAttribute("purchase", purchaseList);
         }
+
         return "purchase/purchase";
     }
-
 
 }

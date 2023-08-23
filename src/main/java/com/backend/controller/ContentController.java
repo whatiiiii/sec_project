@@ -63,8 +63,16 @@ public class ContentController {
     }
 
     @GetMapping("content.do/goods_no={startGcode}&{endGcode}")
-    public String goods(@PathVariable int startGcode, @PathVariable int endGcode, Model model) {
-        List<Goods> goods = goodsService.findDistinctByGcodeBetweenAndSname(startGcode, endGcode, "S");
+    public String goods(@PathVariable int startGcode, @PathVariable int endGcode, @RequestParam(required = false) String shoe,
+        @RequestParam(required = false) String free, Model model) {
+        List<Goods> goods;
+        if (shoe != null){
+            goods = goodsService.findDistinctByGcodeBetweenAndSname(startGcode, endGcode, "38");
+        } else if (free !=null) {
+            goods = goodsService.findDistinctByGcodeBetweenAndSname(startGcode, endGcode, "FREE");
+        } else{
+            goods = goodsService.findDistinctByGcodeBetweenAndSname(startGcode, endGcode, "S");
+        }
         model.addAttribute("goods", goods);
         System.out.println(goods);
         return "/product/content";
