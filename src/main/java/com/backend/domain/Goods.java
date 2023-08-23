@@ -39,4 +39,5 @@ public class Goods {
         this.cgcode =cgcode;
     }
 
+
 }

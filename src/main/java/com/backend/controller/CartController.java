@@ -12,7 +12,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RequestMapping("cart")
 @AllArgsConstructor
@@ -22,12 +24,13 @@ public class CartController {
 
     private final CartService cartService;
     @PostMapping("cart.do")
-  //  @ResponseBody
-    public String cart(HttpServletRequest request, Model model){
+    @ResponseBody
+    public List<Cart> cart(HttpServletRequest request, Model model){
 
         HttpSession session = request.getSession();
         String email = session.getAttribute("loginOkUser").toString();
-        String price = request.getParameter("price");
+
+
         String size = request.getParameter("size");
         int quantity =  Integer.parseInt(request.getParameter("quantity"));
         String test4 = request.getParameter("name");
@@ -49,13 +52,19 @@ public class CartController {
         List<Cart> cartList = cartService.findByEmail(email);
         System.err.println("cart리스트: " + cartList);
         model.addAttribute("cart", cartList);
-        return "cart/cart";
-
+       return cartList;
     }
 
-    @GetMapping("cart.do")
-    public String getPara(){
+   @GetMapping("cart.do")
+   public String getPara(Model model, HttpSession session){
+       String email = (String) session.getAttribute("loginOkUser");
+       if (email != null) {
+           List<Cart> cartList = cartService.findByEmail(email);
+           model.addAttribute("cart", cartList);
+       }
+      return "cart/cart";
+   }
 
-        return "cart/cart";
-    }
+
+
 }

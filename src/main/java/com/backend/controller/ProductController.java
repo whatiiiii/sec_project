@@ -26,6 +26,7 @@ public class ProductController {
     public String detail(@PathVariable int gcode, @PathVariable int cgcode, Model model){
         List<Goods> goods = goodsService.findByGcodeAndCgcode(gcode, cgcode);
         Goods firstGoods = goods.get(0);
+        System.err.println("firstGoods: "+firstGoods);
         model.addAttribute("detail", firstGoods);
         return "/product/product";
     }

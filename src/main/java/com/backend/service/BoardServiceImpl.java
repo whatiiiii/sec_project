@@ -28,5 +28,10 @@ public class BoardServiceImpl implements BoardService {
         Board board = repository.getBySeq(seq);
         return board;
     }
+    @Override
+    public List<Board> findBySeqAndBcgcode(int seq, int bcgcode){
+        List<Board> board = repository.findBySeqAndBcgcode(seq, bcgcode);
+        return board;
+    }
 
 }

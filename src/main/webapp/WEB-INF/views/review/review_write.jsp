@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ include file="../login/login_check_modul.jsp"%>
-<% session.setAttribute("forward_url", "board/write.do");%>
+<% session.setAttribute("forward_url", "board/review_write.do");%>
 
 <!DOCTYPE html>
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" id="main-id" >
@@ -127,7 +127,7 @@ function uploadFile() {
       //  console.log(fileName);
 
         $.ajax({
-            url: "../../board/content.do?productDetail="+productDetail+"&subject="+subject+"&content="+content,
+            url: "../../board/content_review.do?productDetail="+productDetail+"&subject="+subject+"&content="+content,
             type: "POST",
             contentType: "application/json",
             error: function (err) {
@@ -225,11 +225,10 @@ function uploadFile() {
             <div class="form-typeWrite board">
                 <ul>
 <li class="mun-list clear-fix">
-                        <div class="mun-title">제목</div>
-                        <div class="mun-desc"> <select id="subject" name="subject" fw-filter="isFill" fw-label="제목" fw-msg="">
-<option value="상품문의">상품문의</option>
-<option value="기타문의">기타문의</option>
-</select><br> </div>
+  <div class="mun-title">제목</div>
+                        <div class="mun-desc">
+                        <input id="subject" name="subject" fw-filter="isFill" fw-label="제목" fw-msg="" class="inputTypeText" placeholder="" maxlength="125" value="" type="text">
+                        <br> </div>
                     </li>
                     <li class="mun-list clear-fix displaynone">
                         <div class="mun-title">작성자</div>
@@ -710,7 +709,7 @@ function uploadFile() {
 <div class="mun-button-Area">
             <a href="/board/qa/6/" class="mun-btn mun-left">cancel</a>
             <a href="#none" class="mun-btn mun-left displaynone" onclick="">관리자 답변보기</a>
-            <a href="../board/content.do" class="mun-btn mun-right confirm ok" input type="submit" onclick="uploadFile(); passFrom();">ok</a>
+            <a href="../" class="mun-btn mun-right confirm ok" input type="submit" onclick="uploadFile(); passFrom();">ok</a>
         </div>
 </div>
 <input name="_subject" id="tmp_subject" value="상품문의" type="hidden"><textarea name="_message" id="tmp_content" style="display:none">&lt;p&gt;&lt;br&gt;&lt;/p&gt;</textarea>

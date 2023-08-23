@@ -155,10 +155,25 @@ $jointbuy_page = /product/jointbuy.html
         <select id="sizeSelect" class="ProductOption0">
             <option value="*" selected>사이즈를 선택해 주세요.</option>
             <option value="**" disabled ling image>---------------------------------------------</option>
-            <option value="S">사이즈 S</option>
-            <option value="M">사이즈 M</option>
-            <option value="L">사이즈 L</option>
-            <option value="XL">사이즈 XL</option>
+            <!--사이즈 상품마다 바꾸는거 추가함  -->
+                 <c:choose>
+                     <c:when test="${detail.sname=='L'}">
+                         <option value="S">사이즈 S</option>
+                         <option value="M">사이즈 M</option>
+                         <option value="L">사이즈 L</option>
+                         <option value="XL">사이즈 XL</option>
+                     </c:when>
+                     <c:when test="${detail.sname=='FREE'}">
+                         <option value="FREE">사이즈 FREE</option>
+                     </c:when>
+                      <c:when test="${detail.sname=='38'}">
+                          <option value="38">사이즈 38</option>
+                          <option value="39">사이즈 39</option>
+                          <option value="40.5">사이즈 40.5</option>
+                          <option value="42">사이즈 42</option>
+                      </c:when>
+                 </c:choose>
+
         </select>
     </div>
     <div class="ec-base-qty mun-detail-qty">
@@ -201,7 +216,7 @@ $jointbuy_page = /product/jointbuy.html
                                 <div class="coverB ">
                                     <!--버튼구간-->
                                     <div class="board-btn">
-<a href="/board/product/list.html?board_no=4&amp;link_product_no=1189">리뷰<span>(5)</span></a>
+<a href="/board/review.do/goods_name=${detail.gcode}">리뷰<span>(5)</span></a>
 <a href="/board/content.do">문의게시판<span>(10)</span></a>
 </div>
 

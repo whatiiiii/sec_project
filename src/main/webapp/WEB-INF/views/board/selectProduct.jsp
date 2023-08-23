@@ -10,7 +10,8 @@
              </script>
               <script type="text/javascript">
                      function setParentText(gname){
-                      opener.document.getElementById("pInput").value = gname;
+                        opener.document.getElementById("pInput").value = gname;
+                        opener.document.getElementById("dd").src = "/img/" + gname + ".jpg";
                      }
                </script>
 

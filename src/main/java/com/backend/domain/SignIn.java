@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class SignUp {
+public class SignIn {
     @Id
     @Column(name = "M_EMAIL")
     private String email;
@@ -24,14 +24,6 @@ public class SignUp {
 
     @Column(name = "M_NAME")
     private String name;
-
-    @Column(name = "M_SEX")
-    private String sex;
-
-    @Column(name = "M_JOINDATE")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd hh:mm:ss", timezone = "Asia/Seoul")
-    @CreationTimestamp
-    private LocalDateTime rdate;
 
     @Column(name = "M_PHONE")
     private String phone;
@@ -49,7 +41,6 @@ public class SignUp {
 
     @PrePersist
     private void prePersist() {
-        this.rdate = LocalDateTime.now(); // 현재 시간을 rdate 필드에 할당
         this.email = email;
     }
 

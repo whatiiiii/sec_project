@@ -25,7 +25,7 @@ public class FileServiceImpl implements FileService {
     //(1) 파일 업로드
     @Override
     public long saveFile(MultipartFile mf) throws IOException {
-        if(mf.isEmpty()){
+        if(mf==null){
             return -1;
         }
         String origName = mf.getOriginalFilename(); // 원래 파일 이름 추출

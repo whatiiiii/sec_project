@@ -13,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("purchase")
@@ -21,22 +22,32 @@ public class PurchaseController {
     private final PurchaseService purchaseService;
     private final CartService cartService;
     @PostMapping("purchase.do")
-    public String purchase(HttpServletRequest request, Model model){
+    @ResponseBody
+    public List<Purchase> purchase(HttpServletRequest request, Model model){
         HttpSession session = request.getSession();
         String email = session.getAttribute("loginOkUser").toString();
         String name = request.getParameter("name");
-       // String size = request.getParameter("size");
-     //   String quan = request.getParameter("quan");
-      //  int price = Integer.parseInt(request.getParameter("price"));
+      //  String size = request.getParameter("size");
+        String quanString = request.getParameter("quan");
+        int quan = Integer.parseInt(quanString);
         String seqString = request.getParameter("seq");
         int seq = Integer.parseInt(seqString);
+
+        System.err.println("name: "+name);
+        System.err.println("quan: "+quan);
+        System.err.println("seq: "+seq);
+
+
         Cart cart = cartService.findByCseq(seq);
+        System.err.println("cart: "+cart);
+
+        Cart updatedCart = cartService.updateS(cart,quan);
+        System.err.println("updatedCart: "+updatedCart);
 
         Purchase purchase = Purchase.builder()
             .email(email)
-            .price(10000)
-            .situ("주문 완료")
-            .cart(cart)
+            .cart(updatedCart)
+            .situ("주문완료")
             .build();
         purchaseService.insertS(purchase);
 
@@ -44,7 +55,7 @@ public class PurchaseController {
         System.err.println("purchaseList리스트: " + purchaseList);
 
         model.addAttribute("purchase", purchaseList);
-        return "redirect:purchase.do";
+        return purchaseList;
 
     }
     @GetMapping("purchase.do")
@@ -56,4 +67,6 @@ public class PurchaseController {
         }
         return "purchase/purchase";
     }
+
+
 }
