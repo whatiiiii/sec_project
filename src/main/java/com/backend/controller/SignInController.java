@@ -5,6 +5,7 @@ import com.backend.dto.SignInDto;
 import com.backend.service.SignInService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
+
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,6 +34,7 @@ public class SignInController {
 
         SignIn signIn = service.selectS(email);
         System.err.println("signIn: "+signIn);
+
         model.addAttribute("signIn", signIn);
         return  "/account/change";
     }
@@ -44,3 +46,4 @@ public class SignInController {
     }
 
 }
+

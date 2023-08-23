@@ -7,4 +7,6 @@ public interface SignInRepository extends JpaRepository<SignIn, String> {
     SignIn save(SignIn signIn);
 
     SignIn findByEmail(String email);
+
 }
+

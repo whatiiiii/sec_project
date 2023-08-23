@@ -19,21 +19,21 @@ import java.util.UUID;
 public class Member {
     @Id
 
-    @Column(name = "M_EMAIL" , length = 50)
+    @Column(name = "M_EMAIL")
     private String email;
 
-    @Column(name = "M_PWD", length = 100)
+    @Column(name = "M_PWD")
     private String pwd;
 
-    @Column(name = "M_NAME", length = 100)
+    @Column(name = "M_NAME")
     private String name;
 
-    @Column(name = "M_SEX", length = 100)
+    @Column(name = "M_SEX")
     private String sex;
 
-    @Column(name = "M_PHONE", length = 100)
+    @Column(name = "M_PHONE")
     private String phone;
 
-    @Column(name = "M_ADDR", length = 100)
+    @Column(name = "M_ADDR")
     private String addr;
 }

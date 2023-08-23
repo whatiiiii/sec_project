@@ -48,3 +48,4 @@ public class BoardSignUpService implements SignUpService {
         return phone1 + phone2 + phone3;
     }
 }
+
