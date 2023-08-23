@@ -23,6 +23,23 @@ public class SignInServiceImpl implements SignInService {
     }
 
     @Override
+    public SignIn findByEmail(String email) {
+       SignIn signIn = repository.findByEmail(email);
+       return signIn;
+    }
+
+    @Override
+    public SignIn updateSignIn(SignIn signIn, String email, String pwd, String name, String phone, String addr) {
+            SignIn signIn1 =repository.getReferenceById(email);
+            signIn1.setPwd(pwd);
+            signIn1.setName(name);
+            signIn1.setPhone(phone);
+            signIn1.setAddr(addr);
+            SignIn signIn2 = repository.save(signIn1);
+            return signIn2;
+    }
+
+    @Override
     public SignIn selectS(String email){
         System.out.println("@selectS: " + email);
         return repository.findByEmail(email);
@@ -46,7 +63,7 @@ public class SignInServiceImpl implements SignInService {
         System.out.println("addr2: " + addr2);
         System.out.println("addr3: " + addr3);
 
-        String fullAddress = addr1 + addr2 + addr3;
+        String fullAddress = addr1 +"," +addr2 +","+ addr3;
         System.out.println("fullAddress: " + fullAddress);
 
         return fullAddress;
@@ -54,6 +71,6 @@ public class SignInServiceImpl implements SignInService {
 
 
     private String combinePhoneNumbers(String phone1, String phone2, String phone3) {
-        return phone1 + phone2 + phone3;
+        return phone1 +","+ phone2 +","+ phone3;
     }
 }

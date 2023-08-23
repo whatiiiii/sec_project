@@ -8,6 +8,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="../css/change.css" rel ="stylesheet"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script>
+       function passFrom() {
+           let email = '${signIn.email}';
+           let passwd = document.getElementById("passwd").value;
+           let passwd_confirm = document.getElementById("passwd_confirm").value;
+           let name = '${signIn.name}';
+
+           // 값 확인
+           console.log(email);
+           console.log(passwd);
+           console.log(passwd_confirm);
+           console.log(name);
+
+           // 주소
+
+            let addr1 = document.getElementById("sample6_address").value;
+            let addr2 = document.getElementById("sample6_detailAddress").value;
+            let addr3 = document.getElementById("sample6_extraAddress").value;
+
+
+
+           // 휴대전화
+
+            let phone1 = document.getElementById("mobile1").value;
+            let phone2 = document.getElementById("mobile2").value;
+            let phone3 = document.getElementById("mobile3").value;
+
+
+           $.ajax({
+               url: "update.do?email="+email+"&passwd="+passwd+"&passwd_confirm="+passwd_confirm+"&name="+name+"&addr1="+addr1+"&addr2="+addr2+"&addr3="+addr3+"&phone1="+phone1+"&phone2="+phone2+"&phone3="+phone3,
+               type: "POST",
+               contentType: "application/json",
+               error: function (err) {
+                   // 에러 처리
+               }
+           });
+       }
+   </script>
+
+
 </head>
 
 <body class="Mtype_layout">        <div id="loading" style="display: none;"></div>
@@ -151,7 +195,7 @@
                 <div class="mun-title">비밀번호 <img src="   https://aviemuah.com/web/upload/mundane/grey_dot.png" class="" alt="필수"></div>
                 <div class="mun-desc">
                     <div class="eTooltip ePlaceholder" title="(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)">
-                        <input id="passwd" name="passwd" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="비밀번호" fw-msg="" autocomplete="off" maxlength="16" 0="disabled" value="" type="password" placeholder="(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)">                            <div class="ec-base-tooltip typeUpper ">
+                        <input id="passwd" name="passwd" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" fw-label="비밀번호" fw-msg="" autocomplete="off" maxlength="16" 0="disabled" value="${signIn.pwd}" type="password" placeholder="(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)">                            <div class="ec-base-tooltip typeUpper ">
                             <div class="content">
                                 <strong class="txtWarn">※ 비밀번호 입력 조건</strong>
                                 <ul class="ec-base-help typeDash gBlank10 txtWarn">
@@ -165,7 +209,7 @@
             </li>
             <li class="mun-list clear-fix ">
                 <div class="mun-title">비밀번호 확인 <img src="   https://aviemuah.com/web/upload/mundane/grey_dot.png" alt="필수"></div>
-                <div class="mun-desc"><input id="user_passwd_confirm" name="user_passwd_confirm" fw-filter="isFill&amp;isMatch[passwd]" fw-label="비밀번호 확인" fw-msg="비밀번호가 일치하지 않습니다." autocomplete="off" maxlength="16" 0="disabled" value="" type="password"> <span id="pwConfirmMsg"></span>
+                <div class="mun-desc"><input id="passwd_confirm" name="user_passwd_confirm" fw-filter="isFill&amp;isMatch[passwd]" fw-label="비밀번호 확인" fw-msg="비밀번호가 일치하지 않습니다." autocomplete="off" maxlength="16" 0="disabled" value="${signIn.pwd}" type="password"> <span id="pwConfirmMsg"></span>
 </div>
             </li>
             <li class="mun-list clear-fix displaynone">
@@ -202,10 +246,35 @@
                             </div>
 
                           <div class="mb-3">
-                            <input type="text" id="sample6_address" name="addr1" placeholder="주소"><br>
-                            <input type="text" id="sample6_detailAddress" name="addr2" placeholder="상세주소">
-                            <input type="text" id="sample6_extraAddress" name="addr3" placeholder="참고항목">
+                            <input type="text" id="sample6_address" name="addr1" placeholder="주소" value="${detailAddress}"><br>
+                            <input type="text" id="sample6_detailAddress" name="addr2" placeholder="상세주소" value="${apartmentNumber}">
+                            <input type="text" id="sample6_extraAddress" name="addr3" placeholder="참고항목" value="${additionalInfo}">
                           </div>
+   <script>
+       // ** 주소 값 받아옴
+
+       let addressValue = '${signIn.addr}';
+
+       // 콤마로 구분하여 주소 요소 추출
+       let addressParts = addressValue.split('|');
+
+       // 괄호 안의 내용 분리 및 공백 제거
+       let detailAddress = addressParts[0].trim(); // "서울 강서구 강서로18길 103"
+       let apartmentNumber = addressParts[1].trim(); // "12"
+       let additionalInfo = addressParts[2].trim(); // "(화곡동, 아줄포레)"
+
+
+
+           // detailAddress 값을 sample6_address 요소의 value 값으로 설정
+           document.getElementById("sample6_address").value = detailAddress;
+           document.getElementById("sample6_detailAddress").value = apartmentNumber;
+           document.getElementById("sample6_extraAddress").value = additionalInfo;
+
+       console.log("Detail Address:", detailAddress);
+       console.log("Apartment Number:", apartmentNumber);
+       console.log("additionalInfo:", additionalInfo);
+
+   </script>
 
             </li>
         <li class="mun-list ">
@@ -224,6 +293,26 @@
                                     </ul>
                             </span>
                         </div>
+
+                 <script>
+                      // ** 휴대전화번호 값 받아옴
+                      let phoneValue = '${signIn.phone}';
+
+                      let phoneParts = phoneValue.split('|');
+                      // 괄호 안의 내용 분리 및 공백 제거
+                      let firPhone = phoneParts[0].trim();
+                      let secPhone = phoneParts[1].trim();
+                      let thirdPhone = phoneParts[2].trim();
+
+                     document.getElementById("mobile1").value = firPhone;
+                     document.getElementById("mobile2").value = secPhone;
+                     document.getElementById("mobile3").value = thirdPhone;
+
+                            console.log("firPhone:", firPhone);
+                            console.log("secPhone:", secPhone);
+                            console.log("thirdPhone:", thirdPhone);
+
+                 </script>
         </ul>
 </div>
 </div>
@@ -232,7 +321,7 @@
 <div class="mun-button-Area">
     <a href="/myshop/index.html" class="mun-btn mun-left">cancel</a>
     <a href="#none" class="mun-btn mun-left" onclick="memberDelAction(3000, 0, -1)">회원탈퇴</a>
-    <a href="#none" class="mun-btn mun-right confirm ok" onclick="memberEditAction()">ok</a>
+    <a href="../" class="mun-btn mun-right confirm ok" onclick="passFrom()">ok</a>
 </div>
 </div>
 </div>
@@ -511,6 +600,7 @@
                   // 우편번호와 주소 정보를 해당 필드에 넣는다.
                   document.getElementById('sample6_postcode').value = data.zonecode;
                   document.getElementById("sample6_address").value = addr;
+                  document.getElementById("sample6_detailAddress").value = '';
                   // 커서를 상세주소 필드로 이동한다.
                   document.getElementById("sample6_detailAddress").focus();
               }

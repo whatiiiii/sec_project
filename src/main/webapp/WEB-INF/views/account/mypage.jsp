@@ -75,7 +75,18 @@ $url = /member/login.html
 <li><a href="/account/change.do?email=your_email@example.com" class="text-en">edit an account</a></li>
     <li><a href="/myshop/board_list.html" class="text-en">brand</a></li>
     <li><a href="/myshop/addr/list.html" class="text-en">notice</a></li>
-    <li class="xans-element- xans-layout xans-layout-statelogon "><a href="/exec/front/Member/logout/">Logout</a>
+   <c:choose>
+               <c:when test="${empty loginOkUser}">
+                       <li class="xans-element- xans-layout xans-layout-statelogoff group sub log">
+                           <a href="../login/login.do">로그인</a>
+                       </li>
+                   </c:when>
+                   <c:otherwise>
+                       <li class="xans-element- xans-layout xans-layout-statelogoff group sub log">
+                           <a href="../login/logout.do">로그아웃</a>
+                       </li>
+               </c:otherwise>
+   </c:choose>
 </li>
 </ul>
 </div>

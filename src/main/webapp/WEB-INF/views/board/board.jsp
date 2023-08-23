@@ -97,7 +97,7 @@ $deny_access_url = /index.html
 <li class="mun-list clear-fix xans-record-">
                 <div class="number">89325<br></div>
                 <div class="thumb">
-                    <a href="/product/하트-크로셰-니트-재킷-아이보리/1219/"><img src="/img/${board.gname}.jpg"  border="0" alt=""></a>
+                    <img src="/img/${board.gname}.jpg"  border="0" alt=""></a>
                 </div>
                 <div class="info">
                     <div class="mun-name"> <a href="../article/article.do/board_no=${board.seq}" style="color:#555555;">${board.subject}</a> <span class="txtEm"></span>
@@ -132,13 +132,13 @@ $deny_access_url = /index.html
     </div>
 </div>
 
-<div class="xans-element- xans-board xans-board-paging-4 xans-board-paging xans-board-4 ec-base-paginate"><a href="?board_no=6&amp;page=1"><img src="/web/upload/mundane/i_arrival_prev.png" alt="이전 페이지"></a>
+<div class="xans-element- xans-board xans-board-paging-4 xans-board-paging xans-board-4 ec-base-paginate"><a href="?board_no=6&amp;page=1"><img src="https://aviemuah.com/web/upload/mundane/i_arrival_prev.png" alt="이전 페이지"></a>
 <ol>
  <c:forEach begin="0" end="${listResult.totalPageCount}" var="i">
         <li class="xans-record-"><a href="content.do?page=${i}" class="other">${i+1}</a></li>
 </c:forEach>
     </ol>
-<a href="?board_no=6&amp;page=2"><img src="/web/upload/mundane/i_arrival_next.png" alt="다음 페이지"></a>
+<a href="?board_no=6&amp;page=2"><img src="https://aviemuah.com/web/upload/mundane/i_arrival_next.png" alt="다음 페이지"></a>
 </div>
 
 
