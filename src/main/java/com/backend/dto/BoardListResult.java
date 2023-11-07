@@ -13,7 +13,7 @@ public class BoardListResult {
     private int page;
     private int size;
     private long totalCount;
-    private long totalPageCount; //총 페이지 갯수
+    private long totalPageCount;
     public BoardListResult(int page, long totalCount, int size, Page<Board> list){
         this.page = page;
         this.totalCount = totalCount;
@@ -21,10 +21,8 @@ public class BoardListResult {
         this.list = list;
         this.totalPageCount =calTotalPageCount();
     }
-
     public <T> BoardListResult(PageImpl<T> ts) {
     }
-
     private long calTotalPageCount(){
         long tpc = (totalCount/size)-1;
         if(tpc==-1){

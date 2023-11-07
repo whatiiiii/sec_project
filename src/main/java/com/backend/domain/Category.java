@@ -17,5 +17,4 @@ public class Category {
     private int code;
     @Column(name = "CG_NAME")
     private String name;
-
 }

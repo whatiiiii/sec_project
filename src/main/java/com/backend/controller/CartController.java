@@ -10,20 +10,15 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-
 @RequestMapping("cart")
 @AllArgsConstructor
 @Controller
 public class CartController {
     private final GoodsService goodsService;
-
     private final CartService cartService;
     @PostMapping("cart.do")
-    //  @ResponseBody
     public String cart(HttpServletRequest request, Model model){
-
         HttpSession session = request.getSession();
         String email = session.getAttribute("loginOkUser").toString();
         String price = request.getParameter("price");
@@ -33,27 +28,17 @@ public class CartController {
         String test5 = request.getParameter("totalPrice");
         int code = Integer.parseInt(request.getParameter("code"));
         Goods goods = goodsService.getGoodsByCodeAndSname(code, size);
-        System.err.println("goods: "+goods);
-
         Cart cart = Cart.builder()
             .email(email)
             .quan(quantity)
             .goods(goods)
             .check("Y")
             .build();
-
-        System.err.println("cart: "+cart);
-
         cartService.insertS(cart);
-
         List<Cart> cartList = cartService.findByEmailAndCheck(email, cart.getCheck());
-        System.err.println("cart리스트: " + cartList);
-
         model.addAttribute("cart", cartList);
         return "redirect:cart.do";
-
     }
-
     @GetMapping("cart.do")
     public String getPara(Model model, HttpSession session){
         String email = (String) session.getAttribute("loginOkUser");

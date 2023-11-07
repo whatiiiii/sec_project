@@ -32,12 +32,9 @@ public class Goods {
     private String gexp;
     @Column(name = "cg_code")
     private int cgcode;
-
     public Goods(String gname, String sname, int cgcode){
         this.gname = gname;
         this.sname =sname;
         this.cgcode =cgcode;
     }
-
-
 }

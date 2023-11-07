@@ -1,8 +1,6 @@
 package com.backend.service;
 
 import com.backend.domain.Cart;
-
-import com.backend.domain.Purchase;
 import java.util.List;
 
 public interface CartService {
@@ -12,5 +10,4 @@ public interface CartService {
     void deleteS(int seq);
     Cart updateS(Cart cart, int quan);
     List<Cart> findByEmailAndCheck(String email, String check);
-
 }

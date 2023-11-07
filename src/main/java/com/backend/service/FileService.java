@@ -2,7 +2,6 @@ package com.backend.service;
 
 import com.backend.domain.FileUp;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.IOException;
 import java.util.List;
 
@@ -14,6 +13,5 @@ public interface FileService {
     List<FileUp> getFileUpAll();
     //(3)파일 삭제
     void remove(long id);
-
     FileUp findById(long id);
 }

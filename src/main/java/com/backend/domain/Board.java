@@ -7,10 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
-
-import java.io.File;
 import java.sql.Date;
-import java.util.Collection;
 
 @Data
 @AllArgsConstructor
@@ -23,53 +20,39 @@ public class Board {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "BOARD_SEQ_GENERATOR")
     private int seq;
     private String subject;
-
     private String content;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd", timezone = "Asia/Seoul")
     @CreationTimestamp
     private Date rdate;
     @Column(name = "M_EMAIL")
     private String email;
-    @Column(name = "G_CODE")
-    private int gcode;
-    @Column(name = "S_NAME")
-    private String sname;
+    @ManyToOne
+    @JoinColumns({
+        @JoinColumn(name = "s_name", referencedColumnName = "s_name"),
+        @JoinColumn(name = "g_code", referencedColumnName = "g_code")
+    })
+    private Goods goods;
+    public Goods getGoods(){
+        return goods;
+    }
     @Column(name = "BCG_CODE")
     private int bcgcode;
     @Column(name = "G_NAME")
     private String gname;
-    //    @Column(name="FILE_ID")
-//    private long id;
     @ManyToOne(targetEntity = FileUp.class, fetch = FetchType.LAZY)
     @JoinColumn(name = "FILE_ID")
     private FileUp fileUp;
-
-
     public FileUp getFileUp(){
         return fileUp;
     }
-
-    /*
     @Builder
-    public Board(String subject, String content, String email, int gcode, String sname, int bcgcode, long id){
+    public Board(String subject, String content, String email, Goods goods, int bcgcode, FileUp fileUp, String gname){
         this.subject = subject;
         this.content = content;
         this.email= email;
-        this.gcode= gcode;
-        this.sname = sname;
-        this.bcgcode =bcgcode;
-        this.id = id;
-    }*/
-    @Builder
-    public Board(String subject, String content, String email, int gcode, String sname, int bcgcode, FileUp fileUp, String gname){
-        this.subject = subject;
-        this.content = content;
-        this.email= email;
-        this.gcode= gcode;
-        this.sname = sname;
+        this.goods = goods;
         this.bcgcode =bcgcode;
         this.fileUp =fileUp;
         this.gname = gname;
     }
-
 }
