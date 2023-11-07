@@ -21,21 +21,30 @@
 <div id="header" class="clear-fix">
     <div class="cover clear-fix">
         <div class="header-left">
-            <a href="#;" class="mobile-btn"><div class="arrow-type1">MENU</div></a>
+            <a href="#;" id="menu-btn" class="mobile-btn"><div class="arrow-type1">MENU</div></a>
         </div>
         <div class="header-center">
-            <div class="logo"><a href="/"><div class="M_logo_type font-bellefair img"><span class="M_logo_name M_pc" style="font-size: 70px; line-height: 50px; letter-spacing: -3px; font-weight: 300;">Àviemuah</span><span class="M_logo_name M_logo_name_mobile M_mobile" style="font-size: 40px; line-height: 40px; letter-spacing: -3px; font-weight: 300;">Àviemuah</span><img src="/web/upload/mundane/logo.svg" alt="" class="M_logo_img M_pc" style="height: 50px;"><img src="/web/upload/mundane/logo.svg" alt="" class="M_logo_img M_logo_img_mobile M_mobile" style="height: 30px;"></div></a></div>
+            <div class="logo"><a href="/"><div class="M_logo_type font-bellefair img"><span class="M_logo_name M_pc" style="font-size: 70px; line-height: 50px; letter-spacing: -3px; font-weight: 300;">Àviemuah</span><span class="M_logo_name M_logo_name_mobile M_mobile" style="font-size: 40px; line-height: 40px; letter-spacing: -3px; font-weight: 300;">Àviemuah</span><img src="https://aviemuah.com/web/upload/mundane/logo_w.svg" alt="" class="M_logo_img M_pc" style="height: 50px;"><img src="https://aviemuah.com/web/upload/mundane/logo_w.svg" alt="" class="M_logo_img M_logo_img_mobile M_mobile" style="height: 30px;"></div></a></div>
         </div>
         <div class="header-right">
             <ul><li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
-</li>
-<li class="group sub"><a href="#;" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
-<span class="EC-Layout-Basket-count">0</span>
+<c:choose>
+    <c:when test="${empty loginOkUser}">
+        <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
+            <a href="login/login.do">로그인</a>
+        </li>
+    </c:when>
+    <c:otherwise>
+        <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
+            <a href="account/mypage.do">나의 정보</a>
+        </li>
+    </c:otherwise>
+</c:choose>
+<li class="group sub"><a href="#;" id ="s-btn" class="search-btn">검색</a></li>
+<li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
 )
 </span>
 </a></li>
@@ -78,7 +87,7 @@
                     <a href="/product/$1/$2/"></a>
                 </div>
                 <div class="info">
-                    <div class="mun-name"> <a href="/article/qa/6/481/" style="color:#555555;">&lt;필독&gt; 자주 묻는 질문 (FAQ)</a> <img src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_hit.gif" alt="HIT" class="ec-common-rwd-image"><span class="txtEm"></span>
+                    <div class="mun-name"> <a href="/board/question.do" style="color:#555555;">&lt;필독&gt; 자주 묻는 질문 (FAQ)</a> <img src="http://img.echosting.cafe24.com/design/skin/admin/ko_KR/ico_hit.gif" alt="HIT" class="ec-common-rwd-image"><span class="txtEm"></span>
 </div>
                     <div class="mun-writer-date">Avie muah <span class="">| 20.07.02</span>
 </div>
@@ -93,14 +102,14 @@ $login_page_url = /member/login.html
 $deny_access_url = /index.html
 -->
  <c:forEach items = "${listResult.list.content}" var ="board">
-   <c:if test="${board.bcgcode == 1}">
+  <c:if test="${board.bcgcode == 2}">
 <li class="mun-list clear-fix xans-record-">
                 <div class="number">89325<br></div>
                 <div class="thumb">
                     <img src="/img/${board.gname}.jpg"  border="0" alt=""></a>
                 </div>
                 <div class="info">
-                    <div class="mun-name"> <a href="../../article/article.do/board_no=${board.seq}" style="color:#555555;">${board.subject}</a> <span class="txtEm"></span>
+                    <div class="mun-name"> <a href="../article/article.do/board_no=${board.seq}" style="color:#555555;">${board.subject}</a> <span class="txtEm"></span>
 </div>
                     <div class="mun-writer-date">${board.email} <span class="">| ${board.rdate}</span>
 </div>
@@ -113,7 +122,8 @@ $deny_access_url = /index.html
 </div>
 <p class="xans-element- xans-board xans-board-empty-4 xans-board-empty xans-board-4 mun-empty message displaynone "></p>
 <div class="clear-fix board-footer">
-        <form id="boardSearchForm" name="" action="/search/review_searchReview.do" method="get" target="_top" enctype="multipart/form-data">
+        <form id="boardSearchForm" name="" action="/search/review_search.do" method="get" target="_top" enctype="multipart/form-data">
+
 <div class="xans-element- xans-board xans-board-search-4 xans-board-search xans-board-4 board-footer-left "><fieldset class="boardSearch">
 
 <legend>게시물 검색</legend>
@@ -127,40 +137,18 @@ $deny_access_url = /index.html
             </fieldset>
 </div>
 </form>
-         <div class="xans-element- xans-board xans-board-buttonlist-4 xans-board-buttonlist xans-board-4  mun-button-Area board-footer-right "><a href="/board/review_write.do" class="mun-btn mun-right confirm ">write</a></div>
+         <div class="xans-element- xans-board xans-board-buttonlist-4 xans-board-buttonlist xans-board-4  mun-button-Area board-footer-right "><a href="/board/write.do" class="mun-btn mun-right confirm ">write</a></div>
     </div>
 </div>
 
 <div class="xans-element- xans-board xans-board-paging-4 xans-board-paging xans-board-4 ec-base-paginate"><a href="?board_no=6&amp;page=1"><img src="https://aviemuah.com/web/upload/mundane/i_arrival_prev.png" alt="이전 페이지"></a>
 <ol>
-
-<c:forEach items="${listResult.list.content}" var="board" varStatus="loop">
-    <c:if test="${loop.index eq 0}">
-        <c:set var="gcode" value="${board.gcode}" />
-    </c:if>
-</c:forEach>
-
  <c:forEach begin="0" end="${listResult.totalPageCount}" var="i">
-        <li class="xans-record-"><a href="../review.do/goods_name=${gcode}?page=${i}" class="other">${i+1}</a></li>
+        <li class="xans-record-"><a href="content.do?page=${i}" class="other">${i+1}</a></li>
 </c:forEach>
     </ol>
 <a href="?board_no=6&amp;page=2"><img src="https://aviemuah.com/web/upload/mundane/i_arrival_next.png" alt="다음 페이지"></a>
 </div>
-
-<!--
-                <c:forEach begin="0" end="${listResult.totalPageCount}" var="i">
-                    <a href="list.do?page=${i}">
-               			<c:choose>
-               			    <c:when test="${i==listResult.page}">
-                            	<strong>${i+1}</strong>
-                            </c:when>
-                            <c:otherwise>
-                                ${i+1}
-                            </c:otherwise>
-            			</c:choose>
-                	</a>&nbsp;
-                </c:forEach>
--->
 
 
 

@@ -7,4 +7,6 @@ import java.util.List;
 public interface PurchaseService {
     Purchase insertS(Purchase purchase);
     List<Purchase> findByEmail(String email);
+
+
 }

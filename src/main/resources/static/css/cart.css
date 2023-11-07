@@ -1,3 +1,10 @@
+.logo-black {
+    color: black; /* 로고 텍스트 색상 변경 */
+}
+
+.logo-black img {
+    filter: brightness(0%); /* 로고 이미지 무채색으로 변경 */
+}
 li {
     list-style: none;
 }

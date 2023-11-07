@@ -46,7 +46,6 @@
 </c:choose>
 <li class="group sub"><a href="#;" id ="s-btn" class="search-btn">검색</a></li>
 <li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
-<span class="EC-Layout-Basket-count">0</span>
 )
 </span>
 </a></li>
@@ -55,7 +54,6 @@
     </div>
 </div>
 </div>
-
 
 <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
     <div class="carousel-inner">
@@ -84,210 +82,18 @@
     <div style="float: right;">
         <a href="/product/content.do?cate_no=258">SHOP NOW</a>
     </div>
-</div>
-</li>
-                <li class="displaynone xans-record-">
-<span class="desc font-bellefair"></span><a href="/product/content.do?cate_no=239"></a>
-</li>
-<li class="displaynone xans-record-">
-<span class="desc font-bellefair"></span><a href="/product/content.do?cate_no=243"></a>
-</li>
-            </ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="main_2" class="displaynone">
 
 
-<div id="b_WF_6_1" class="fade_section">
-<div class="b_WF_6_1">
-    <div class="xans-element- xans-product xans-product-listmain-2 xans-product-listmain xans-product-2 ec-base-product fade"><!--
-        $count = 3
-        $moreview = no
-        ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
-        ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
-        $basket_result = /product/add_basket.html
-        $basket_option = /product/basket_option.html
-        -->
-<div id="grid" class="grid1-3-3">
-            <ul>
-<li class="mun-prd-list xans-record- fade-in">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202112/bac37133cf15aedd672b49525c5a2454.jpg" id="eListPrdImage644_3" alt="소프트 벨벳 블랭킷 (라이트 베이지)"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=644&amp;cate_no=1&amp;display_group=3"><img src="//aviemuah.com/web/product/tiny/202112/b9617b3b6fa2daf2eb11323c38b4d467.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=644&amp;cate_no=1&amp;display_group=3" class=""><span class="title displaynone"><span style="font-size:11px;color:#000000;">상품명</span> :</span> <span style="font-size:11px;color:#000000;">소프트 벨벳 블랭킷 (라이트 베이지)</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem-2 xans-product-listitem xans-product-2"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2d2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2d2e;">KRW 53,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-<li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2d2e;font-style:italic;">상품간략설명</span> :</span> <span style="font-size:11px;color:#2e2d2e;font-style:italic;">부드러운 극세사 원단으로 만든 소프트 벨벳 블랭킷을 소개합니다.
-<br>
-<br>유행을 타지 않는 디자인과 색감으로
-<br>추운 겨울을 포근하게 안아줄 아이템입니다.
-<br>
-<br>탁월한 체온 유지 효과로 따뜻한 온기가 오래도록 지속될 수 있도록 도와주는
-<br>이 블랭킷은 가벼운 중량감으로 휴대성 또한 뛰어납니다.
-<br>
-<br>겨울에는 모닥 불 앞에서, 여름에는 에어컨 아래에서
-<br>두루두루 부담 없이 사용하기 좋은 미니멀한 제품입니다.
-<br>
-<br>집에서는 낮잠 이불로, 사무실 또는 학교에서는 무릎 담요로도 훌륭한데요,
-<br>어깨에 걸치거나 무릎에 덮었을 때 가장 이상적인 크기입니다.
-<br>
-<br>팀 아비에무아의 노하우를 가득 담아 세심하게 제작하여,
-<br>그 어떤 블랭킷보다 자주 손이 갈 아이템이 될 거예요.
-<br>
-<br>사계절 내내 당신과 어디든 함께할, 아비에무아의 블랭킷을 만나보세요.</span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="mun-prd-list fade_section xans-record- fade-in">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202112/78ed4d1e637b83e1488c2ecf95104e48.jpg" id="eListPrdImage643_3" alt="소프트 벨벳 블랭킷 (민트)"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=643&amp;cate_no=1&amp;display_group=3"><img src="//aviemuah.com/web/product/tiny/202112/e21a96fbdd084d420ee21cceb6eb3c5e.jpg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=643&amp;cate_no=1&amp;display_group=3" class=""><span class="title displaynone"><span style="font-size:11px;color:#000000;">상품명</span> :</span> <span style="font-size:11px;color:#000000;">소프트 벨벳 블랭킷 (민트)</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem-2 xans-product-listitem xans-product-2"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2d2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2d2e;">KRW 53,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-<li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2d2e;font-style:italic;">상품간략설명</span> :</span> <span style="font-size:11px;color:#2e2d2e;font-style:italic;">부드러운 극세사 원단으로 만든 소프트 벨벳 블랭킷을 소개합니다.
-<br>
-<br>유행을 타지 않는 디자인과 색감으로
-<br>추운 겨울을 포근하게 안아줄 아이템입니다.
-<br>
-<br>탁월한 체온 유지 효과로 따뜻한 온기가 오래도록 지속될 수 있도록 도와주는
-<br>이 블랭킷은 가벼운 중량감으로 휴대성 또한 뛰어납니다.
-<br>
-<br>겨울에는 모닥 불 앞에서, 여름에는 에어컨 아래에서
-<br>두루두루 부담 없이 사용하기 좋은 미니멀한 제품입니다.
-<br>
-<br>집에서는 낮잠 이불로, 사무실 또는 학교에서는 무릎 담요로도 훌륭한데요,
-<br>어깨에 걸치거나 무릎에 덮었을 때 가장 이상적인 크기입니다.
-<br>
-<br>팀 아비에무아의 노하우를 가득 담아 세심하게 제작하여,
-<br>그 어떤 블랭킷보다 자주 손이 갈 아이템이 될 거예요.
-<br>
-<br>사계절 내내 당신과 어디든 함께할, 아비에무아의 블랭킷을 만나보세요.</span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-<li class="mun-prd-list fade_section xans-record- fade-in">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb">
-<img src="//aviemuah.com/web/product/medium/202302/6aed5dd831b5e6988ec531b4a9e0c977.jpeg" id="eListPrdImage634_3" alt="싱글 브레스티드 베스트"><div class="mun-prd-thumb-hover"><a href="/product/detail.html?product_no=634&amp;cate_no=1&amp;display_group=3"><img src="//aviemuah.com/web/product/tiny/202302/9149be7823d10f06396210f73403c789.jpeg"></a></div>
-</div>
-                        <div class="mun-prd-info">
-                            <div class="name"><a href="/product/detail.html?product_no=634&amp;cate_no=1&amp;display_group=3" class=""><span class="title displaynone"><span style="font-size:11px;color:#000000;">상품명</span> :</span> <span style="font-size:11px;color:#000000;">싱글 브레스티드 베스트</span></a></div>
-                            <ul class="xans-element- xans-product xans-product-listitem-2 xans-product-listitem xans-product-2"><li class=" xans-record-">
-<span class="title displaynone"><span style="font-size:11px;color:#2e2d2e;">판매가</span> :</span> <span style="font-size:11px;color:#2e2d2e;">KRW 148,000</span><span id="span_product_tax_type_text" style=""> </span></li>
-</ul>
-<div class="icon">
-                                                                  </div>
-                            <div class="mun-prd-sold_out"><span class="M_soldout type2" style="color: rgb(207, 14, 0);">SOLD OUT</span>
-</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-</div>
-</div>
-
-        </div>
-</div>
-</div>
-<div id="main_3" class="displaynone">
-
-
-<div id="c_WF_7_1">
-<div class="c_WF_7_1">
-    <div class="xans-element- xans-product xans-product-listmain-3 xans-product-listmain xans-product-3 ec-base-product image-Area M_modal"><div id="grid">
-            <ul>
-<li class="mun-prd-list fade_section xans-record-">
-                    <div class="mun-prd-list-cover">
-                        <div class="mun-prd-thumb fade-list" transition_property="top" fade_set_size="40" fade_set_speed="2" fade_set_delay="0" style="transition-property: opacity, top; transition-duration: 2s; transition-delay: 0s; top: 0px; opacity: 1;"><a href="/mundane/html/product/collection_detail.html?product_no=912&amp;cate_no=1&amp;display_group=4"><img src="//aviemuah.com/web/product/medium/202209/b66422de0addd0a209a28b6335b673bb.jpg"></a></div>
-                        <div class="mun-prd-info fade-list" transition_property="top" fade_set_size="20" fade_set_speed="2" fade_set_delay=".5" style="transition-property: opacity, top; transition-duration: 2s; transition-delay: 0.5s; top: 0px; opacity: 1;">
-                            <div class="cover">
-                                <div class="name"><span style="font-size:12px;color:#555555;">뉴! 와이드 레그 데님 트라우저</span></div>
-                                <div class="desc">Read more | </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                                </ul>
-</div>
-</div>
-
-    <div class="xans-element- xans-product xans-product-listmain-3 xans-product-listmain xans-product-3 ec-base-product text-Area M_modal"><h2 class="fade_section"><span class="M_c_WF_7_1_title font-bellefair fade-list" transition_property="top" fade_set_size="20" fade_set_speed="2" fade_set_delay=".2" style="transition-property: opacity, top; transition-duration: 2s; transition-delay: 0.2s; top: 0px; opacity: 1;">Archive</span></h2>
-<div id="grid">
-            <ul>
-<li class="mun-prd-list fade_section xans-record-">
-                    <div class="mun-prd-list-cover">
-                        <div class="image-box"><img src="//aviemuah.com/web/product/medium/202209/b66422de0addd0a209a28b6335b673bb.jpg"></div>
-                        <div class="mun-prd-info mun-prd-thumb fade-list" transition_property="top" fade_set_size="20" fade_set_speed="2" fade_set_delay=".4" style="transition-property: opacity, top; transition-duration: 2s; transition-delay: 0.4s; top: 0px; opacity: 1;">
-                            <div class="cover">
-                                <a href="/mundane/html/product/collection_detail.html?product_no=912&amp;cate_no=1&amp;display_group=4">
-                                    <div class="name"><span style="font-size:12px;color:#555555;">뉴! 와이드 레그 데님 트라우저</span></div>
-                                    <div class="desc">Read more | </div>
-                                    <div class="arrow"><span></span></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                                </ul>
-</div>
-</div>
-    <div id="M_modal" class="header_notice_margin" style="margin-top: 0px;"></div>
-</div>
-</div>
-</div>
 <div id="main_4" class="displaynone">
 
 <div id="a_WF_3_3" class="fade_section">
 <div class="a_WF_3_3">
     <div fade_set_top="0" fade_set_speed="2" fade_set_delay="0" class="xans-element- xans-product xans-product-listmain-4 xans-product-listmain xans-product-4 image-Area fade-list" style="transition-property: opacity, top; transition-duration: 2s; transition-delay: 0s; top: 0px; opacity: 1;"><div class="a_WF_3_3-slide swiper swiper-container-initialized swiper-container-horizontal">
-            <ul class="swiper-wrapper" style="transition-duration: 1500ms;">
-<li class="section swiper-slide xans-record-">
-<div class="M_pc"><img src="//aviemuah.com/web/product/medium/202305/7aed0df8aee8ef3450d1deef16988479.jpg" id="eListPrdImage1047_5" alt="메인 배너 텍스트 및 링크 수정 전용상품"></div>
-<div class="M_mobile"><img src="//aviemuah.com/web/product/tiny/202305/398b369a87d2a5f17b6fc6375803eb33.jpg" alt="메인 배너 텍스트 및 링크 수정 전용상품"></div>
-</li>
-                <li class="section swiper-slide xans-record-">
-<div class="M_pc"><img src="//aviemuah.com/web/product/medium/202305/860b288687dbc45b2830eec5db1aa0d7.jpg" id="eListPrdImage1048_5" alt="메인 배너 2"></div>
-<div class="M_mobile"><img src="//aviemuah.com/web/product/tiny/202307/d5140890427b77ff57091d3073c383bc.jpg" alt="메인 배너 2"></div>
-</li>
-<li class="section swiper-slide xans-record-">
-<div class="M_pc"><img src="//aviemuah.com/web/product/medium/202305/88d5c5c3e4e97ca3fb675511c6865e67.jpg" id="eListPrdImage1049_5" alt="메인 배너 3"></div>
-<div class="M_mobile"><img src="//aviemuah.com/web/product/tiny/202307/1652e8af531957eb6791718dbde56019.jpg" alt="메인 배너 3"></div>
-</li>
-            </ul>
+
 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
 </div>
     <div class="xans-element- xans-product xans-product-listmain-4 xans-product-listmain xans-product-4 text-Area"><div class="cover fade-list" fade_set_top="15" fade_set_speed="3" fade_set_delay=".5" style="transition-property: opacity, top; transition-duration: 3s; transition-delay: 0.5s; top: 0px; opacity: 1;">
-            <ul>
-<li class="xans-record-">
-<span class="name"><span style="font-size:12px;color:#555555;">메인 배너 텍스트 및 링크 수정 전용상품</span></span><span class="desc">AVIE MUAH IS AN ARTISAN CLOTHING BRAND BASED ON THE UNIQUE TASTES OF ITS FOUNDER.THE BRAND USES NATURAL FIBERS TO CREATE COMFORTABLE CLOTHING FOR A WIDE VARIETY OF LIFESTYLES.AVIE MUAH VALUES THE WORK OF INDEPENDENT EMERGING DESIGNERS WHO HELP TO OFFER HIGH QUALITY.HANDMADE GARMENTS FOR EVERY CUSTOMER.</span><a href="/product/content.do?cate_no=258" class="banner-link">SHOP NOW</a>
-</li>
-                <li class="displaynone xans-record-">
-<span class="name"><span style="font-size:12px;color:#555555;">메인 배너 2</span></span><span class="desc"></span><a href="/product/content.do?cate_no=239" class="banner-link"></a>
-</li>
-<li class="displaynone xans-record-">
-<span class="name"><span style="font-size:12px;color:#555555;">메인 배너 3</span></span><span class="desc"></span><a href="/product/content.do?cate_no=243" class="banner-link"></a>
-</li>
-            </ul>
+
 </div>
 </div>
 </div>
@@ -359,8 +165,7 @@
 <li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/myshop/order/list.html">로그인</a>
 </li>
 <li class="group sub"><a href="#;" id="s-btn" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
-<span class="EC-Layout-Basket-count">0</span>
+<li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
 )
 </span>
 </a></li>
@@ -423,7 +228,6 @@
       <!-- 여기가 진짜 메뉴 -->
         <li class="group"><a href="/menu/brandIntro.do">브랜드 소개</a></li>
         <li class="group"><a href="/menu/info.do">정보</a></li>
-        <li class="group"><a href="/board/free/list.html?board_no=1">공지사항</a></li>
         <li class="group"><a href="/board/content.do">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
         <!-- 진짜메뉴 이미지 호버 -->
@@ -439,11 +243,10 @@
 &nbsp;/&nbsp;
 
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/order/login.do">로그인</a>
+<li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/login/login.do">로그인</a>
 </li>
 <li class="group sub"><a href="#;" id="s-btn" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
-<span class="EC-Layout-Basket-count">0</span>
+<li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
 )
 </span>
 </a></li>
@@ -458,8 +261,7 @@
 <li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/order/login.do">로그인</a> <!-- /myshop/order/list.html-->
 </li>
 <li class="group sub"><a href="#;" id="s-btn" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/order/basket.html">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
-<span class="EC-Layout-Basket-count">0</span>
+<li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
 )
 </span>
 </a></li>
@@ -470,26 +272,21 @@
     <div id="Mpage_footer">
 <div id="footer" class="xans-element- xans-layout xans-layout-footer "><div class="cover">
         <div class="section1">
-            <span class="M_mall_name" style="text-transform:none;">Àvie muah</span><br><span class="M_email mun-lowercase">info@aviemuah.com</span><br><span class="M_tel">1577-0793</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (2PM – 6PM)</span><br><span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
+            <span class="M_mall_name" style="text-transform:none;">Àvie muah</span><br><span class="M_email mun-lowercase">dhkim310@naver.com</span><br><span class="M_tel">010-5390-0372</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (09:30 – 18:30)</span><br><span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
         </div>
         <div class="section2">
-            owner - <span class="M_ceo">kang min kyung</span><br>permit number. <span class="M_regno_2">제2020-서울용산-0912호</span><br>business number. <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=488-81-01678" class="M_regno_1" target="_blank">488-81-01678</a>
+            owner - <span class="M_ceo">Kim Hyun Ji</span><br>permit number. <span class="M_regno_2">제2020-서울금천-0912호</span><br>business number. <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=488-81-01678" class="M_regno_1" target="_blank">488-81-01678</a>
         </div>
         <div class="section3">
-            address<br><span class="M_Addr">04048 서울특별시 마포구 양화로 6길 88 (합정동) 주식회사 아비에무아</span>
+            address<br><span class="M_Addr">08505 서울 금천구 가산디지털2로 101 B동 306호</span>
         </div>
         <div class="section4">
-            <div class="sns-Area">
-<a href="http://instagram.com/aviemuah" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
-<a href="http://facebook.com/" target="_blank" class="M_facebookLink off">facebook</a>
-<a href="http://twitter.com/" target="_blank" class="M_twitterLink off">twitter</a>
-<a href="http://blog.naver.com/" target="_blank" class="M_blogLink off">blog</a>
-<a href="http://pinterest.com/" target="_blank" class="M_pinterestLink off">pinterest</a>
-<a href="http://kakao.com/" target="_blank" class="M_kakaoLink off">kakao</a>
-</div>
+        <div class="sns-Area">
+        <a href="http://instagram.com/dhkim310" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
+        </div>
         </div>
         <div class="section5">
-            <a href="/member/agreement.html">Terms &amp; Conditions</a><br><a href="/shopinfo/guide.html">Guide</a><br><a href="/member/privacy.html">Policy Privacy</a><br><br>©<span class="M_mall_name">Àvie muah</span>  <a href="http://studiomundane.kr" target="_blank" style="color:#ddd;">Cafe24 / Mundane</a>
+            <a href="#">Terms &amp; Conditions</a><br><a href="#">Guide</a><br><a href="#">Policy Privacy</a><br><br>©<span class="M_mall_name">Àvie muah</span>
         </div>
     </div>
 </div>
