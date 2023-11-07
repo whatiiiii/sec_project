@@ -2,26 +2,21 @@ package com.backend.service;
 
 import com.backend.domain.FileUp;
 import com.backend.repository.FileRepository;
-import com.backend.service.FileService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.sql.exec.spi.StandardEntityInstanceResolver;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
 @Service
-@RequiredArgsConstructor //자동으로 생성자 만들어줌
+@RequiredArgsConstructor
 public class FileServiceImpl implements FileService {
-
     @org.springframework.beans.factory.annotation.Value("${file.dir}")
     private String fileDir;
     private final FileRepository fileRepository;
-
     //(1) 파일 업로드
     @Override
     public long saveFile(MultipartFile mf) throws IOException {
@@ -33,7 +28,6 @@ public class FileServiceImpl implements FileService {
         String extension = origName.substring(origName.lastIndexOf(".")); //확장자추출(ex: .png)
         String savedName = uuid + extension; //uuid 와 확장자 결합
         String savedPath = fileDir+savedName; //파일 불러올 때 사용할 파일 경로(물리적 경로)
-        System.out.println("savedPath: "+savedPath);
         FileUp fileUp = FileUp.builder()
                 .orgnm(origName)
                 .savednm(savedName)
@@ -43,7 +37,6 @@ public class FileServiceImpl implements FileService {
         FileUp savedFile = fileRepository.save(fileUp); //오라클(DB)에 파일 insert
         return savedFile.getId();
     }
-
     //(2) 파일 다운로드
     @Override
     public List<FileUp> getFileUpAll(){
@@ -62,13 +55,11 @@ public class FileServiceImpl implements FileService {
         FileUp fileup = fileRepository.findById(id).orElse(null); //만약 db에서 file이 없다면 null
         String savedpath = fileup.getSavedpath();
         File f = new File(savedpath);
-        // f.delete();
         if(f.exists()) { //(1) 파일이 존재하면 store 폴더에서 삭제해라
             f.delete();
         }
         fileRepository.deleteById(id); //(2)DB에서 삭제
     }
-
     @Override
     public FileUp findById(long id) {
         FileUp fileup = fileRepository.findById(id).orElse(null); //만약 db에서 file이 없다면 null

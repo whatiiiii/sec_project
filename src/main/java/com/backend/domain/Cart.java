@@ -1,6 +1,5 @@
 package com.backend.domain;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,26 +18,19 @@ public class Cart {
     private int seq;
     @Column(name = "c_quan")
     private int quan;
-
     @ManyToOne
     @JoinColumns({
         @JoinColumn(name = "s_name", referencedColumnName = "s_name"),
         @JoinColumn(name = "g_code", referencedColumnName = "g_code")
     })
-
     private Goods goods;
-
     public Goods getGoods(){
         return goods;
     }
-
-
     @Column(name = "m_email")
     private String email;
-
     @Column(name = "c_check")
     private String check;
-
     @Builder
     public Cart(int quan, String email, Goods goods, String check) {
         this.quan = quan;
@@ -46,7 +38,6 @@ public class Cart {
         this.goods = goods;
         this.check = check;
     }
-
     public Cart(int seq, String email){
         this.seq =seq;
         this.email =email;

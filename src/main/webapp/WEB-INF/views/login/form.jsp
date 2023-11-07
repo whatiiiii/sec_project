@@ -1,8 +1,6 @@
 <%@ page contentType="text/html;charset=utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <meta charset="utf-8">
-
 <script src="/js/trim.js"></script>
 <script language="javascript"> 
     function check(){
@@ -21,7 +19,6 @@
 				return false;
 			}
 		}
-		
 		var pwdval = f.pwd.value;
 		pwdval = trim(pwdval);
 		if(pwdval.length == 0){
@@ -37,10 +34,8 @@
 				return false;
 			}
 		}
-
 		f.submit();
 	}
-
     function checkByteLen(str, size){
         var byteLen = getByteLen(str);
 		if(byteLen <= size){
@@ -52,7 +47,6 @@
 	function getByteLen(str){
 	   return str.replace(/[\0-\x7f]|([0-\u07ff]|(.))/g,"$&$1$2").length;
     }
-	
 	function enterCheck(elm){
 		if(event.keyCode == 13){
 			if(elm == f.email){

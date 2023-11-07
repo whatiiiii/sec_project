@@ -2,7 +2,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ include file="../login/login_check_modul.jsp"%>
 <% session.setAttribute("forward_url", "board/write.do");%>
-
 <!DOCTYPE html>
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" id="main-id" >
 <head>
@@ -15,55 +14,21 @@
            openWin = window.open("selectProduct.do", "a", "width=600, height=400");
        }
     </script>
-    <link href="../../css/main.css" rel ="stylesheet"/>
-
+    <link href="../../css/write.css" rel ="stylesheet"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script>
-
-async function executeFunctions(event) {
-    event.preventDefault();
-
-    await uploadFile();
+function handleClick() {
+    uploadFile();
     passFrom();
+    setTimeout(function () {
+        location.href = "../board/content.do";
+    }, 300);
 }
-
-
-
-/*
-function uploadFile() {
-    // 파일 업로드 로직
-    console.log("uploadFile() executed");
-
-         let productDetail = document.getElementById("pInput").value;
-
-        var form = $('#ppp')[0].files[0];
-        var fileName = form.name;
-		var formData = new FormData();
-		formData.append('file', form);
-		 $.ajax({
-		        type: "POST",
-		        enctype: 'multipart/form-data',
-		        url: "../../board/update.do?fileName="+fileName,
-		        data: formData,
-		        async: false,
-		        processData: false,
-		        contentType: false,
-		        cache: false,
-		        success: function (data) {
-		            alert("성공");
-		        },
-		        error: function (e) {
-		            alert("실패");
-		        }
-		    });
-}*/
-
 function uploadFile() {
   var form = $('#ppp')[0].files[0];
-
-    if (form) { // 파일이 선택된 경우
+    if (form) {
         var fileName = form.name;
         var formData = new FormData();
         formData.append('file', form);
@@ -83,9 +48,7 @@ function uploadFile() {
                 alert("실패");
             }
         });
-    } else { // 파일이 선택되지 않은 경우
-        // 파일이 선택되지 않았음을 사용자에게 알리거나 다른 처리 수행
-      //  alert("파일을 선택해주세요.");
+    } else {
         $.ajax({
             type: "POST",
             enctype: 'multipart/form-data',
@@ -104,28 +67,11 @@ function uploadFile() {
         });
     }
 }
-
-
-
-
-
-
     function passFrom()
     {
-        // passFrom() 로직
-        console.log("passFrom() executed");
-
         let productDetail = document.getElementById("pInput").value;
         let subject = document.getElementById("subject").value;
         let content = document.getElementById("content").value;
-       //  var f = document.getElementById("ppp").files[0];
-       //  var fileName = f.name;
-
-        console.log(productDetail);
-        console.log(subject);
-        console.log(content);
-      //  console.log(fileName);
-
         $.ajax({
             url: "../../board/content.do?productDetail="+productDetail+"&subject="+subject+"&content="+content,
             type: "POST",
@@ -134,58 +80,52 @@ function uploadFile() {
             }
         })
     }
-
 </script>
-
-
-
-
 </head>
-
 <body class="Mtype_layout">        <div id="loading" style="display: none;"></div>
         <div id="background-opacity"></div>
-
 <div id="Mpage_header">
 <div id="header" class="clear-fix">
-    <div class="cover clear-fix">
-        <div class="header-left">
-            <a href="#;" id="menu-btn" class="mobile-btn"><div class="arrow-type1">MENU</div></a>
-        </div>
-        <div class="header-center">
-            <div class="logo"><a href="/"><div class="M_logo_type font-bellefair img"><span class="M_logo_name M_pc" style="font-size: 70px; line-height: 50px; letter-spacing: -3px; font-weight: 300;">Àviemuah</span><span class="M_logo_name M_logo_name_mobile M_mobile" style="font-size: 40px; line-height: 40px; letter-spacing: -3px; font-weight: 300;">Àviemuah</span><img src="https://aviemuah.com/web/upload/mundane/logo_w.svg" alt="" class="M_logo_img M_pc" style="height: 50px;"><img src="https://aviemuah.com/web/upload/mundane/logo_w.svg" alt="" class="M_logo_img M_logo_img_mobile M_mobile" style="height: 30px;"></div></a></div>
-        </div>
-        <div class="header-right">
-            <ul><li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
-&nbsp;/&nbsp;
-
-<a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
-<c:choose>
-    <c:when test="${empty loginOkUser}">
-        <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
-            <a href="login/login.do">로그인</a>
-        </li>
-    </c:when>
-    <c:otherwise>
-        <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
-            <a href="../account/mypage.do">나의 정보</a>
-        </li>
-    </c:otherwise>
-</c:choose>
-<li class="group sub"><a href="#;" id ="s-btn" class="search-btn">검색</a></li>
-<li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
-)
-</span>
-</a></li>
-
-            </ul></div>
-    </div>
-</div>
-</div>
-
-
-
-
-        <div id="contents" class="header_notice_margin" style="margin-top: 0px;">
+     <div class="cover clear-fix">
+         <div class="header-left">
+             <a href="#;" id="menu-btn" class="mobile-btn"><div class="arrow-type1">MENU</div></a>
+         </div>
+         <div class="header-center">
+             <div class="logo">
+                <a href="/">
+                    <div class="M_logo_type font-bellefair img">
+                       <span class="M_logo_name M_pc" style="font-size: 70px; line-height: 50px; letter-spacing: -3px; font-weight: 300;">MÊRCI BIEN</span>
+                           <img src="../logo/logo3.png" alt="" class="M_logo_img M_pc" style="height: 50px;">
+                    </div>
+                </a>
+             </div>
+         </div>
+         <div class="header-right">
+             <ul><li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><class="xans-record-">한국어</a>
+ &nbsp;/&nbsp;
+ <class="xans-record-">EN</a></li>
+ <c:choose>
+     <c:when test="${empty loginOkUser}">
+         <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
+             <a href="../login/login.do">로그인</a>
+         </li>
+     </c:when>
+     <c:otherwise>
+         <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
+             <a href="../account/mypage.do">나의 정보</a>
+         </li>
+     </c:otherwise>
+ </c:choose>
+ <li class="group sub"><a href="#;" id ="s-btn" class="search-btn">검색</a></li>
+ <li class="group sub cart"><a href="/cart/cart.do">장바구니<span class="xans-element- xans-layout xans-layout-orderbasketcount count displaynone EC-Layout_Basket-count-display ">(
+ )
+ </span>
+ </a></li>
+       </ul></div>
+     </div>
+ </div>
+ </div>
+<div id="contents" class="header_notice_margin" style="margin-top: 0px;">
 <div class="xans-element- xans-board xans-board-writepackage-4 xans-board-writepackage xans-board-4 "><form id="boardWriteForm" name="" action="/exec/front/Board/write/6" method="post" target="_self" enctype="multipart/form-data">
 <input id="board_no" name="board_no" value="6" type="hidden">
 <input id="product_no" name="product_no" value="0" type="hidden">
@@ -199,21 +139,15 @@ function uploadFile() {
 <input id="62ebf2a8807ec742" name="62ebf2a8807ec742" value="da7db9543acd3ed6f6100c1c10791457" type="hidden">
 <input id="fix_title_form_0" name="fix_title_form_0" value="상품문의" type="hidden">
 <input id="fix_title_form_1" name="fix_title_form_1" value="기타문의" type="hidden">
-<input id="bulletin_type" name="bulletin_type" value="title" type="hidden"><div class="xans-element- xans-board xans-board-write-4 xans-board-write xans-board-4"><!--
-            $write_success_url = /board/product/list.html
-            $product_select_url = /product/search_board_list.html
-            $order_select_url = /order/search_board_list.html
-            $login_page_url = /member/login.html
-            $deny_access_url = /index.html
-        -->
+<input id="bulletin_type" name="bulletin_type" value="title" type="hidden"><div class="xans-element- xans-board xans-board-write-4 xans-board-write xans-board-4">
 <div class="ec-base-table typeList  ">
             <div class="form-typeList">
                 <ul>
 <li class="mun-list clear-fix">
                <!--     <button onclick='passFrom()'>test</button> -->
-                      <input type="text" id="pInput" readonly>
+                       <input type="text" id="pInput" readonly style="display: none;">
                                            <div class="thumb">
-                        <a href=""><img id="dd" src="" onerror="this.src='//img.echosting.cafe24.com/thumb/75x75.gif'" alt=""></a>
+                        <a href="" id="myLink"><img id="dd" src="" onerror="this.src='//img.echosting.cafe24.com/thumb/75x75.gif'" alt=""></a>
                         </div>
                         <div class="info">
                             <div class="mun-name"><a href="/product/detail.html?product_no=0" id="aPrdNameLink"><strong><span id="sPrdName"></span></strong></a></div>
@@ -224,7 +158,6 @@ function uploadFile() {
                                 <span class="displaynone"><a href="#none" class="btnNormal" onclick="BOARD_WRITE.product_popup('/order/search_board_list.html')">주문상품선택</a></span>
                             </div>
                         </div>
-<!--info-->
                     </li>
                 </ul>
 </div>
@@ -258,8 +191,8 @@ function uploadFile() {
             <link rel="stylesheet" href="//img.echosting.cafe24.com/editors/froala/css/themes/ec_froala.css?vs=2308111229">
 
             <!-- HTML -->
-          <span class="fr-counter" style="bottom: 1px; margin-right: 2px;">문자 : 0</span></div></div><textarea style="width: 100%; display: none;" name="content" id="content" class="ec-fr-never-be-duplicated"></textarea>
-              <!--  <input type="hidden" id="content_hidden" fw-filter="isSimplexEditorFill" fw-label="내용" value="EC_FROALA_INSTANCE"> -->
+          <span class="fr-counter" style="bottom: 1px; margin-right: 2px;"></span></div></div>
+          <textarea style="width: 100%; display: none;" name="content" id="content" class="ec-fr-never-be-duplicated"></textarea>
 
             <!-- JavaScript -->
             <script type="text/javascript" src="//img.echosting.cafe24.com/editors/froala/js/polyfill.min.js?vs=2308111229"></script>
@@ -716,16 +649,14 @@ function uploadFile() {
 <ul>
 
 <div class="mun-button-Area">
-            <a href="/board/qa/6/" class="mun-btn mun-left">cancel</a>
+            <a href="/board/content.do" class="mun-btn mun-left">cancel</a>
             <a href="#none" class="mun-btn mun-left displaynone" onclick="">관리자 답변보기</a>
-            <a href="../board/content.do" class="mun-btn mun-right confirm ok" input type="submit" onclick="uploadFile(); passFrom();">ok</a>
+            <a href="#" class="mun-btn mun-right confirm ok" input type="submit" onclick="handleClick()">ok</a>
         </div>
 </div>
 <input name="_subject" id="tmp_subject" value="상품문의" type="hidden"><textarea name="_message" id="tmp_content" style="display:none">&lt;p&gt;&lt;br&gt;&lt;/p&gt;</textarea>
 </form></div>
 </div>
-
-
 <div class="mobile-category header_layout_padding" style="padding-top: 64px;">
 <div class="cover header_notice_margin" style="margin-top: 0px;">
     <div class="section1">
@@ -735,7 +666,7 @@ function uploadFile() {
         <li class="group image">
             <a href="/product/content.do">카테고리</a>
             <div class="middle-category">
-                <!-- 진짜 메뉴 -->
+                <!--메뉴 -->
                 <ul>
                     <li class="group" id="group_top">
                         <a href="/product/content.do/cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/content.do?cate_no=89">상의</a>
@@ -760,12 +691,12 @@ function uploadFile() {
                 </ul></div>
         </li>
     </ul><ul>
-      <!-- 여기가 진짜 메뉴 -->
+      <!--메뉴 -->
         <li class="group"><a href="/menu/brandIntro.do">브랜드 소개</a></li>
         <li class="group"><a href="/menu/info.do">정보</a></li>
         <li class="group"><a href="/board/content.do">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
-        <!-- 진짜메뉴 이미지 호버 -->
+        <!-- 이미지 호버 -->
     <div class="image-list" id="image-list-top" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg"><a href="/product/content.do/cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt=""><span class="title">상의</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-pants" data_check="바지/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg"><a href="/product/content.do/cate_no=91"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" alt=""><span class="title">바지</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-dress" data_check="드레스/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg"><a href="/product/content.do/cate_no=94"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" alt=""><span class="title">드레스</span><span>바로가기</span></a></div>
@@ -776,7 +707,6 @@ function uploadFile() {
         <div class="multi-Area M_mobile">
             <li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
 &nbsp;/&nbsp;
-
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
 <li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/login/login.do">로그인</a>
 </li>
@@ -804,29 +734,28 @@ function uploadFile() {
     </div>
 </div>
 </div>
-    <div id="Mpage_footer">
-<div id="footer" class="xans-element- xans-layout xans-layout-footer "><div class="cover">
-        <div class="section1">
-            <span class="M_mall_name" style="text-transform:none;">Àvie muah</span><br><span class="M_email mun-lowercase">dhkim310@naver.com</span><br><span class="M_tel">010-5390-0372</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (09:30 – 18:30)</span><br><span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
-        </div>
-        <div class="section2">
-            owner - <span class="M_ceo">Kim Hyun Ji</span><br>permit number. <span class="M_regno_2">제2020-서울금천-0912호</span><br>business number. <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=488-81-01678" class="M_regno_1" target="_blank">488-81-01678</a>
-        </div>
-        <div class="section3">
-            address<br><span class="M_Addr">08505 서울 금천구 가산디지털2로 101 B동 306호</span>
-        </div>
-        <div class="section4">
-        <div class="sns-Area">
-        <a href="http://instagram.com/dhkim310" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
-        </div>
-        </div>
-        <div class="section5">
-            <a href="#">Terms &amp; Conditions</a><br><a href="#">Guide</a><br><a href="#">Policy Privacy</a><br><br>©<span class="M_mall_name">Àvie muah</span>
+<div id="Mpage_footer">
+        <div id="footer" class="xans-element- xans-layout xans-layout-footer "><div class="cover">
+                <div class="section1">
+                    <span class="M_mall_name" style="text-transform:none;">MERCI BIEN</span><br><span class="M_email mun-lowercase">mercii000@merci.com</span><br><span class="M_tel">010-0000-1111</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (09:30 – 18:30)</span><br><span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
+                </div>
+                <div class="section2">
+                    owner - <span class="M_ceo">Joy Kim</span><br>permit number. <span class="M_regno_2">제2020-서울금천-0912호</span><br>business number. <a href="#" class="M_regno_1">488-81-01678</a>
+                </div>
+                <div class="section3">
+                    address<br><span class="M_Addr">08505 서울 금천구 가산디지털111로 111동 111호</span>
+                </div>
+                <div class="section4">
+                <div class="sns-Area">
+                <a href="http://instagram.com/dhkim310" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
+                </div>
+                </div>
+                <div class="section5">
+                    <a href="#">Terms &amp; Conditions</a><br><a href="#">Guide</a><br><a href="#">Policy Privacy</a><br><br>©<span class="M_mall_name">MERCI BIEN</span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
-
 <script src="../js/main.js"></script>
 <div class="search_menu search_fullpage">
 <div class="search_btn search-background"><a href="#;"></a></div>

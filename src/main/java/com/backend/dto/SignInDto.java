@@ -12,8 +12,6 @@ public class SignInDto {
     private String addr1;
     private String addr2;
     private String addr3;
-    // ...
-
     public SignInDto(String phone1, String phone2, String phone3,
                      String addr1, String addr2, String addr3) {
         this.phone1 = phone1;
@@ -23,5 +21,4 @@ public class SignInDto {
         this.addr2 = addr2;
         this.addr3 = addr3;
     }
-
 }

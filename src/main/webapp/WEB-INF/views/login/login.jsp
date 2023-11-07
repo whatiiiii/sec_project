@@ -1,6 +1,5 @@
 <%@ page contentType="text/html;charset=utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <!DOCTYPE html>
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" id="main-id">
 <head>
@@ -8,15 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="../css/login.css" rel ="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="../css/login.css" rel ="stylesheet"/>
     <style>
      .input-form {
       max-width: 680px;
-
       margin-top: 80px;
       padding: 32px;
-
       background: #fff;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -26,36 +23,38 @@
       box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
     }
     </style>
-
 </head>
-
 <body class="Mtype_layout">        <div id="loading" style="display: none;"></div>
     <div id="background-opacity"></div>
-
 <div id="Mpage_header">
-
 <div id="header" class="clear-fix">
     <div class="cover clear-fix">
         <div class="header-left">
             <a href="#;" id="menu-btn" class="mobile-btn"><div class="arrow-type1">MENU</div></a>
         </div>
         <div class="header-center">
-            <div class="logo"><a href="/"><div class="M_logo_type font-bellefair img"><span class="M_logo_name M_pc" style="font-size: 70px; line-height: 50px; letter-spacing: -3px; font-weight: 300;">Àviemuah</span><span class="M_logo_name M_logo_name_mobile M_mobile" style="font-size: 40px; line-height: 40px; letter-spacing: -3px; font-weight: 300;">Àviemuah</span><img src="https://aviemuah.com/web/upload/mundane/logo_w.svg" alt="" class="M_logo_img M_pc" style="height: 50px;"><img src="https://aviemuah.com/web/upload/mundane/logo_w.svg" alt="" class="M_logo_img M_logo_img_mobile M_mobile" style="height: 30px;"></div></a></div>
+            <div class="logo">
+               <a href="/">
+                   <div class="M_logo_type font-bellefair img">
+                      <span class="M_logo_name M_pc" style="font-size: 70px; line-height: 50px; letter-spacing: -3px; font-weight: 300;">MÊRCI BIEN</span>
+                          <img src="../logo/logo3.png" alt="" class="M_logo_img M_pc" style="height: 50px;">
+                   </div>
+               </a>
+            </div>
         </div>
         <div class="header-right">
-            <ul><li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
+            <ul><li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><class="xans-record-">한국어</a>
 &nbsp;/&nbsp;
-
-<a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
+<class="xans-record-">EN</a></li>
 <c:choose>
     <c:when test="${empty loginOkUser}">
         <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
-            <a href="login/login.do">로그인</a>
+            <a href="../login/login.do">로그인</a>
         </li>
     </c:when>
     <c:otherwise>
         <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
-            <a href="account/mypage.do">나의 정보</a>
+            <a href="../account/mypage.do">나의 정보</a>
         </li>
     </c:otherwise>
 </c:choose>
@@ -64,27 +63,18 @@
 )
 </span>
 </a></li>
-
-            </ul></div>
+    </ul></div>
     </div>
 </div>
 </div>
-
-
-
-
-    <div id="contents" class="header_notice_margin" style="margin-top: 0px;">
-
+<div id="contents" class="header_notice_margin" style="margin-top: 0px;">
 <form id="member_form_7931326741" name="" action="/exec/front/Member/login/" method="post" target="_self" enctype="multipart/form-data">
     <input id="returnUrl" name="returnUrl" value="/myshop/order/list.html" type="hidden">
     <input id="returnUrl" name="returnUrl" value="/myshop/order/list.html" type="hidden">
     <input id="forbidIpUrl" name="forbidIpUrl" value="/index.html" type="hidden">
     <input id="certificationUrl" name="certificationUrl" value="/intro/adult_certification.html?returnUrl=%2Fmyshop%2Forder%2Flist.html" type="hidden">
     <input id="sIsSnsCheckid" name="sIsSnsCheckid" value="" type="hidden">
-    <input id="sProvider" name="sProvider" value="" type="hidden"><div class="xans-element- xans-member xans-member-login ec-base-box typeThin "><!--
-        $defaultReturnUrl = /index.html
-        $forbidIpUrl = member/adminFail.html
-    -->
+    <input id="sProvider" name="sProvider" value="" type="hidden"><div class="xans-element- xans-member xans-member-login ec-base-box typeThin ">
     <div class="login">
         <h3 class="boxTitle">회원로그인</h3>
         <fieldset>
@@ -98,27 +88,20 @@
             <p class="security">
                 <img src="//img.echosting.cafe24.com/design/skin/default/member/ico_access.gif" alt="보안접속"> 보안접속
             </p>
-
             <button class="mun-btn login-btn" onclick="performLogin();">LOGIN</button>
-
             <ul class="button">
-                <li class="text-en">forgot your &nbsp;<a href="/member/id/find_id.html">id?</a></li>
-                <li class="text-en">or &nbsp;<a href="/member/passwd/find_passwd_info.html">password?</a></li>
                 <li class="text-en"><a href="join.html" data-bs-toggle="modal" data-bs-target="#exampleModal">create account</a></li>
             </ul>
         </fieldset>
     </div>
 </form>
-
 <script>
     function performLogin() {
         var form = document.getElementById("member_form_7931326741");
-        form.action = "log.do"; // 로그인 요청을 log.do로 보내도록 변경
+        form.action = "log.do";
         form.submit();
     }
 </script>
-
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -129,117 +112,105 @@
         </div>
         <form action="write.do" method="POST" class="validation-form">
         <div class="modal-body">
-                  <div class="mb-3">
-                    <label for="email">이메일</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="aaa@gmail.com" required>
-                    <div class="invalid-feedback">
-                      이메일을 입력해주세요.
-                    </div>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="pwd">비밀번호</label>
-                    <input type="password" class="form-control" id="pwd" name="pwd" placeholder="비밀번호를 입력해주세요" required>
-                    <div class="invalid-feedback">
-                      비밀번호를 입력해주세요.
-                    </div>
-                  </div>
-
-                  <div class="mb-3">
-                    <label for="pwd_check">비밀번호 확인</label>
-                    <input type="password" class="form-control" id="pwd_check" name="pwd_check" placeholder="" required>
-                    <div class="invalid-feedback">
-                      비밀번호를 입력해주세요.
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6 mb-3">
-                      <label for="name">이름</label>
-                      <input type="name" class="form-control" id="name" name="name" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        이름을 입력해주세요.
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <label for="sex">성별</label>
-                      <select class="custom-select d-block w-100" id="sex" name="sex">
-                        <option value=""></option>
-                        <option>여성</option>
-                        <option>남성
-                        </option>
-                      </select>
-                      <div class="invalid-feedback">
-                        성별을 선택해주세요
-                      </div>
-                    </div>
-                  </div>
-
-                  <td align="center">
-                      <fmt:formatDate value="${signup.rdate}" pattern="yyyy-MM-dd a hh:mm:ss"/>
-                  </td>
-
-                  <label for="addr">주소</label>
-                  <div class="row">
-                    <div class="col-md-6 mb-3">
-                      <input type="text" id="sample6_postcode" placeholder="우편번호">
-                   </div>
-                  <div class="col-md-6 mb-3">
-                    <input type="button" class="btn btn-link" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-                  </div>
-                </div>
-
-              <div class="mb-3">
-                <input type="text" id="sample6_address" name="addr1" placeholder="주소"><br>
-                <input type="text" id="sample6_detailAddress" name="addr2" placeholder="상세주소">
-                <input type="text" id="sample6_extraAddress" name="addr3" placeholder="참고항목">
-              </div>
-
-              <div class="row">
-                <label for="phone">휴대폰 번호</label>
-                <div class="col-sm"><input type="text" class="form-control" id="phone1" name="phone1" placeholder="" value="" required></div>
-                <div class="col-sm"><input type="text" class="form-control" id="phone2" name="phone2" placeholder="" value="" required></div>
-                <div class="col-sm"><input type="text" class="form-control" id="phone3" name="phone3" placeholder="" value="" required></div>
-              </div>
-                  <hr class="mb-4">
-                  <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="aggrement" required>
-                    <label class="custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
-                  </div>
-                  <div class="mb-4"></div>
-                  <button class="btn btn-outline-secondary" type="submit">SIGN UP</button>
-                </form>
+          <div class="mb-3">
+            <label for="email">이메일</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="aaa@gmail.com" required>
+            <div class="invalid-feedback">
+              이메일을 입력해주세요.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="pwd">비밀번호</label>
+            <input type="password" class="form-control" id="pwd" name="pwd" placeholder="비밀번호를 입력해주세요" required>
+            <div class="invalid-feedback">
+              비밀번호를 입력해주세요.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="pwd_check">비밀번호 확인</label>
+            <input type="password" class="form-control" id="pwd_check" name="pwd_check" placeholder="" required>
+            <div class="invalid-feedback">
+              비밀번호를 입력해주세요.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name">이름</label>
+              <input type="name" class="form-control" id="name" name="name" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                이름을 입력해주세요.
               </div>
             </div>
-            <footer class="my-3 text-center text-small">
-            </footer>
+            <div class="col-md-6 mb-3">
+              <label for="sex">성별</label>
+              <select class="custom-select d-block w-100" id="sex" name="sex">
+                <option value=""></option>
+                <option>여성</option>
+                <option>남성
+                </option>
+              </select>
+              <div class="invalid-feedback">
+                성별을 선택해주세요
+              </div>
+            </div>
           </div>
+          <td align="center">
+              <fmt:formatDate value="${signup.rdate}" pattern="yyyy-MM-dd a hh:mm:ss"/>
+          </td>
+          <label for="addr">주소</label>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input type="text" id="sample6_postcode" placeholder="우편번호">
+           </div>
+          <div class="col-md-6 mb-3">
+            <input type="button" class="btn btn-link" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
+          </div>
+        </div>
+        <div class="mb-3">
+        <input type="text" id="sample6_address" name="addr1" placeholder="주소"><br>
+        <input type="text" id="sample6_detailAddress" name="addr2" placeholder="상세주소">
+        <input type="text" id="sample6_extraAddress" name="addr3" placeholder="참고항목">
+        </div>
+        <div class="row">
+        <label for="phone">휴대폰 번호</label>
+        <div class="col-sm"><input type="text" class="form-control" id="phone1" name="phone1" placeholder="" value="" required></div>
+        <div class="col-sm"><input type="text" class="form-control" id="phone2" name="phone2" placeholder="" value="" required></div>
+        <div class="col-sm"><input type="text" class="form-control" id="phone3" name="phone3" placeholder="" value="" required></div>
+        </div>
+          <hr class="mb-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="aggrement" required>
+            <label class="custom-control-label" for="aggrement">개인정보 수집 및 이용에 동의합니다.</label>
+          </div>
+          <div class="mb-4"></div>
+          <button class="btn btn-outline-secondary" type="submit">SIGN UP</button>
+        </form>
+        </div>
+        </div>
+        <footer class="my-3 text-center text-small">
+        </footer>
+        </div>
       </div>
     </div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script></body>
   <script src="../js/main.js"></script>
-
   <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
   <script>
       function sample6_execDaumPostcode() {
           new daum.Postcode({
               oncomplete: function(data) {
                   // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
-
                   // 각 주소의 노출 규칙에 따라 주소를 조합한다.
                   // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
                   var addr = ''; // 주소 변수
                   var extraAddr = ''; // 참고항목 변수
-
                   //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
                   if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
                       addr = data.roadAddress;
                   } else { // 사용자가 지번 주소를 선택했을 경우(J)
                       addr = data.jibunAddress;
                   }
-
                   // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
                   if(data.userSelectedType === 'R'){
                       // 법정동명이 있을 경우 추가한다. (법정리는 제외)
@@ -257,11 +228,9 @@
                       }
                       // 조합된 참고항목을 해당 필드에 넣는다.
                       document.getElementById("sample6_extraAddress").value = extraAddr;
-
                   } else {
                       document.getElementById("sample6_extraAddress").value = '';
                   }
-
                   // 우편번호와 주소 정보를 해당 필드에 넣는다.
                   document.getElementById('sample6_postcode').value = data.zonecode;
                   document.getElementById("sample6_address").value = addr;
@@ -274,90 +243,25 @@
 <script>
     window.addEventListener('load', () => {
       const forms = document.getElementsByClassName('validation-form');
-
       Array.prototype.filter.call(forms, (form) => {
         form.addEventListener('submit', function (event) {
           if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
           }
-
           form.classList.add('was-validated');
         }, false);
       });
     }, false);
-
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<ul class="snsArea">
-<li class="displaynone">
-                <a href="#none" onclick=""><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_naver_login.gif" alt="네이버 로그인"></a>
-            </li>
-            <li class="displaynone">
-                <a href="#none" onclick=""><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_facebook_login.gif" alt="페이스북 로그인"></a>
-            </li>
-            <li class="displaynone">
-                <a href="#none" onclick=""><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_google_login.gif" alt="구글 로그인"></a>
-            </li>
-            <li class="displaynone">
-                <a href="#none" onclick=""><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_kakao_login.gif" alt="카카오계정 로그인"></a>
-            </li>
-            <li class="displaynone">
-                <a href="#none" onclick=""><img src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_line_login.gif" alt="LINE 로그인"></a>
-            </li>
-        </ul>
-<p class="link displaynone" id="noMemberWrap">
-            비회원님도 상품구매가 가능하나 다양한<br>회원혜택에서 제외됩니다.
-            <a href="/myshop/order/list.html" class="mun-btn login-btn" onclick="">guest order now</a>
-        </p>
-    </fieldset>
 </div>
 </div>
 </form>
 <form id="historyNoLoginForm" name="" action="/exec/front/MyShop/OrderHistoryLogin/" method="POST" target="_self" enctype="multipart/form-data">
 <input id="order_detail_url" name="order_detail_url" value="/myshop/order/list.html" type="hidden"><div class="xans-element- xans-myshop xans-myshop-orderhistorynologin ec-base-table typeWrite "><div class="form-typeWrite">
-
-    <!--
-    $orderDetailUrl = /myshop/order/list.html
-    -->
-    <ul class="">
-<p></p>
-        <li class="mun-list clear-fix">
-            <p></p>
-            <p></p>
-        </li>
-        <li class="mun-list clear-fix">
-            <p></p>
-            <p></p>
-        </li>
-        <li class="mun-list clear-fix">
-            <p></p>
-            <p></p>
-        </li>
-    </ul>
-    <p></p>
-    <p></p>
 </div>
 </div>
 </form></div>
-
-
 <div class="mobile-category header_layout_padding" style="padding-top: 64px;">
 <div class="cover header_notice_margin" style="margin-top: 0px;">
     <div class="section1">
@@ -367,7 +271,7 @@
         <li class="group image">
             <a href="/product/content.do">카테고리</a>
             <div class="middle-category">
-                <!-- 진짜 메뉴 -->
+                <!-- 메뉴 -->
                 <ul>
                     <li class="group" id="group_top">
                         <a href="/product/content.do/cate_no=89" image_url="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" title="상의" button_text="바로 가기" button_link="/product/content.do?cate_no=89">상의</a>
@@ -392,12 +296,12 @@
                 </ul></div>
         </li>
     </ul><ul>
-      <!-- 여기가 진짜 메뉴 -->
+      <!-- 메뉴 -->
         <li class="group"><a href="/menu/brandIntro.do">브랜드 소개</a></li>
         <li class="group"><a href="/menu/info.do">정보</a></li>
         <li class="group"><a href="/board/content.do">문의게시판</a></li>
     </ul><ul class="M_pc"><li class="group image-box">
-        <!-- 진짜메뉴 이미지 호버 -->
+        <!-- 이미지 호버 -->
     <div class="image-list" id="image-list-top" data_check="상의/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg"><a href="/product/content.do/cate_no=89"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/topppp.jpg" alt=""><span class="title">상의</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-pants" data_check="바지/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg"><a href="/product/content.do/cate_no=91"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/2023%20summer/pantsssss.jpg" alt=""><span class="title">바지</span><span>바로 가기</span></a></div>
     <div class="image-list" id="image-list-dress" data_check="드레스/https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg"><a href="/product/content.do/cate_no=94"><img src="https://aviemuah2020.cafe24.com/CATEGORY%20BANNER/23%20summer/dress.jpg" alt=""><span class="title">드레스</span><span>바로가기</span></a></div>
@@ -408,7 +312,6 @@
         <div class="multi-Area M_mobile">
             <li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
 &nbsp;/&nbsp;
-
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
 <li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/login/login.do">로그인</a>
 </li>
@@ -417,7 +320,6 @@
 )
 </span>
 </a></li>
-
         </div>
     </div>
     <div class="section2 M_mobile">
@@ -436,33 +338,31 @@
     </div>
 </div>
 </div>
-    <div id="Mpage_footer">
-<div id="footer" class="xans-element- xans-layout xans-layout-footer "><div class="cover">
-        <div class="section1">
-            <span class="M_mall_name" style="text-transform:none;">Àvie muah</span><br><span class="M_email mun-lowercase">dhkim310@naver.com</span><br><span class="M_tel">010-5390-0372</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (09:30 – 18:30)</span><br><span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
-        </div>
-        <div class="section2">
-            owner - <span class="M_ceo">Kim Hyun Ji</span><br>permit number. <span class="M_regno_2">제2020-서울금천-0912호</span><br>business number. <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=488-81-01678" class="M_regno_1" target="_blank">488-81-01678</a>
-        </div>
-        <div class="section3">
-            address<br><span class="M_Addr">08505 서울 금천구 가산디지털2로 101 B동 306호</span>
-        </div>
-        <div class="section4">
-        <div class="sns-Area">
-        <a href="http://instagram.com/dhkim310" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
-        </div>
-        </div>
-        <div class="section5">
-            <a href="#">Terms &amp; Conditions</a><br><a href="#">Guide</a><br><a href="#">Policy Privacy</a><br><br>©<span class="M_mall_name">Àvie muah</span>
+<div id="Mpage_footer">
+        <div id="footer" class="xans-element- xans-layout xans-layout-footer "><div class="cover">
+                <div class="section1">
+                    <span class="M_mall_name" style="text-transform:none;">MERCI BIEN</span><br><span class="M_email mun-lowercase">mercii000@merci.com</span><br><span class="M_tel">010-0000-1111</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (09:30 – 18:30)</span><br><span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
+                </div>
+                <div class="section2">
+                    owner - <span class="M_ceo">Joy Kim</span><br>permit number. <span class="M_regno_2">제2020-서울금천-0912호</span><br>business number. <a href="#" class="M_regno_1">488-81-01678</a>
+                </div>
+                <div class="section3">
+                    address<br><span class="M_Addr">08505 서울 금천구 가산디지털111로 111동 111호</span>
+                </div>
+                <div class="section4">
+                <div class="sns-Area">
+                <a href="http://instagram.com/dhkim310" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
+                </div>
+                </div>
+                <div class="section5">
+                    <a href="#">Terms &amp; Conditions</a><br><a href="#">Guide</a><br><a href="#">Policy Privacy</a><br><br>©<span class="M_mall_name">MERCI BIEN</span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
-
 <div class="search_menu search_fullpage">
 <div class="search_btn search-background"><a href="#;"></a></div>
 <form id="searchForm" name="" action="/search/search.do" method="get" target="_self" enctype="multipart/form-data">
-
 <div class="xans-element- xans-search xans-search-form menu-search ">
 <fieldset>
 <legend>검색</legend>
@@ -472,7 +372,6 @@
 </fieldset>
 </div>
 </form></div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script></body>
 <script src="../../js/main.js"></script>
 </html>

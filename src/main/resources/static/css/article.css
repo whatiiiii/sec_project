@@ -3673,7 +3673,7 @@ a {
 }
 
 .ec-base-box.agree li.mun-list .mun-desc .mun-content {
-    padding: 5px 0 0;
+    padding: 20px 0 0;
 }
 
 .ec-base-box.agree li.mun-list .mun-desc .mun-content textarea {
@@ -3712,9 +3712,9 @@ a {
 .ec-base-box.agree.noform li.mun-list .mun-desc .mun-content {
     overflow: auto;
     height: 80px;
-    margin: 5px 0;
+    margin: 30px 0;
     padding: 5px 6px;
-    border: 1px solid #ddd;
+    border-top: 1px solid #ddd;
 }
 
 button,input[type=button] {

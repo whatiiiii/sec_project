@@ -26,13 +26,17 @@ dependencies {
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.5'
+
 	compileOnly 'org.projectlombok:lombok' //추가
 	annotationProcessor 'org.projectlombok:lombok' //추가
 	implementation 'com.oracle.database.jdbc:ojdbc11'
+	implementation 'io.springfox:springfox-boot-starter:3.0.0' // 또는 최신 버전
 	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.1'//버전을 써줘야 함
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 
+	implementation 'com.googlecode.json-simple:json-simple:1.1.1'
 	implementation group: 'javax.servlet', name: 'jstl', version: '1.2'
 
 	implementation group: 'org.javassist', name: 'javassist', version: '3.15.0-GA'

@@ -1,6 +1,5 @@
 <%@ page contentType="text/html;charset=utf-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
 <!DOCTYPE html>
 <html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko" id="main-id" >
 <head>
@@ -9,25 +8,28 @@
     <title>Document</title>
     <link href="../css/purchase.css" rel ="stylesheet"/>
 </head>
-
 <body class="Mtype_layout">        <div id="loading" style="display: none;"></div>
     <div id="background-opacity"></div>
-
 <div id="Mpage_header">
-
 <div id="header" class="clear-fix">
     <div class="cover clear-fix">
         <div class="header-left">
             <a href="#;" id="menu-btn" class="mobile-btn"><div class="arrow-type1">MENU</div></a>
         </div>
         <div class="header-center">
-            <div class="logo"><a href="/"><div class="M_logo_type font-bellefair img"><span class="M_logo_name M_pc" style="font-size: 70px; line-height: 50px; letter-spacing: -3px; font-weight: 300;">Àviemuah</span><span class="M_logo_name M_logo_name_mobile M_mobile" style="font-size: 40px; line-height: 40px; letter-spacing: -3px; font-weight: 300;">Àviemuah</span><img src="https://aviemuah.com/web/upload/mundane/logo_w.svg" alt="" class="M_logo_img M_pc" style="height: 50px;"><img src="https://aviemuah.com/web/upload/mundane/logo_w.svg" alt="" class="M_logo_img M_logo_img_mobile M_mobile" style="height: 30px;"></div></a></div>
+            <div class="logo">
+               <a href="/">
+                   <div class="M_logo_type font-bellefair img">
+                      <span class="M_logo_name M_pc" style="font-size: 70px; line-height: 50px; letter-spacing: -3px; font-weight: 300;">MÊRCI BIEN</span>
+                          <img src="../logo/logo3.png" alt="" class="M_logo_img M_pc" style="height: 50px;">
+                   </div>
+               </a>
+            </div>
         </div>
         <div class="header-right">
-            <ul><li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
+            <ul><li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><class="xans-record-">한국어</a>
 &nbsp;/&nbsp;
-
-<a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
+<class="xans-record-">EN</a></li>
 <c:choose>
     <c:when test="${empty loginOkUser}">
         <li class="xans-element- xans-layout xans-layout-statelogoff group sub log ">
@@ -45,48 +47,31 @@
 )
 </span>
 </a></li>
-
             </ul></div>
     </div>
 </div>
 </div>
-
-<div id="header_notice_m" class="M_header_notice M_mobile off mobile">
-<div class="swiper header_notice_slide">
-    <ul class="swiper-wrapper"><li class="swiper-slide M_headerNotice_list1 on"><a href="https://aviemuah.com/product/detail.html?product_no=1304&amp;cate_no=97&amp;display_group=1" class="M_headerNotice_desc1" style="font-size: 12px; line-height: 1.6em; font-weight: 400;">À Logo Leather Griptok (6 Colors)<br>Now Available!</a></li>
-<li class="swiper-slide M_headerNotice_list2 off"><a href="/" class="M_headerNotice_desc2" style="font-size: 12px; line-height: 30px; font-weight: 400;">Notice</a></li>
-<li class="swiper-slide M_headerNotice_list3 off"><a href="/" class="M_headerNotice_desc3" style="font-size: 12px; line-height: 30px; font-weight: 400;">Notice</a></li>
-<li class="swiper-slide M_headerNotice_list4 off"><a href="/" class="M_headerNotice_desc4" style="font-size: 12px; line-height: 30px; font-weight: 400;">Notice</a></li>
-<li class="swiper-slide M_headerNotice_list5 off"><a href="/" class="M_headerNotice_desc5" style="font-size: 12px; line-height: 30px; font-weight: 400;">Notice</a></li>
-    </ul></div>
-<div class="header-notice-close"><span><span></span><span></span></span></div>
-</div>
-
-
-    <div id="contents" class="header_notice_margin">
+<div id="contents" class="header_notice_margin">
 <div class="xans-element- xans-myshop xans-myshop-orderhistorytab ec-base-tab "><ul class="menu">
-<li class="tab_class selected"><a href="/myshop/order/list.html?history_start_date=2023-05-24&amp;history_end_date=2023-08-22&amp;past_year=2022">주문내역조회 </a></li>
+<li class="tab_class selected"><a>주문내역조회 </a></li>
 </ul>
 </div>
-
-<div class="xans-element- xans-myshop xans-myshop-orderhistorylistitem ec-base-table typeList"><!--
-    $login_url = /member/login.html
--->
+<div class="xans-element- xans-myshop xans-myshop-orderhistorylistitem ec-base-table typeList">
 <ul class="form-typeList order ">
 <c:forEach items = "${purchase}" var ="purchase">
 <li class="mun-list clear-fix xans-record-">
         <div class="mun-orderInfo ">
-            주문일자/주문번호 :${purchase.pdate} / <a href="detail.html?order_id=20230813-0000571&amp;page=1&amp;history_start_date=2023-05-24&amp;history_end_date=2023-08-22" class="mun-underline">${purchase.pseq}</a>
+            주문일자/주문번호 :${purchase.pdate} / <a class="mun-underline" href="/purchase/detail.do/orderId=${purchase.orderId}">${purchase.orderId}</a>
         </div>
         <div class="thumb">
             <a href="/product/product.do/product_no=${purchase.cart.goods.gcode}&cate_no=${purchase.cart.goods.cgcode}"><img src="/img/${purchase.cart.goods.gname}.jpg" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" alt=""></a>
         </div>
         <div class="info">
-            <div class="mun-name"><strong><a href="/product/À-팟-체인-백-6컬러/1297/category/97/" class="ec-product-name">${purchase.cart.goods.gname}</a></strong></div>
+            <div class="mun-name"><strong><a href="/product/product.do/product_no=${purchase.cart.goods.gcode}&cate_no=${purchase.cart.goods.cgcode}" class="ec-product-name">${purchase.cart.goods.gname}</a></strong></div>
             <div class="mun-option">
                 <div class="option ">[사이즈: ${purchase.cart.goods.sname}]</div>
             </div>
-            <div class="mun-qty">${purchase.cart.quan}</div>
+            <div class="mun-qty">QTY. ${purchase.cart.quan}</div>
             <div class="mun-price">
                 <strong>KRW ${purchase.cart.goods.gprice * purchase.cart.quan}</strong><div class="displaynone"></div>
             </div>
@@ -101,8 +86,6 @@
 <p class="mun-empty message displaynone">주문 내역이 없습니다.</p>
 </div>
 </div>
-
-
 <div class="mobile-category header_layout_padding" style="padding-top: 64px;">
 <div class="cover header_notice_margin" style="margin-top: 0px;">
     <div class="section1">
@@ -153,7 +136,6 @@
         <div class="multi-Area M_mobile">
             <li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
 &nbsp;/&nbsp;
-
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
 <li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/login/login.do">로그인</a>
 </li>
@@ -162,13 +144,11 @@
 )
 </span>
 </a></li>
-
         </div>
     </div>
     <div class="section2 M_mobile">
         <li class="xans-element- xans-layout xans-layout-multishoplistitem group sub multi"><a href="//aviemuah.com/" class="xans-record-">한국어</a>
 &nbsp;/&nbsp;
-
 <a href="//en.aviemuah.com/" class="xans-record-">EN</a></li>
 <li class="xans-element- xans-layout xans-layout-statelogoff group sub log "><a href="/order/login.do">로그인</a> <!-- /myshop/order/list.html-->
 </li>
@@ -177,37 +157,34 @@
 )
 </span>
 </a></li>
-
     </div>
 </div>
 </div>
-    <div id="Mpage_footer">
-<div id="footer" class="xans-element- xans-layout xans-layout-footer "><div class="cover">
-        <div class="section1">
-            <span class="M_mall_name" style="text-transform:none;">Àvie muah</span><br><span class="M_email mun-lowercase">dhkim310@naver.com</span><br><span class="M_tel">010-5390-0372</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (09:30 – 18:30)</span><br><span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
-        </div>
-        <div class="section2">
-            owner - <span class="M_ceo">Kim Hyun Ji</span><br>permit number. <span class="M_regno_2">제2020-서울금천-0912호</span><br>business number. <a href="http://www.ftc.go.kr/info/bizinfo/communicationViewPopup.jsp?wrkr_no=488-81-01678" class="M_regno_1" target="_blank">488-81-01678</a>
-        </div>
-        <div class="section3">
-            address<br><span class="M_Addr">08505 서울 금천구 가산디지털2로 101 B동 306호</span>
-        </div>
-        <div class="section4">
-        <div class="sns-Area">
-        <a href="http://instagram.com/dhkim310" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
-        </div>
-        </div>
-        <div class="section5">
-            <a href="#">Terms &amp; Conditions</a><br><a href="#">Guide</a><br><a href="#">Policy Privacy</a><br><br>©<span class="M_mall_name">Àvie muah</span>
+<div id="Mpage_footer">
+        <div id="footer" class="xans-element- xans-layout xans-layout-footer "><div class="cover">
+                <div class="section1">
+                    <span class="M_mall_name" style="text-transform:none;">MERCI BIEN</span><br><span class="M_email mun-lowercase">mercii000@merci.com</span><br><span class="M_tel">010-0000-1111</span><br><br><span class="M_runtime_1">OPEN  |  MON – FRI (09:30 – 18:30)</span><br><span class="M_runtime_2">CLOSE  |  HOLIDAYS</span>
+                </div>
+                <div class="section2">
+                    owner - <span class="M_ceo">Joy Kim</span><br>permit number. <span class="M_regno_2">제2020-서울금천-0912호</span><br>business number. <a href="#" class="M_regno_1">488-81-01678</a>
+                </div>
+                <div class="section3">
+                    address<br><span class="M_Addr">08505 서울 금천구 가산디지털111로 111동 111호</span>
+                </div>
+                <div class="section4">
+                <div class="sns-Area">
+                <a href="http://instagram.com/dhkim310" target="_blank" class="M_instagramLink on"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a>
+                </div>
+                </div>
+                <div class="section5">
+                    <a href="#">Terms &amp; Conditions</a><br><a href="#">Guide</a><br><a href="#">Policy Privacy</a><br><br>©<span class="M_mall_name">MERCI BIEN</span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
-
 <div class="search_menu search_fullpage">
 <div class="search_btn search-background"><a href="#;"></a></div>
 <form id="searchForm" name="" action="/search/search.do" method="get" target="_self" enctype="multipart/form-data">
-
 <div class="xans-element- xans-search xans-search-form menu-search ">
 <fieldset>
 <legend>검색</legend>
@@ -217,13 +194,11 @@
 </fieldset>
 </div>
 </form></div>
-
 <script src="/mundane/js/jquery.js"></script>
 <script type="text/javascript">window.$MD = $.noConflict(true);</script>
 <script src="/mundane/js/fullpage.min.js"></script>
 <!--<script src="//unpkg.com/swiper@7/swiper-bundle.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-
 </script>
 <script src="../js/main.js"></script>
 <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><iframe src="/exec/front/eclog/main/?&amp;rloc=https%3A//aviemuah.com/myshop/order/list.html%3F&amp;rref=https%3A//aviemuah.com/member/change_passwd.html%3FreturnUrl%3D%252Fmyshop%252Forder%252Flist.html%253F&amp;udim=1920*1080&amp;rserv=elg-db-svcm-293.cafe24.com&amp;cid=CID26e1cc8f4b9b209c142fa697653d2305&amp;role_path=MYSHOP_ORDER_LIST&amp;stype=e&amp;shop_no=1&amp;lang=ko_KR&amp;ver=2" id="log_realtime" style="display: none;"></iframe><div id="modalBackpanel"></div><div id="modalContainer">
