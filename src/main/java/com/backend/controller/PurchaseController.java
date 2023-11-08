@@ -87,7 +87,7 @@ public class PurchaseController {
                     .build();
             purchaseService.insertS(purchase);
         }
-        String secretKey = ""; //toss API 시크릿키 입력
+        String secretKey = "key"; //toss API 시크릿키 입력
         Base64.Encoder encoder = Base64.getEncoder();
         byte[] encodedBytes = encoder.encode(secretKey.getBytes("UTF-8"));
         String authorizations = "Basic " + new String(encodedBytes, 0, encodedBytes.length);
