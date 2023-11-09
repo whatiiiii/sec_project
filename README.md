@@ -4,7 +4,7 @@
 - - - 
 
 # 📋 목차 
-### 1. [프로젝트 설명](https://github.com/whatiiiii/sec_project/tree/whatiiiii-patch-1#rocket-프로젝트-설명 "프로젝트설명")                  
+### 1. [프로젝트 설명](https://github.com/whatiiiii/sec_project#rocket-프로젝트-설명 "프로젝트설명")                  
 ### 2. [개발기간](https://github.com/whatiiiii/sec_project/tree/whatiiiii-patch-1#-개발-기간 "개발기간")         
 ### 3. [데이터베이스(DB) 설계](https://github.com/whatiiiii/sec_project/tree/whatiiiii-patch-1#-데이터베이스db-설계 "db설계")         
 ### 4. [사용기술](https://github.com/whatiiiii/sec_project/tree/whatiiiii-patch-1#%EF%B8%8F-languages-and-tools "사용기술")         
